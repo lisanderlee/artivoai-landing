@@ -1,0 +1,63 @@
+{
+    "Navigation": {
+        "Home": "Home",
+        "UseCases": "Use Cases",
+        "Features": "Features",
+        "Tools": "Tools",
+        "Pricing": "Pricing",
+        "Login": "Login",
+        "cta": "Sign Up",
+        "ImageGeneration": "Image Generation",
+        "ImageToVideo": "Image to Video",
+        "BakckgroundChange": "Background Change",
+        "ImageResize": "Image Resize",
+        "ImageUpscale": "Image Upscale",
+        "ProductTransfer": " Product Placement",
+        "Creatives": "Creatives and Designers",
+        "Ecommerce": "E-commerce",
+        "Marketing": "Angenies and Marketing Teams",
+        "ImageGenerationDescription": "Generate high-quality images from text prompts.",
+        "ImageToVideoDescription": "Turn any image into a moving video.",
+        "BakckgroundChangeDescription": "Change product backgrounds with a prompt or image.",
+        "ImageResizeDescription": "Image Resize",
+        "ImageUpscaleDescription": "Sharpen and enlarge images without losing quality.",
+        "ProductTransferDescription": "Place your product into any scene.",
+        "CreativesDescription": "Explore new ideas and create image variations with AI in seconds.",
+        "EcommerceDescription": "Boost your online store’s conversion with optimized visual content.",
+        "MarketingDescription": "Save time and deliver impactful visual content faster."
+    },
+    "HeroSection": {
+        "title": "Create Professional Images and Videos",
+        "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
+        "cta": "Get Started"
+    },
+    "CaseStudy": {
+        "Creatives": "Creatives and Designers",
+        "Ecommerce": "E-commerce",
+        "Marketing": "Angenies and Marketing Teams",
+        "CreativesDescription": "Explore new ideas and create image variations with AI in seconds.",
+        "EcommerceDescription": "Boost your online store’s conversion with optimized visual content.",
+        "MarketingDescription": "Save time and deliver impactful visual content faster.",
+        "cta": "Get Started"
+    },
+    "Features": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Tools": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Pricing": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Testimonials": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    },
+    "Footer": {
+        "title": "Hello world!",
+        "about": "Go to the about page"
+    }
+}
