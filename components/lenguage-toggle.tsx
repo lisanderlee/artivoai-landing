@@ -33,9 +33,10 @@ export default function LanguageToggle() {
   };
 
   return (
+    <div className="flex h-full">
     <Select defaultValue={locale} onValueChange={handleChange}>
       <SelectTrigger>
-        <Globe />
+        <Globe  size={15} />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
@@ -47,5 +48,6 @@ export default function LanguageToggle() {
         </SelectGroup>
       </SelectContent>
     </Select>
+    </div>
   );
 }

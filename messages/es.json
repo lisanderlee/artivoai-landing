@@ -31,7 +31,7 @@
     "description": "Olvidate de producciones costosas o flujos de trabajo complejos. Usá IA para crear visuales de producto para e-commerce, redes y publicidad — en minutos.",
     "cta": "Empezar ahora"
   },
-  "CaseStudy": {
+  "UseCase": {
     "Creatives": "Creativos y diseñadores",
     "Ecommerce": "E-commerce",
     "Marketing": "Agencias y equipos de marketing",
@@ -40,9 +40,21 @@
     "MarketingDescription": "Ahorrá tiempo y generá contenido visual impactante más rápido.",
     "cta": "Empezar ahora"
   },
-  "Features": {
-    "title": "¡Hola mundo!",
-    "about": "Ir a la página de información"
+  "BentoSection": {
+    "title": "Todas las herramientas de IA visual. En un solo lugar.",
+    "description": "Qué hace única a Artivo",
+    "ApiEyebrow": "Pensado para escalar",
+    "ApiTitle": "Genera contenido vía API",
+    "ApiDescription": "Usa nuestra API para crear visuales en volumen desde tus propias herramientas o plataforma.",
+    "BotEyebrow": "Prompts mejores, sin esfuerzo",
+    "BotTitle": "Tu copiloto IA para prompts",
+    "BotDescription": "Escribe, mejora y traduce prompts en segundos con ayuda de nuestro chatbot.",
+    "ModelsEyebrow": "Acceso todo-en-uno",
+    "ModelsTitle": "Los mejores modelos, una sola membresía",
+    "ModelsDescription": "Accede a modelos top de imagen y video con un solo plan. Sin cambiar de herramientas ni suscripciones.",
+    "WorkflowEyebrow": "Más que una herramienta",
+    "WorkflowTitle": "Workflows que resuelven tareas reales",
+    "WorkflowDescription": "Desde fondos hasta campañas, nuestros workflows te guían paso a paso y simplifican lo complejo."
   },
   "Tools": {
     "title": "¡Hola mundo!",

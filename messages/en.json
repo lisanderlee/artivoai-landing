@@ -15,7 +15,7 @@
         "ProductTransfer": " Product Placement",
         "Creatives": "Creatives and Designers",
         "Ecommerce": "E-commerce",
-        "Marketing": "Angenies and Marketing Teams",
+        "Marketing": "Angencies and Marketing Teams",
         "ImageGenerationDescription": "Generate high-quality images from text prompts.",
         "ImageToVideoDescription": "Turn any image into a moving video.",
         "BakckgroundChangeDescription": "Change product backgrounds with a prompt or image.",
@@ -31,18 +31,30 @@
         "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
         "cta": "Get Started"
     },
-    "CaseStudy": {
+    "UseCase": {
         "Creatives": "Creatives and Designers",
         "Ecommerce": "E-commerce",
-        "Marketing": "Angenies and Marketing Teams",
+        "Marketing": "Angencies and Marketing Teams",
         "CreativesDescription": "Explore new ideas and create image variations with AI in seconds.",
         "EcommerceDescription": "Boost your online store’s conversion with optimized visual content.",
         "MarketingDescription": "Save time and deliver impactful visual content faster.",
         "cta": "Get Started"
     },
-    "Features": {
-        "title": "Hello world!",
-        "about": "Go to the about page"
+    "BentoSection": {
+        "title": "All the Visual AI Tools You Need. In One Place.",
+        "description": "What Makes Artivo Unique",
+        "ApiEyebrow": "Built for Scale",
+        "ApiTitle": "Generate Content via API",
+        "ApiDescription": "Use our API to produce high-quality visuals in bulk, right from your own tools or platform.",
+        "BotEyebrow": "Write Better Prompts, Effortlessly",
+        "BotTitle": "Your AI Copilot for Prompting",
+        "BotDescription": "Get better results with less effort. Our AI chatbot helps you write, improve, and translate prompts in seconds.",
+        "ModelsEyebrow": "All-in-One Access",
+        "ModelsTitle": "The Best Models, One Membership",
+        "ModelsDescription": "Access top image and video AI models with a single plan—no need to juggle tools or subscriptions.",
+        "WorkflowEyebrow": "Smarter Than Just a Tool",
+        "WorkflowTitle": "Workflows That Solve Real Tasks",
+        "WorkflowDescription": "From background changes to campaign visuals, our guided workflows simplify complex tasks."
     },
     "Tools": {
         "title": "Hello world!",

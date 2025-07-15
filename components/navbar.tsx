@@ -3,8 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/components/ui/accordion';
-import { Button } from '@/components/ui/button';
+} from "@/components/ui/accordion";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,14 +11,14 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from '@/components/ui/navigation-menu';
+} from "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet';
+} from "@/components/ui/sheet";
 import {
   Film,
   Focus,
@@ -29,12 +28,12 @@ import {
   Ratio,
   Replace,
   Zap,
-} from 'lucide-react';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import LanguageToggle from './lenguage-toggle';
-import Logo from '/public/Logo.svg';
-
+} from "lucide-react";
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import LanguageToggle from "./lenguage-toggle";
+import Logo from "/public/Logo.svg";
+import { Button } from "./button";
 interface MenuItem {
   title: string;
   url?: string;
@@ -63,91 +62,91 @@ interface Navbar1Props {
   };
 }
 
-const Navbar1 = ({
+const Navbar = ({
   logo = {
-    url: '/',
-    src: '@/public/logo.svg',
-    alt: 'logo',
-    title: 'artivo.ai',
+    url: "/",
+    src: "@/public/logo.svg",
+    alt: "logo",
+    title: "artivo.ai",
   },
   menu = [
-    { title: 'Home', url: '#' },
+    { title: "Home", url: "#" },
     {
-      title: 'UseCases',
+      title: "UseCases",
       items: [
         {
-          title: 'Creatives',
-          description: 'CreativesDescription',
+          title: "Creatives",
+          description: "CreativesDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          title: 'Ecommerce',
-          description: 'EcommerceDescription',
+          title: "Ecommerce",
+          description: "EcommerceDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          title: 'Marketing',
-          description: 'MarketingDescription',
+          title: "Marketing",
+          description: "MarketingDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
       ],
     },
     {
-      title: 'Tools',
-      url: '#',
+      title: "Tools",
+      url: "#",
       items: [
         {
-          title: 'ImageGeneration',
-          description: 'ImageGenerationDescription',
+          title: "ImageGeneration",
+          description: "ImageGenerationDescription",
           icon: <ImageIcon className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          title: 'ImageToVideo',
-          description: 'ImageToVideoDescription',
+          title: "ImageToVideo",
+          description: "ImageToVideoDescription",
           icon: <Film className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          title: 'BakckgroundChange',
-          description: 'BakckgroundChangeDescription',
+          title: "BakckgroundChange",
+          description: "BakckgroundChangeDescription",
           icon: <Focus className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          description: 'ProductTransferDescription',
-          title: 'ProductTransfer',
+          description: "ProductTransferDescription",
+          title: "ProductTransfer",
           icon: <Replace className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          description: 'ImageResizeDescription',
-          title: 'ImageResize',
+          description: "ImageResizeDescription",
+          title: "ImageResize",
           icon: <Ratio className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
         {
-          description: 'ImageUpscaleDescription',
-          title: 'ImageUpscale',
+          description: "ImageUpscaleDescription",
+          title: "ImageUpscale",
           icon: <Grip className="size-5 shrink-0" />,
-          url: '#',
+          url: "#",
         },
       ],
     },
     {
-      title: 'Pricing',
-      url: '#',
+      title: "Pricing",
+      url: "#",
     },
   ],
   auth = {
-    login: { title: 'Login', url: '#' },
-    signup: { title: 'cta', url: '#' },
+    login: { title: "Login", url: "#" },
+    signup: { title: "cta", url: "#" },
   },
 }: Navbar1Props) => {
-  const t = useTranslations('Navigation');
+  const t = useTranslations("Navigation");
 
   return (
     <section className="py-4">
@@ -164,14 +163,14 @@ const Navbar1 = ({
             </NavigationMenu>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
             <div className="z-50">
               <LanguageToggle />
             </div>
-            <Button asChild variant="outline" size="sm">
+            <Button variant="secondary">
               <a href={auth.login.url}>{t(auth.login.title)}</a>
             </Button>
-            <Button asChild size="sm">
+            <Button>
               <a href={auth.signup.url}>{t(auth.signup.title)}</a>
             </Button>
           </div>
@@ -180,11 +179,11 @@ const Navbar1 = ({
         <div className="block w-full lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-             <Image src={Logo} className="max-h-8" alt={logo.alt} />
+              <Image src={Logo} className="max-h-8" alt={logo.alt} />
             </a>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="outline" size="icon">
+                <Button variant="secondary">
                   <Menu className="size-4" />
                 </Button>
               </SheetTrigger>
@@ -192,7 +191,7 @@ const Navbar1 = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                    <Image src={Logo} className="max-h-8" alt={logo.alt} />
+                      <Image src={Logo} className="max-h-8" alt={logo.alt} />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -206,10 +205,10 @@ const Navbar1 = ({
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
-                    <Button asChild variant="outline">
+                    <Button variant="secondary">
                       <a href={auth.login.url}>{t(auth.login.title)}</a>
                     </Button>
-                    <Button asChild>
+                    <Button>
                       <a href={auth.signup.url}>{t(auth.signup.title)}</a>
                     </Button>
                   </div>
@@ -223,7 +222,10 @@ const Navbar1 = ({
   );
 };
 
-const renderMenuItem = (item: MenuItem, t: ReturnType<typeof useTranslations>) => {
+const renderMenuItem = (
+  item: MenuItem,
+  t: ReturnType<typeof useTranslations>
+) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
@@ -253,7 +255,10 @@ const renderMenuItem = (item: MenuItem, t: ReturnType<typeof useTranslations>) =
   );
 };
 
-const renderMobileMenuItem = (item: MenuItem, t: ReturnType<typeof useTranslations>) => {
+const renderMobileMenuItem = (
+  item: MenuItem,
+  t: ReturnType<typeof useTranslations>
+) => {
   if (item.items) {
     return (
       <AccordionItem key={item.title} value={item.title} className="border-b-0">
@@ -276,7 +281,13 @@ const renderMobileMenuItem = (item: MenuItem, t: ReturnType<typeof useTranslatio
   );
 };
 
-const SubMenuLink = ({ item, t }: { item: MenuItem; t: ReturnType<typeof useTranslations> }) => {
+const SubMenuLink = ({
+  item,
+  t,
+}: {
+  item: MenuItem;
+  t: ReturnType<typeof useTranslations>;
+}) => {
   return (
     <a
       className="hover:bg-muted hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
@@ -295,4 +306,4 @@ const SubMenuLink = ({ item, t }: { item: MenuItem; t: ReturnType<typeof useTran
   );
 };
 
-export { Navbar1 };
+export { Navbar };
