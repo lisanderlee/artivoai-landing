@@ -11,7 +11,7 @@ function CallToAction() {
     <div className="relative pt-20 pb-16 text-center sm:py-24">
       <hgroup>
         <Subheading>Get started</Subheading>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
+        <p className="mt-6 text-6xl font-bold tracking-tight text-gray-950 sm:text-5xl">
           Ready to dive in?
           <br />
           Start your free trial today.

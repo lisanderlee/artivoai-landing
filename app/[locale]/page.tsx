@@ -5,16 +5,25 @@ import Tools from "@/components/sections/tools-section";
 import Pricing from "@/components/sections/pricing-section";
 import Testimonials from "@/components/sections/testimonials-sections";
 import { Footer } from "@/components/sections/footer-section";
+import { FadeIn } from "@/components/fade-in";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Hero />
+      <FadeIn>
+        <Hero />
+      </FadeIn>
+
       <UseCase />
-      <BentoSection />
+
+      <FadeIn>
+        <BentoSection />
+      </FadeIn>
       <Tools />
       <Pricing />
       <Testimonials />
-      <Footer />
+      <FadeIn>
+        <Footer />
+      </FadeIn>
     </div>
   );
 }

@@ -34,6 +34,7 @@ import Image from "next/image";
 import LanguageToggle from "./lenguage-toggle";
 import Logo from "/public/Logo.svg";
 import { Button } from "./button";
+import Link from "next/link";
 interface MenuItem {
   title: string;
   url?: string;
@@ -70,7 +71,7 @@ const Navbar = ({
     title: "artivo.ai",
   },
   menu = [
-    { title: "Home", url: "#" },
+    { title: "Home", url: "/" },
     {
       title: "UseCases",
       items: [
@@ -78,19 +79,19 @@ const Navbar = ({
           title: "Creatives",
           description: "CreativesDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          url: "creatives",
         },
         {
           title: "Ecommerce",
           description: "EcommerceDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          url: "ecommerce",
         },
         {
           title: "Marketing",
           description: "MarketingDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "#",
+          url: "marketing",
         },
       ],
     },
@@ -138,7 +139,7 @@ const Navbar = ({
     },
     {
       title: "Pricing",
-      url: "#",
+      url: "/pricing",
     },
   ],
   auth = {
@@ -289,9 +290,9 @@ const SubMenuLink = ({
   t: ReturnType<typeof useTranslations>;
 }) => {
   return (
-    <a
+    <Link
       className="hover:bg-muted hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-      href={item.url}
+     href={`/use-case/${item.url}`}
     >
       <div className="text-foreground">{item.icon}</div>
       <div>
@@ -302,7 +303,7 @@ const SubMenuLink = ({
           </p>
         )}
       </div>
-    </a>
+    </Link>
   );
 };
 

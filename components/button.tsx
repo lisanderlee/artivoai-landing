@@ -53,7 +53,7 @@ export function Button({
   const content = (
     <>
       {children}
-      {icon && <span className="ml-2">{icon}</span>}
+      {icon && <span className="ml-2 border p-1 rounded-full">{icon}</span>}
     </>
   )
 
