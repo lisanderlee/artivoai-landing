@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import type { Transition } from "framer-motion";
 
 export function Logo({ className }: { className?: string }) {
- const transition: Transition = {
-  duration: 0.5,
-  ease: 'easeInOut',
-};
+  const transition: Transition = {
+    duration: 0.5,
+    ease: "easeInOut",
+  };
+
   return (
     <motion.svg
       variants={{ idle: {}, active: {} }}

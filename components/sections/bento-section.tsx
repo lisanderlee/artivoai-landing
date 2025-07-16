@@ -10,7 +10,7 @@ export default function BentoSection() {
   return (
     <div className="rounded-4xl mx-2 mt-2 py-32">
       <Container>
-        <Subheading dark>{t("description")}</Subheading>
+        <Subheading dark>{t("Eyebrow")}</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
         {t("title")}
         </Heading>

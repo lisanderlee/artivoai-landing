@@ -6,6 +6,7 @@ import AgencyUse from "@/public/content/AgencyUse.png";
 import EcommerceUse from "@/public/content/EcommerceUse.png";
 import { useTranslations } from "next-intl";
 
+
 const featuredCases = [
   {
     title: 'Creatives',
