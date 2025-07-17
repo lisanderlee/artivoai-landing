@@ -43,7 +43,7 @@ export function BentoCard({
           <div className="absolute inset-0 bg-linear-to-t from-white to-50% group-data-dark:from-gray-100 group-data-dark:from-[-25%]" />
         )}
       </div>
-      <div className="relative p-10">
+      <div className="relative  p-5 lg:p-10">
         <Subheading as="h3" dark={dark}>
           {eyebrow}
         </Subheading>

@@ -6,7 +6,7 @@
         "Tools": "Tools",
         "Pricing": "Pricing",
         "Login": "Login",
-        "cta": "Sign Up",
+        "cta": "Try Now",
         "ImageGeneration": "Image Generation",
         "ImageToVideo": "Image to Video",
         "BakckgroundChange": "Background Change",
@@ -29,7 +29,7 @@
     "HeroSection": {
         "title": "Create Professional Images and Videos",
         "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
-        "cta": "Get Started"
+        "cta": "Try Now"
     },
     "UseCase": {
         "Creatives": "Creatives and Designers",
@@ -37,8 +37,7 @@
         "Marketing": "Angencies and Marketing Teams",
         "CreativesDescription": "Explore new ideas and create image variations with AI in seconds.",
         "EcommerceDescription": "Boost your online store’s conversion with optimized visual content.",
-        "MarketingDescription": "Save time and deliver impactful visual content faster.",
-        "cta": "Get Started"
+        "MarketingDescription": "Save time and deliver impactful visual content faster."
     },
     "BentoSection": {
         "title": "All the Visual AI Tools You Need. In One Place.",

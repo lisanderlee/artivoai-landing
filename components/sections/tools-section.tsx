@@ -23,6 +23,7 @@ type Tool = {
   title: string;
   description: string;
   detail: string;
+  id:string;
   icon: LucideIcon;
   image: StaticImageData;
 };
@@ -37,6 +38,7 @@ const tools: Tool[] = [
     detail: "ImageGenerationDetail",
     icon: ImageIcon,
     image: Sneaker,
+    id:"ImageGenerationID"
   },
   {
     name: "ImageToVideo",
@@ -46,6 +48,7 @@ const tools: Tool[] = [
     detail: "ImageToVideoDetail",
     icon: Film,
     image: Sneaker,
+    id: "ImageToVideoID"
   },
   {
     name: "ProductTransfer",
@@ -55,6 +58,7 @@ const tools: Tool[] = [
     detail: "ProductTransferDetail",
     icon: Replace,
     image: Sneaker,
+    id: "ProductTransferID"
   },
   {
     name: "BakckgroundChange",
@@ -64,6 +68,7 @@ const tools: Tool[] = [
     detail: "BakckgroundChangeDetail",
     icon: Focus,
     image: Sneaker,
+    id: "BakckgroundChangeID",
   },
   {
     name: "ImageUpscale",
@@ -73,6 +78,7 @@ const tools: Tool[] = [
     detail: "ImageUpscaleDetail",
     icon: Grip,
     image: Sneaker,
+    id: "ImageUpscaleID",
   },
   {
     name: "ImageResize",
@@ -82,6 +88,7 @@ const tools: Tool[] = [
     detail: "ImageResizeDetail",
     icon: Ratio,
     image: Sneaker,
+    id: "ImageResizeID",
   },
 ];
 
@@ -105,7 +112,7 @@ export default function Tools() {
       <Header />
 
       <div className="overflow-hidden ">
-        <div className="mx-auto max-w-7xl px-3 md:px-6 lg:px-0">
+        <div className="mx-auto max-w-7xl px-6 md:px-6 lg:px-0">
           {tools.map((tool, idx) => {
             const isReversed = idx % 2 !== 0;
 
@@ -113,6 +120,7 @@ export default function Tools() {
               <FadeIn key={tool.name}>
                 <div
                   key={tool.name}
+                  id={tool.id}
                   className={`flex flex-col-reverse lg:items-stretch items-center lg:flex-row h-full ${
                     isReversed
                       ? "lg:flex-row-reverse  justify-between flex mt-10 lg:mt-32"
@@ -120,7 +128,7 @@ export default function Tools() {
                   } h-full justify-between gap-x-4 flex lg:flex-row mt-10 lg:mt-32`}
                 >
                   <div className="flex lg:flex-1/2 max-w-2xl lg:w-full">
-                    <div className="w-full mt-10 lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-10  rounded-3xl text-left lg:text-left">
+                    <div className="w-full mt-10 lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-10  border-white/10 border rounded-3xl text-left lg:text-left">
                       <div className="h-full">
                         <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent   font-medium">
                           {t(tool.eyebrow)}
@@ -135,7 +143,7 @@ export default function Tools() {
                           variant="secondary-icon-outline"
                           className="mt-10"
                           icon={<ArrowUpRight className="h-5 w-5" />}
-                          href="#"
+                          href="https://app.artivo.ai/"
                         >
                           {t("cta")}
                         </Button>

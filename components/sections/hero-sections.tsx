@@ -25,7 +25,7 @@ export default function Hero() {
             <Button
               variant="primary-icon"
               icon={<ArrowUpRight className="h-5 w-5" />}
-              href="#"
+              href="https://app.artivo.ai/"
             >
               {t("cta")}
             </Button>

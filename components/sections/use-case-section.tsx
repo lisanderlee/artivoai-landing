@@ -54,12 +54,12 @@ export default function UseCase() {
                         className="aspect-3/2 w-full rounded-2xl object-cover "
                       />
                     )}
-                    <div className="flex flex-1 flex-col py-3 px-5">
-                      <div className="mt-2 text-2xl font-medium text-white">
+                    <div className="flex flex-1 flex-col py-3  px-5">
+                      <div className=" text-xl font-medium text-white">
                         <span className="absolute inset-0" />
                         {t(post.title)}
                       </div>
-                      <div className="mt-2 flex-1 text-lg/7 text-white">
+                      <div className="mt-1 flex-1 text-md text-white/50">
                         {t(post.description)}
                       </div>
                     </div>

@@ -104,11 +104,8 @@ const tiers = [
 function CallToAction() {
   return (
     <div>
-      <p className="max-w-sm mt-25 text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
-      </p>
-      <div className="mt-2">
+   
+      <div className="mt-10 ml-5 lg:ml-0">
         <Link
           href="/pricing"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
@@ -139,8 +136,8 @@ function Header() {
 
 function PricingCards() {
   return (
-    <div className="relative py-24">
-      <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
+    <div className="relative py-20 ">
+      <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset mx-4 lg:mx-0" />
       <Container className="relative">
         <FadeInStagger faster>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">

@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 export default function BentoSection() {
       const t = useTranslations("BentoSection");
   return (
-    <div className="rounded-4xl mx-2 mt-2 py-32">
+    <div className="rounded-4xl  mt-2 py-32">
       <Container>
         <Subheading dark>{t("Eyebrow")}</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">

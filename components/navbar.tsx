@@ -79,19 +79,19 @@ const Navbar = ({
           title: "Creatives",
           description: "CreativesDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "creatives",
+          url: "/use-case/creatives",
         },
         {
           title: "Ecommerce",
           description: "EcommerceDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "ecommerce",
+          url: "/use-case/ecommerce",
         },
         {
           title: "Marketing",
           description: "MarketingDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "marketing",
+          url: "/use-case/marketing",
         },
       ],
     },
@@ -103,37 +103,37 @@ const Navbar = ({
           title: "ImageGeneration",
           description: "ImageGenerationDescription",
           icon: <ImageIcon className="size-5 shrink-0" />,
-          url: "#",
+          url:  "/#ImageGenerationID",
         },
         {
           title: "ImageToVideo",
           description: "ImageToVideoDescription",
           icon: <Film className="size-5 shrink-0" />,
-          url: "#",
+          url: "/#ImageToVideoID",
         },
         {
           title: "BakckgroundChange",
           description: "BakckgroundChangeDescription",
           icon: <Focus className="size-5 shrink-0" />,
-          url: "#",
+          url: "/#BakckgroundChangeID",
         },
         {
           description: "ProductTransferDescription",
           title: "ProductTransfer",
           icon: <Replace className="size-5 shrink-0" />,
-          url: "#",
+          url:  "/#ProductTransferID",
         },
         {
           description: "ImageResizeDescription",
           title: "ImageResize",
           icon: <Ratio className="size-5 shrink-0" />,
-          url: "#",
+          url: "/#ImageResizeID",
         },
         {
           description: "ImageUpscaleDescription",
           title: "ImageUpscale",
           icon: <Grip className="size-5 shrink-0" />,
-          url: "#",
+          url:  "/#ImageUpscaleID",
         },
       ],
     },
@@ -143,8 +143,8 @@ const Navbar = ({
     },
   ],
   auth = {
-    login: { title: "Login", url: "#" },
-    signup: { title: "cta", url: "#" },
+    login: { title: "Login", url: "https://app.artivo.ai/" },
+    signup: { title: "cta", url: "https://app.artivo.ai/" },
   },
 }: Navbar1Props) => {
   const t = useTranslations("Navigation");
@@ -292,7 +292,7 @@ const SubMenuLink = ({
   return (
     <Link
       className="hover:bg-muted hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-     href={`/use-case/${item.url}`}
+     href={`${item.url}`}
     >
       <div className="text-foreground">{item.icon}</div>
       <div>
