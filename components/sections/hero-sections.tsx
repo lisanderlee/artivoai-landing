@@ -3,7 +3,7 @@ import { Container } from "@/components/container";
 import { Gradient } from "@/components/gradient";
 import { Navbar } from "@/components/navbar";
 import { useTranslations } from "next-intl";
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -22,9 +22,12 @@ export default function Hero() {
             {t("description")}
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button variant='primary-icon-outline'  icon={<ArrowUpRight /> } href="#">{t("cta")}</Button>
-           <Button variant="secondary" >
-              See pricing
+            <Button
+              variant="primary-icon"
+              icon={<ArrowUpRight className="h-5 w-5" />}
+              href="#"
+            >
+              {t("cta")}
             </Button>
           </div>
           <Image
