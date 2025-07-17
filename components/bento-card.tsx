@@ -45,7 +45,9 @@ export function BentoCard({
       </div>
       <div className="relative  p-5 lg:p-10">
         <Subheading as="h3" dark={dark}>
+          <div className="w-fit bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
           {eyebrow}
+          </div>
         </Subheading>
         <p className="mt-1 text-2xl/8 font-medium tracking-tight text-gray-950 group-data-dark:text-white">
           {title}

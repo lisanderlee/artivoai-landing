@@ -12,9 +12,7 @@ export default function Home() {
       <FadeIn>
         <Hero />
       </FadeIn>
-
       <UseCase />
-
       <FadeIn>
         <BentoSection />
       </FadeIn>

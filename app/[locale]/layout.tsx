@@ -4,7 +4,6 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./globals.css";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,11 +32,14 @@ export default async function LocaleLayout({
     notFound();
   }
   return (
-      <html lang={locale}>
+    <html lang={locale}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0E0F11] scroll-smooth`}
       >
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+     
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
