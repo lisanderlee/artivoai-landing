@@ -170,11 +170,7 @@ function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
   )
 }
 
-function PricingTable({
-  selectedTier,
-}: {
-  selectedTier: (typeof tiers)[number]
-}) {
+function PricingTable() {
   return (
     <Container className="py-24">
       <table className="w-full text-left">
@@ -182,15 +178,15 @@ function PricingTable({
         <colgroup>
           <col className="w-3/5 sm:w-2/5" />
           <col
-            data-selected={selectedTier === tiers[0] ? true : undefined}
+   
             className="w-2/5 data-selected:table-column max-sm:hidden sm:w-1/5"
           />
           <col
-            data-selected={selectedTier === tiers[1] ? true : undefined}
+          
             className="w-2/5 data-selected:table-column max-sm:hidden sm:w-1/5"
           />
           <col
-            data-selected={selectedTier === tiers[2] ? true : undefined}
+         
             className="w-2/5 data-selected:table-column max-sm:hidden sm:w-1/5"
           />
         </colgroup>
@@ -201,7 +197,7 @@ function PricingTable({
               <th
                 key={tier.slug}
                 scope="col"
-                data-selected={selectedTier === tier ? true : undefined}
+       
                 className="p-0 data-selected:table-cell max-sm:hidden"
               >
                 <Subheading as="div">{tier.name}</Subheading>
@@ -213,7 +209,7 @@ function PricingTable({
               <div className="relative inline-block">
                 <Menu>
                   <MenuButton className="flex items-center justify-between gap-2 font-medium">
-                    {selectedTier.name}
+                 Menasdasd
                     <ChevronDown className="size-4 fill-gray-900" />
                   </MenuButton>
                   <MenuItems
@@ -225,9 +221,7 @@ function PricingTable({
                         <Link
                           scroll={false}
                           href={`/pricing?tier=${tier.slug}`}
-                          data-selected={
-                            tier === selectedTier ? true : undefined
-                          }
+                       
                           className="group flex items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-200"
                         >
                           {tier.name}
@@ -243,7 +237,7 @@ function PricingTable({
               </div>
             </td>
             <td colSpan={3} className="p-0 text-right">
-              <Button variant="outline" href={selectedTier.href}>
+              <Button variant="outline" href={"#"}>
                 Get started
               </Button>
             </td>
@@ -255,10 +249,10 @@ function PricingTable({
             {tiers.map((tier) => (
               <td
                 key={tier.slug}
-                data-selected={selectedTier === tier ? true : undefined}
+             
                 className="px-0 pt-4 pb-0 data-selected:table-cell max-sm:hidden"
               >
-                <Button variant="outline" href={tier.href}>
+              <Button variant="outline" href={"#"}>
                   Get started
                 </Button>
               </td>
@@ -301,9 +295,7 @@ function PricingTable({
                       return (
                         <td
                           key={tier.slug}
-                          data-selected={
-                            selectedTier === tier ? true : undefined
-                          }
+                       
                           className="p-4 data-selected:table-cell max-sm:hidden"
                         >
                           {value === true ? (
@@ -489,15 +481,7 @@ function FrequentlyAskedQuestions() {
   )
 }
 
-export default function Pricing({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  const tier =
-    typeof searchParams.tier === 'string'
-      ? tiers.find(({ slug }) => slug === searchParams.tier)!
-      : tiers[0]
+export default function Pricing() {
 
   return (
     <main className="overflow-hidden bg-white">
@@ -507,7 +491,7 @@ export default function Pricing({
       </Container>
       <Header />
       <PricingCards />
-      <PricingTable selectedTier={tier} />
+      <PricingTable  />
       <Testimonial />
       <FrequentlyAskedQuestions />
       <Footer />

@@ -1,28 +1,28 @@
-import { notFound } from "next/navigation";
+import { notFound } from 'next/navigation';
 
 const useCases = {
   ecommerce: {
-    title: "E-commerce",
-    description: "Create product images and lifestyle visuals for your store in seconds.",
+    title: 'E-commerce',
+    description: 'Create product images and lifestyle visuals for your store in seconds.',
   },
   marketing: {
-    title: "Social Media",
-    description: "Generate content for posts, stories, and ads instantly.",
+    title: 'Social Media',
+    description: 'Generate content for posts, stories, and ads instantly.',
   },
-  creative: {
-    title: "Creative Agencies",
-    description: "Scale your visual production for client projects effortlessly.",
+  creatives: {
+    title: 'Creative Agencies',
+    description: 'Scale your visual production for client projects effortlessly.',
   },
 };
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
-
-export default function UseCasePage({ params }: Props) {
-  const useCase = useCases[params.slug as keyof typeof useCases];
+// ✅ Default export function (async to handle Promise-based params)
+export default async function UseCasePage({ 
+  params 
+}: { 
+  params: Promise<{ locale: string; slug: string }> 
+}) {
+  const { slug } = await params;
+  const useCase = useCases[slug as keyof typeof useCases];
 
   if (!useCase) return notFound();
 
