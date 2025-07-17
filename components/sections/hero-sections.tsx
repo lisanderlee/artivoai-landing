@@ -20,7 +20,7 @@ export default function Hero() {
               {t("badge")}
             </div>
           </div>
-          <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
+          <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-slate-800  sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             {t("title")}
           </h1>
           <p className="mt-8 max-w-2xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">

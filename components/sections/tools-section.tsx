@@ -15,6 +15,13 @@ import { LucideIcon } from "lucide-react";
 import { StaticImageData } from "next/image";
 import { Button } from "../button";
 import { FadeIn } from "../fade-in";
+import GenerateImage from "@/public/tools/ImageGeneration.png";
+import VideoGeneration from "@/public/tools/VideoGeneration.gif";
+import BackgroundChange from "@/public/tools/BackgroundChange.png";
+import ProductTransfer from "@/public/tools/ProductTransfer.png";
+import ImageResize from "@/public/tools/ImageResize.png";
+import ImageFixer from "@/public/tools/ImageFixer.png";
+
 import Image from "next/image";
 
 type Tool = {
@@ -23,7 +30,8 @@ type Tool = {
   title: string;
   description: string;
   detail: string;
-  id:string;
+  prompt: string;
+  id: string;
   icon: LucideIcon;
   image: StaticImageData;
 };
@@ -36,9 +44,10 @@ const tools: Tool[] = [
     title: "ImageGenerationTitle",
     description: "ImageGenerationDescription",
     detail: "ImageGenerationDetail",
+    prompt: "ImageGenerationPrompt",
     icon: ImageIcon,
-    image: Sneaker,
-    id:"ImageGenerationID"
+    image: GenerateImage,
+    id: "ImageGenerationID",
   },
   {
     name: "ImageToVideo",
@@ -46,9 +55,10 @@ const tools: Tool[] = [
     title: "ImageToVideoTitle",
     description: "ImageToVideoDescription",
     detail: "ImageToVideoDetail",
+    prompt: "ImageToVideoPrompt",
     icon: Film,
-    image: Sneaker,
-    id: "ImageToVideoID"
+    image: VideoGeneration,
+    id: "ImageToVideoID",
   },
   {
     name: "ProductTransfer",
@@ -56,9 +66,10 @@ const tools: Tool[] = [
     title: "ProductTransferTitle",
     description: "ProductTransferDescription",
     detail: "ProductTransferDetail",
+    prompt: "ProductTransferPrompt",
     icon: Replace,
-    image: Sneaker,
-    id: "ProductTransferID"
+    image: ProductTransfer,
+    id: "ProductTransferID",
   },
   {
     name: "BakckgroundChange",
@@ -66,8 +77,9 @@ const tools: Tool[] = [
     title: "BakckgroundChangeTransferTitle",
     description: "BakckgroundChangeDescription",
     detail: "BakckgroundChangeDetail",
+    prompt: "BakckgroundChangePrompt",
     icon: Focus,
-    image: Sneaker,
+    image: BackgroundChange,
     id: "BakckgroundChangeID",
   },
   {
@@ -76,8 +88,9 @@ const tools: Tool[] = [
     title: "ImageUpscaleTransferTitle",
     description: "ImageUpscaleDescription",
     detail: "ImageUpscaleDetail",
+    prompt: "ImageUpscalePrompt",
     icon: Grip,
-    image: Sneaker,
+    image: ImageFixer,
     id: "ImageUpscaleID",
   },
   {
@@ -86,9 +99,10 @@ const tools: Tool[] = [
     title: "ImageResizeTransferTitle",
     description: "ImageResizeDescription",
     detail: "ImageResizeDetail",
+    prompt: "ImageResizePrompt",
     icon: Ratio,
-    image: Sneaker,
-    id: "ImageResizeID",
+    image: ImageResize,
+    id: "ImageUpscaleID",
   },
 ];
 
@@ -156,12 +170,17 @@ export default function Tools() {
                       </div>
                     </div>
                   </div>
-                  <div className=" h-full items-center flex w-full max-w-2xl lg:flex-1/2 flex-col ">
+                  <div className=" h-full items-center flex w-full max-w-2xl lg:flex-1/2 flex-col relative ">
+                    <div>
+                      <p className="text-white/50 lg:text-sm  text-xs  bottom-4 lg:bottom-7 w-[300px]  lg:-translate-x-11/12 -translate-x-7/12 lg:w-[250px] absolute">
+                        {t(tool.prompt)}
+                      </p>
+                    </div>
                     <Image
                       src={tool.image}
                       alt={tool.name}
                       className="object-cover rounded-3xl h-full w-full"
-                      placeholder="blur"
+                 
                     />
                   </div>
                 </div>
