@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Container } from "@/components/container";
 import Link from "next/link";
-import CreativeUse from "@/public/content/CreativeUse.png";
-import AgencyUse from "@/public/content/AgencyUse.png";
-import EcommerceUse from "@/public/content/EcommerceUse.png";
+import CreativeUse from "@/public/use-case/CreativeUse.png";
+import AgencyUse from "@/public/use-case/AgencyUse.png";
+import EcommerceUse from "@/public/use-case/EcommerceUse.png";
 import { useTranslations } from "next-intl";
 import { FadeInStagger, FadeIn } from "../fade-in";
 

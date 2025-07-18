@@ -103,13 +103,13 @@ const Navbar = ({
           title: "ImageGeneration",
           description: "ImageGenerationDescription",
           icon: <ImageIcon className="size-5 shrink-0" />,
-          url:  "/#ImageGenerationID",
+          url: "/#ImageGenerationID",
         },
         {
-          title: "ImageToVideo",
-          description: "ImageToVideoDescription",
+          title: "VideoGeneration",
+          description: "VideoGenerationDescription",
           icon: <Film className="size-5 shrink-0" />,
-          url: "/#ImageToVideoID",
+          url: "/#VideoGenerationID",
         },
         {
           title: "BakckgroundChange",
@@ -121,19 +121,19 @@ const Navbar = ({
           description: "ProductTransferDescription",
           title: "ProductTransfer",
           icon: <Replace className="size-5 shrink-0" />,
-          url:  "/#ProductTransferID",
+          url: "/#ProductTransferID",
+        },
+        {
+          description: "RetouchLabDescription",
+          title: "RetouchLab",
+          icon: <Grip className="size-5 shrink-0" />,
+          url: "/#RetouchLabID",
         },
         {
           description: "ImageResizeDescription",
           title: "ImageResize",
           icon: <Ratio className="size-5 shrink-0" />,
           url: "/#ImageResizeID",
-        },
-        {
-          description: "ImageUpscaleDescription",
-          title: "ImageUpscale",
-          icon: <Grip className="size-5 shrink-0" />,
-          url:  "/#ImageUpscaleID",
         },
       ],
     },
@@ -292,7 +292,7 @@ const SubMenuLink = ({
   return (
     <Link
       className="hover:bg-muted hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
-     href={`${item.url}`}
+      href={`${item.url}`}
     >
       <div className="text-foreground">{item.icon}</div>
       <div>

@@ -1,6 +1,5 @@
 import { Container } from "@/components/container";
 import { Heading, Lead } from "@/components/text";
-import Sneaker from "@/public/content/sneakers.png";
 import { useTranslations } from "next-intl";
 import {
   Film,
@@ -20,7 +19,7 @@ import VideoGeneration from "@/public/tools/VideoGeneration.gif";
 import BackgroundChange from "@/public/tools/BackgroundChange.png";
 import ProductTransfer from "@/public/tools/ProductTransfer.png";
 import ImageResize from "@/public/tools/ImageResize.png";
-import ImageFixer from "@/public/tools/ImageFixer.png";
+import RetouchLab from "@/public/tools/RetouchLab.png";
 
 import Image from "next/image";
 
@@ -50,15 +49,15 @@ const tools: Tool[] = [
     id: "ImageGenerationID",
   },
   {
-    name: "ImageToVideo",
-    eyebrow: "ImageToVideoEyebrow",
-    title: "ImageToVideoTitle",
-    description: "ImageToVideoDescription",
-    detail: "ImageToVideoDetail",
-    prompt: "ImageToVideoPrompt",
+    name: "VideoGeneration",
+    eyebrow: "VideoGenerationEyebrow",
+    title: "VideoGenerationTitle",
+    description: "VideoGenerationDescription",
+    detail: "VideoGenerationDetail",
+    prompt: "VideoGenerationPrompt",
     icon: Film,
     image: VideoGeneration,
-    id: "ImageToVideoID",
+    id: "VideoGenerationID",
   },
   {
     name: "ProductTransfer",
@@ -83,15 +82,15 @@ const tools: Tool[] = [
     id: "BakckgroundChangeID",
   },
   {
-    name: "ImageUpscale",
-    eyebrow: "ImageUpscaleChangeEyebrow",
-    title: "ImageUpscaleTransferTitle",
-    description: "ImageUpscaleDescription",
-    detail: "ImageUpscaleDetail",
-    prompt: "ImageUpscalePrompt",
+    name: "RetouchLab",
+    eyebrow: "RetouchLabEyebrow",
+    title: "RetouchLabTitle",
+    description: "RetouchLabDescription",
+    detail: "RetouchLabDetail",
+    prompt: "RetouchLabPrompt",
     icon: Grip,
-    image: ImageFixer,
-    id: "ImageUpscaleID",
+    image: RetouchLab,
+    id: "RetouchLabID",
   },
   {
     name: "ImageResize",
@@ -102,7 +101,7 @@ const tools: Tool[] = [
     prompt: "ImageResizePrompt",
     icon: Ratio,
     image: ImageResize,
-    id: "ImageUpscaleID",
+    id: "ImageResizeID",
   },
 ];
 
@@ -139,11 +138,11 @@ export default function Tools() {
                     isReversed
                       ? "lg:flex-row-reverse  justify-between flex mt-10 lg:mt-32"
                       : ""
-                  } h-full justify-between gap-x-4 flex lg:flex-row mt-10 lg:mt-32`}
+                  } h-full justify-between gap-x-4 md:px-8 lg:px-0 flex lg:flex-row mt-10 lg:mt-32`}
                 >
-                  <div className="flex lg:flex-1/2 max-w-2xl lg:w-full">
-                    <div className="w-full mt-10 lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-10  border-white/10 border rounded-3xl text-left lg:text-left">
-                      <div className="h-full">
+                  <div className="flex  lg:flex-1/2 max-w-2xl w-full">
+                    <div className="w-full mt-5  lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-7 lg:p-10  border-white/10 border rounded-3xl text-left lg:text-left">
+                      <div className="h-full ">
                         <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent   font-medium">
                           {t(tool.eyebrow)}
                         </span>
@@ -164,7 +163,7 @@ export default function Tools() {
                       </div>
                       <div className="mt-24">
                         <div className=" h-[1px] w-full bg-white/20 mb-5" />
-                        <span className="text-white/50 text-sm   ">
+                        <span className="text-white/50 text-sm  font-semibold ">
                           {t(tool.detail)}
                         </span>
                       </div>
@@ -172,7 +171,7 @@ export default function Tools() {
                   </div>
                   <div className=" h-full items-center flex w-full max-w-2xl lg:flex-1/2 flex-col relative ">
                     <div>
-                      <p className="text-white/50 lg:text-sm  text-xs  bottom-4 lg:bottom-7 w-[300px]  lg:-translate-x-11/12 -translate-x-7/12 lg:w-[250px] absolute">
+                      <p className="absolute text-white/50  text-[10px]  bottom-3 leading-3 w-[160px] -translate-x-11/12   md:-translate-x-10/12 md:w-[300px] md:leading-5 md:bottom-8 lg:text-[14px] lg:bottom-4 lg:leading-5 lg:-translate-x-10/12 lg:pl-1 lg:w-[220px] lg:tracking-tighter   xl:-translate-x-10/12 xl:pl-3 xl:w-[300px]  xl:bottom-6  xl:text-[16px]  ">
                         {t(tool.prompt)}
                       </p>
                     </div>

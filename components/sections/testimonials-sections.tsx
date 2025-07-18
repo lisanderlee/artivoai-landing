@@ -1,5 +1,5 @@
 "use client";
-
+import { useTranslations } from "next-intl";
 import * as Headless from "@headlessui/react";
 import { ArrowRightIcon } from "lucide-react";
 import { clsx } from "clsx";
@@ -17,47 +17,43 @@ import { Container } from "@/components/container";
 import { Link } from "@/components/link";
 import { Heading, Subheading } from "@/components/text";
 import { FadeInStagger, FadeIn } from "../fade-in";
+
 const testimonials = [
   {
     img: "/testimonials/tina-yards.jpg",
-    name: "Tina Yards",
-    title: "VP of Sales, Protocol",
-    quote:
-      "Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.",
+    name: "User1.Name",
+    title: "User1.Title",
+    quote: "User1.Quote",
   },
   {
     img: "/testimonials/conor-neville.jpg",
-    name: "Conor Neville",
-    title: "Head of Customer Success, TaxPal",
-    quote:
-      "Radiant made undercutting all of our competitors an absolute breeze.",
+    name: "User2.Name",
+    title: "User2.Title",
+    quote: "User2.Quote",
   },
   {
     img: "/testimonials/amy-chase.jpg",
-    name: "Amy Chase",
-    title: "Head of GTM, Pocket",
-    quote:
-      "We closed a deal in literally a few minutes because we knew their exact budget.",
+    name: "User3.Name",
+    title: "User3.Title",
+    quote: "User3.Quote",
   },
   {
     img: "/testimonials/veronica-winton.jpg",
-    name: "Veronica Winton",
-    title: "CSO, Planeteria",
-    quote:
-      "We’ve managed to put two of our main competitors out of business in 6 months.",
+    name: "User4.Name",
+    title: "User4.Title",
+    quote: "User4.Quote",
   },
   {
     img: "/testimonials/dillon-lenora.jpg",
-    name: "Dillon Lenora",
-    title: "VP of Sales, Detax",
-    quote: "I was able to replace 80% of my team with RadiantAI bots.",
+    name: "User5.Name",
+    title: "User5.Title",
+    quote: "User5.Quote",
   },
   {
     img: "/testimonials/harriet-arron.jpg",
-    name: "Harriet Arron",
-    title: "Account Manager, Commit",
-    quote:
-      "I’ve smashed all my targets without having to speak to a lead in months.",
+    name: "User6.Name",
+    title: "User6.Title",
+    quote: "User6.Quote",
   },
 ];
 
@@ -78,7 +74,7 @@ function TestimonialCard({
   scrollX: MotionValue<number>;
 } & HTMLMotionProps<"div">) {
   const ref = useRef<HTMLDivElement | null>(null);
-
+  const t = useTranslations("Testimonials");
   const computeOpacity = useCallback(() => {
     const element = ref.current;
     if (!element || bounds.width === 0) return 1;
@@ -140,10 +136,10 @@ function TestimonialCard({
           </p>
         </blockquote>
         <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">{name}</p>
+          <p className="text-sm/6 font-medium text-white">{t(name)}</p>
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              {title}
+              {t(title)}
             </span>
           </p>
         </figcaption>
@@ -153,18 +149,16 @@ function TestimonialCard({
 }
 
 function CallToAction() {
+  const t = useTranslations("Testimonials");
   return (
     <div>
-      <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
-      </p>
+      <p className="max-w-sm text-sm/6 text-gray-600">{t("Claim")}</p>
       <div className="mt-2">
         <Link
-          href="#"
+          href="https://app.artivo.ai/"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
-          Get started
+          {t("cta")}
           <ArrowRightIcon className="size-5" />
         </Link>
       </div>
@@ -177,7 +171,7 @@ export default function Testimonials() {
   const { scrollX } = useScroll({ container: scrollRef });
   const [setReferenceWindowRef, bounds] = useMeasure();
   const [activeIndex, setActiveIndex] = useState(0);
-
+  const t = useTranslations("Testimonials");
   useMotionValueEvent(scrollX, "change", (x) => {
     setActiveIndex(Math.floor(x / scrollRef.current!.children[0].clientWidth));
   });
@@ -192,11 +186,9 @@ export default function Testimonials() {
     <div className="overflow-hidden  py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading className="text-white">
-            What everyone is saying
-          </Subheading>
+          <Subheading className="text-white">{t("title")}</Subheading>
           <Heading as="h3" className="mt-2 text-white">
-            Trusted by professionals.
+            {t("Eyebrow")}
           </Heading>
         </div>
       </Container>
@@ -221,7 +213,7 @@ export default function Testimonials() {
                 scrollX={scrollX}
                 onClick={() => scrollTo(testimonialIndex)}
               >
-                {quote}
+                {t(quote)}
               </TestimonialCard>
             </FadeIn>
           ))}
