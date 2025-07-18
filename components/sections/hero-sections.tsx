@@ -4,6 +4,7 @@ import { Gradient } from "@/components/gradient";
 import { Navbar } from "@/components/navbar";
 import { useTranslations } from "next-intl";
 import { ArrowUpRight } from "lucide-react";
+import { HeroBadge } from "@/components/hero-badge";
 import Image from "next/image";
 
 export default function Hero() {
@@ -15,10 +16,10 @@ export default function Hero() {
       <Container className="relative">
         <Navbar />
         <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-32 md:pt-32">
-          <div className="flex relative">
-            <div className="border-1 border-black/20  bg-white/30  relative  px-4 py-1 rounded-full mb-5 text-sm font-medium">
-              {t("badge")}
-            </div>
+          <div className="flex relative mb-5">
+         <div>
+              <HeroBadge />
+         </div>
           </div>
           <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-slate-800  sm:text-8xl/[0.8] md:text-9xl/[0.8]">
             {t("title")}
