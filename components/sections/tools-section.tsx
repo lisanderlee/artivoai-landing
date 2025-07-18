@@ -22,10 +22,12 @@ import ImageResize from "@/public/tools/ImageResize.png";
 import RetouchLab from "@/public/tools/RetouchLab.png";
 import ThumbProductTransferBase from "@/public/tools/ThumbProductTranferBase.png";
 import ThumbProductTransferProduct from "@/public/tools/ThumbProductPlacementProduct.png";
-import ThumbBackgroundChange from "@/public/tools/ThumbBackgroundChange.png"
-import ThumbResizer from "@/public/tools/ThumbResize.png"
-import ThumbRetouchLab from "@/public/tools/ThumbRetouchLab.png"
-import PanelResize from '@/public/tools/PanelResize.png'
+import ThumbVideoGeneration from "@/public/tools/ThumbVideoGeneration.png"
+import ThumbBackgroundChange from "@/public/tools/ThumbBackgroundChange.png";
+import ThumbResizer from "@/public/tools/ThumbResize.png";
+import ThumbRetouchLab from "@/public/tools/ThumbRetouchLab.png";
+import PanelResize from "@/public/tools/PanelResize.png";
+import PanelSlider from "@/public/tools/PanelSlider.png"
 import Image from "next/image";
 
 type Tool = {
@@ -40,7 +42,7 @@ type Tool = {
   image: StaticImageData;
   thumb1?: StaticImageData;
   thumb2?: StaticImageData;
-    panel?: StaticImageData;
+  panel?: StaticImageData;
 };
 
 // Define the array
@@ -65,6 +67,7 @@ const tools: Tool[] = [
     prompt: "VideoGenerationPrompt",
     icon: Film,
     image: VideoGeneration,
+    thumb2:ThumbVideoGeneration,
     id: "VideoGenerationID",
   },
   {
@@ -102,6 +105,7 @@ const tools: Tool[] = [
     icon: Grip,
     image: RetouchLab,
     thumb2: ThumbRetouchLab,
+    panel:PanelSlider,
     id: "RetouchLabID",
   },
   {
@@ -167,14 +171,14 @@ export default function Tools() {
                         <p className="text-gray-200 text-sm max-w-md mt-4">
                           {t(tool.description)}
                         </p>
-                        {/* <Button
+                        <Button
                           variant="secondary-icon-outline"
                           className="mt-10"
                           icon={<ArrowUpRight className="h-5 w-5" />}
                           href="https://app.artivo.ai/"
                         >
                           {t("cta")}
-                        </Button> */}
+                        </Button>
                       </div>
                       <div className="mt-24">
                         <div className=" h-[1px] w-full bg-white/20 mb-5" />
@@ -212,7 +216,15 @@ export default function Tools() {
                           </div>
                         )}
                       </div>
-                   
+                      {tool.panel && (
+                        <div className="absolute w-8/12">
+                          <Image
+                            src={tool.panel}
+                            alt={tool.name}
+                            className=""
+                          />
+                        </div>
+                      )}
                       <div className="flex  text-white/90 mt-2 md:mt-0 lg:mt-0  md:text-lg md:leading-7 text-[13px] lg:pr-4  md:pr-5 leading-4 lg:text-lg lg:leading-6 w-full">
                         <p> {t(tool.prompt)}</p>
                       </div>
