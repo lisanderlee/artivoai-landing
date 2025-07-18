@@ -57,44 +57,101 @@
     "WorkflowDescription": "Desde fondos hasta campañas, nuestros workflows te guían paso a paso y simplifican lo complejo."
   },
   "Tools": {
-    "title": "Herramientas AI diseñadas para crear contenido visual",
+    "title": "Herramientas de IA diseñadas para crear contenido visual",
     "Eyebrow": "Herramientas especializadas, resultados reales",
-    "ImageGeneration": "Generación de imágenes",
-    "ImageToVideo": "Imagen a video",
-    "BakckgroundChange": "Cambio de fondo",
-    "ImageResize": "Redimensionar imagen",
-    "ImageUpscale": "Aumento de resolución",
-    "ProductTransfer": "Integración de producto",
-    "ImageGenerationEyebrow": "De texto a imagen",
-    "ImageGenerationTitle": "Generá imágenes con prompts",
-    "ImageGenerationDescription": "Convertí cualquier idea en una imagen de alta calidad usando solo un prompt. Varios modelos disponibles.",
-    "ImageToVideoEyebrow": "Animá tus imágenes",
-    "ImageToVideoTitle": "Convertí imágenes en videos cortos",
-    "ImageToVideoDescription": "Dale vida a tus imágenes con movimientos de cámara. Subí una imagen y describí el movimiento. Varios modelos disponibles.",
-    "ProductTransferEyebrow": "Ponelo donde quieras",
-    "ProductTransferTitle": "Ubicación inteligente de producto",
-    "ProductTransferDescription": "Insertá tu producto en cualquier escena. La IA lo escala y fusiona de forma natural para mockups o campañas.",
-    "BakckgroundChangeEyebrow": "Cambiá el fondo fácil",
-    "BakckgroundChangeTransferTitle": "Cambio de fondo instantáneo",
-    "BakckgroundChangeDescription": "Subí la foto de tu producto y describí o mostrá el fondo que querés. Conservamos sombras y ángulos realistas.",
-    "ImageUpscaleChangeEyebrow": "Más grande y nítida",
-    "ImageUpscaleTransferTitle": "Mejorador de imagen",
-    "ImageUpscaleDescription": "Ampliá y mejorá tus imágenes sin perder calidad. Ideal para impresiones o detalles.",
-    "ImageResizeChangeEyebrow": "Adaptalo a tu medida",
-    "ImageResizeTransferTitle": "Redimensionador de imagen",
-    "ImageResizeDescription": "Redimensioná tus imágenes rápido para cualquier formato. Ideal para e-commerce, redes o web.",
-       "cta":"Probar"
+    "ImageGeneration": "Generación de Imágenes",
+    "ImageToVideo": "Imagen a Video",
+    "BakckgroundChange": "Cambio de Fondo",
+    "ImageResize": "Redimensionar Imagen",
+    "ImageUpscale": "Aumentar Resolución",
+    "ProductTransfer": "Colocación de Producto",
+    "ImageGenerationEyebrow": "Del texto a lo visual",
+    "ImageGenerationTitle": "Genera imágenes con prompts",
+    "ImageGenerationDescription": "Convierte cualquier idea en una imagen de alta calidad usando solo texto. Múltiples modelos para adaptarse a tu estilo y necesidades.",
+    "ImageGenerationDetail": "Flux • Flux 1.1 Pro • Ideogram V 2.0 • Más próximamente",
+    "ImageGenerationPrompt": "Retrato vibrante de una mujer con turbante colorido, maquillaje llamativo, flores y fondo artístico.",
+    "VideoGenerationEyebrow": "Anima cualquier imagen",
+    "VideoGenerationTitle": "Convierte imágenes en videos cortos",
+    "VideoGenerationDescription": "Dale vida a tus imágenes con movimiento de cámara suave. Sube una imagen fija y describe cómo debería moverse la cámara. Múltiples modelos disponibles.",
+    "VideoGenerationDetail": "Luma Ray 2 • Kling 2.1 Pro • Hasta 10 segundos • SD / HD • Más próximamente",
+    "VideoGenerationPrompt": "Paneo cinematográfico en jardín. Mariposas vuelan, hojas se mueven, luz cambia, fondo urbano desenfocado, movimiento realista.",
+    "ProductTransferEyebrow": "Colócalo donde quieras",
+    "ProductTransferTitle": "Colocación inteligente de productos",
+    "ProductTransferDescription": "Inserta tu producto en cualquier escena. Sube tu producto y un fondo—la IA los combina de forma natural para mockups o campañas.",
+    "ProductTransferDetail": "Flujo personalizado • Fondo • Sombras • Perspectiva • Realismo",
+    "ProductTransferPrompt": "Coloca la botella de agua de forma natural en la mano del modelo, como si la sostuviera con confianza y realismo.",
+    "BakckgroundChangeEyebrow": "Cambia la escena fácilmente",
+    "BakckgroundChangeTransferTitle": "Cambia fondos al instante",
+    "BakckgroundChangeDescription": "Sube la foto de tu producto y describe o muestra el fondo que deseas. Las sombras, ángulos y luces se mantienen realistas.",
+    "BakckgroundChangeDetail": "Describe o sube imagen • Máscara automática • Iluminación ajustada • Fusión de sombras • Realismo en la escena",
+    "BakckgroundChangePrompt": "Caja rosa y blanca de Viviscal flotando sobre un plato de mármol rodeado de helechos y burbujas.",
+    "RetouchLabEyebrow": "Más grande. Más nítido. Más limpio.",
+    "RetouchLabTitle": "Laboratorio de Retoque Inteligente",
+    "RetouchLabDescription": "Retouch Lab te ofrece un conjunto de herramientas para mejorar tus imágenes—afinar, aumentar resolución y aplicar efectos de estudio. Ideal para crear visuales pulidos y de alta calidad.",
+    "RetouchLabDetail": "Upscaler • Relight • Grano • Enfocar • Limpiar • Mejorar",
+    "RetouchLabPrompt": "",
+    "ImageResizeChangeEyebrow": "Ajusta tus dimensiones",
+    "ImageResizeTransferTitle": "Redimensionador de Imágenes",
+    "ImageResizeDescription": "Redimensiona rápidamente tus imágenes para cualquier formato o plataforma. Perfecto para e-commerce, redes o sitios web.",
+    "ImageResizeDetail": "4:3 • 1:1 • 16:9 • 9:16 • 3:4 • Web / Redes",
+    "ImageResizePrompt": "",
+    "cta": "Probar ahora"
   },
   "Pricing": {
     "title": "¡Hola mundo!",
     "about": "Ir a la página de información"
   },
   "Testimonials": {
-    "title": "¡Hola mundo!",
-    "about": "Ir a la página de información"
+    "title": "Confiado por profesionales",
+    "Eyebrow": "Lo que todos están diciendo",
+    "Claim": "Únete a los principales creadores y marcas que ya usan Artivo para producir contenido increíble—más rápido, de forma inteligente y a escala.",
+    "cta": "Probar ahora",
+    "User1": {
+      "Name": "Sofía Ramos",
+      "Title": "Gerente de Redes Sociales, FreshGlow",
+      "Quote": "La IA me ayuda a crear contenido más rápido y mejor."
+    },
+    "User2": {
+      "Name": "Leo Tanaka",
+      "Title": "Fundador, Tanaka Streetwear",
+      "Quote": "Ya no necesito sesiones costosas—creo visuales en minutos."
+    },
+    "User3": {
+      "Name": "Isabella Moretti",
+      "Title": "Directora de Arte, Studio Nove",
+      "Quote": "Puedo probar ideas rápido y mantenerme creativa."
+    },
+    "User4": {
+      "Name": "Chloe Dubois",
+      "Title": "Directora de E-commerce, UrbanNest",
+      "Quote": "La IA mejoró muchísimo nuestras fotos de producto."
+    },
+    "User5": {
+      "Name": "Malik Johnson",
+      "Title": "Diseñador Freelance",
+      "Quote": "Es como tener un equipo creativo completo, yo solo."
+    },
+    "User6": {
+      "Name": "María Méndez",
+      "Title": "Líder de Marketing, NovaTech",
+      "Quote": "La IA mantiene nuestras campañas frescas y en línea con la marca."
+    }
   },
   "Footer": {
-    "title": "¡Hola mundo!",
-    "about": "Ir a la página de información"
+    "Eyebrow": "Empieza ahora",
+    "title": "¿Listo para comenzar? Prueba gratis hoy mismo.",
+    "cta": "Probar ahora",
+    "Pricing": "Precios",
+    "Blog": "Blog",
+    "Faq": "Preguntas frecuentes",
+    "TermsAndCoditions": "Términos y condiciones",
+    "Company": "Empresa",
+    "Carreers": "Carreras",
+    "PrivacyPolicy": "Política de privacidad",
+    "Product": "Producto",
+    "Support": "Soporte",
+    "Terms": "Términos",
+    "Tools": "Herramientas",
+    "UseCase": "Casos de uso"
   }
 }
