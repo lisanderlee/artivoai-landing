@@ -32,6 +32,7 @@ const variants = {
     "gap-2 pl-5 py-2 pr-2 group rounded-full border border-white/20 bg-transparent shadow-md text-sm text-white ring-1 ring-white/20",
     "data-disabled:opacity-40 data-hover:bg-white/10"
   ),
+  
 };
 
 type ButtonProps = {
