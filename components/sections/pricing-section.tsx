@@ -137,7 +137,7 @@ function Header() {
 function PricingCards() {
   return (
     <div className="relative py-20 ">
-      <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset mx-4 lg:mx-0" />
+      <Gradient className="absolute rounded-2xl lg:rounded-4xl  inset-x-2 top-48 bottom-0  ring-1 ring-black/5 ring-inset  " />
       <Container className="relative">
         <FadeInStagger faster>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">

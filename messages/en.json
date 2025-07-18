@@ -146,10 +146,12 @@
         "Faq": "FAQ",
         "TermsAndCoditions": "Terms and Condition",
         "Company": "Company",
-        "Carrers": "Carreers",
+        "Carreers": "Carreers",
         "PrivacyPolicy": "Privacy Privacy",
         "Product": "Product",
         "Support": "Support",
-        "Terms": "Terms"
+        "Terms": "Terms",
+        "Tools":"Tools",
+        "UseCase":"Use Case"
     }
 }

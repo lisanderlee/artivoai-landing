@@ -32,8 +32,9 @@ const featuredCases = [
 export default function UseCase() {
   const t = useTranslations("UseCase");
   return (
-    <div className="mt-56 pb-14">
+    <div className="mt-56 pb-14" >
       <Container>
+        <div id="useCaseId" />
         <FadeInStagger>
           <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-3">
             {featuredCases.map((post) => (

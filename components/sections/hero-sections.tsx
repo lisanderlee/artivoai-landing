@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <div className="relative">
-      <Gradient className="rounded-4xl absolute inset-2 bottom-0 ring-1 ring-inset ring-black/5" />
+      <Gradient className="rounded-2xl lg:rounded-4xl absolute inset-2 bottom-0 ring-1 ring-inset ring-black/5" />
       <Container className="relative">
         <Navbar />
         <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-32 md:pt-32">

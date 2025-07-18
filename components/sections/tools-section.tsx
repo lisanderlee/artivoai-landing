@@ -109,6 +109,7 @@ function Header() {
   const t = useTranslations("Tools");
   return (
     <FadeIn>
+      <div id="toolsID"/>
       <Container className="mt-16">
         <Heading className="text-white max-w-md" as="h1">
           {t("Eyebrow")}

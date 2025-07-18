@@ -3,10 +3,10 @@ import { Button } from "@/components/button";
 import { Container } from "@/components/container";
 import { Gradient } from "@/components/gradient";
 import { Link } from "@/components/link";
-import { Logo } from "@/components/logo";
+import Image from "next/image";
 import { Subheading } from "@/components/text";
 import { useTranslations } from "next-intl";
-
+import Logo from "@/public/Logo.svg";
 function CallToAction() {
   const t = useTranslations("Footer");
   return (
@@ -46,36 +46,36 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
 }
 
 function Sitemap() {
+  const t = useTranslations("Footer");
   return (
     <>
       <div>
-        <SitemapHeading>Product</SitemapHeading>
+        <SitemapHeading>{t("Product")}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          <SitemapLink href="/pricing"> {t("Pricing")}</SitemapLink>
+          <SitemapLink href="/#toolsID">{t("Tools")}</SitemapLink>
+          <SitemapLink href="/#useCaseId">{t("UseCase")}</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>{t("Company")}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
+          <SitemapLink href="#">{t("Carreers")}</SitemapLink>
+          <SitemapLink href="/blog">{t("Blog")}</SitemapLink>
+          <SitemapLink href="/company">{t("Company")}</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Support</SitemapHeading>
+        <SitemapHeading>{t("Support")}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
+          <SitemapLink href="#">{t("Faq")}</SitemapLink>
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>{t("Terms")}</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
+          <SitemapLink href="#">{t("TermsAndCoditions")}</SitemapLink>
+          <SitemapLink href="#">{t("PrivacyPolicy")}</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -144,7 +144,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Artivo LLC.
     </div>
   );
 }
@@ -152,7 +152,7 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative rounded-4xl rounded-b-none ">
+      <Gradient className="relative rounded-2xl lg:rounded-4xl mx-2  rounded-b-none ">
         <div className="absolute inset-2 rounded-4xl " />
         <Container>
           <CallToAction />
@@ -161,7 +161,9 @@ export function Footer() {
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
+                    <a href={"/"} className="flex items-center    ">
+                      <Image src={Logo} className="w-22" alt="Logo Artivo" />
+                    </a>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">

@@ -150,11 +150,11 @@ const Navbar = ({
   const t = useTranslations("Navigation");
 
   return (
-    <section className="py-4">
+    <section className="py-4 ">
       <div className="container relative flex">
         <nav className="hidden w-full justify-between lg:flex">
-          <a href={logo.url} className="flex items-center gap-2">
-            <Image src={Logo} className="max-h-8" alt={logo.alt} />
+          <a href={logo.url} className="flex items-center    ">
+            <Image src={Logo} className="w-22" alt={logo.alt} />
           </a>
           <div className="flex items-center justify-center">
             <NavigationMenu>
@@ -180,7 +180,7 @@ const Navbar = ({
         <div className="block w-full lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-              <Image src={Logo} className="max-h-8" alt={logo.alt} />
+              <Image src={Logo} className="w-22 pl-1" alt={logo.alt} />
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -192,7 +192,7 @@ const Navbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <Image src={Logo} className="max-h-8" alt={logo.alt} />
+                      <Image src={Logo} className="w-22 pt-1" alt={logo.alt} />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -230,12 +230,12 @@ const renderMenuItem = (
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className="bg-transparent hover:bg-white/30">
+        <NavigationMenuTrigger className="bg-transparent text-[17px] hover:bg-white/30">
           {t(item.title)}
         </NavigationMenuTrigger>
-        <NavigationMenuContent className="bg-popover text-popover-foreground">
+        <NavigationMenuContent className="bg-popover text-popover-foreground  ">
           {item.items.map((subItem) => (
-            <NavigationMenuLink asChild key={subItem.title} className="w-80">
+            <NavigationMenuLink asChild key={subItem.title} className="w-80 ">
               <SubMenuLink item={subItem} t={t} />
             </NavigationMenuLink>
           ))}
@@ -248,7 +248,7 @@ const renderMenuItem = (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium hover:bg-white/30"
+        className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-[17px] font-medium hover:bg-white/70"
       >
         {t(item.title)}
       </NavigationMenuLink>
@@ -263,10 +263,10 @@ const renderMobileMenuItem = (
   if (item.items) {
     return (
       <AccordionItem key={item.title} value={item.title} className="border-b-0">
-        <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline">
+        <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline ">
           {t(item.title)}
         </AccordionTrigger>
-        <AccordionContent className="mt-2">
+        <AccordionContent className="mt-2 ">
           {item.items.map((subItem) => (
             <SubMenuLink key={subItem.title} item={subItem} t={t} />
           ))}
@@ -291,7 +291,7 @@ const SubMenuLink = ({
 }) => {
   return (
     <Link
-      className="hover:bg-muted hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+      className="hover:bg-orange-50 hover:text-accent-foreground   flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
       href={`${item.url}`}
     >
       <div className="text-foreground">{item.icon}</div>
