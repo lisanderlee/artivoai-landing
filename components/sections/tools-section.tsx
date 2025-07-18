@@ -10,7 +10,7 @@ import {
   Replace,
   ArrowUpRight,
 } from "lucide-react";
-import { LucideIcon } from "lucide-react";
+import { LucideIcon, WandSparkles } from "lucide-react";
 import { StaticImageData } from "next/image";
 import { Button } from "../button";
 import { FadeIn } from "../fade-in";
@@ -20,7 +20,12 @@ import BackgroundChange from "@/public/tools/BackgroundChange.png";
 import ProductTransfer from "@/public/tools/ProductTransfer.png";
 import ImageResize from "@/public/tools/ImageResize.png";
 import RetouchLab from "@/public/tools/RetouchLab.png";
-
+import ThumbProductTransferBase from "@/public/tools/ThumbProductTranferBase.png";
+import ThumbProductTransferProduct from "@/public/tools/ThumbProductPlacementProduct.png";
+import ThumbBackgroundChange from "@/public/tools/ThumbBackgroundChange.png"
+import ThumbResizer from "@/public/tools/ThumbResize.png"
+import ThumbRetouchLab from "@/public/tools/ThumbRetouchLab.png"
+import PanelResize from '@/public/tools/PanelResize.png'
 import Image from "next/image";
 
 type Tool = {
@@ -33,6 +38,9 @@ type Tool = {
   id: string;
   icon: LucideIcon;
   image: StaticImageData;
+  thumb1?: StaticImageData;
+  thumb2?: StaticImageData;
+    panel?: StaticImageData;
 };
 
 // Define the array
@@ -68,6 +76,8 @@ const tools: Tool[] = [
     prompt: "ProductTransferPrompt",
     icon: Replace,
     image: ProductTransfer,
+    thumb1: ThumbProductTransferBase,
+    thumb2: ThumbProductTransferProduct,
     id: "ProductTransferID",
   },
   {
@@ -79,6 +89,7 @@ const tools: Tool[] = [
     prompt: "BakckgroundChangePrompt",
     icon: Focus,
     image: BackgroundChange,
+    thumb2: ThumbBackgroundChange,
     id: "BakckgroundChangeID",
   },
   {
@@ -90,6 +101,7 @@ const tools: Tool[] = [
     prompt: "RetouchLabPrompt",
     icon: Grip,
     image: RetouchLab,
+    thumb2: ThumbRetouchLab,
     id: "RetouchLabID",
   },
   {
@@ -101,6 +113,8 @@ const tools: Tool[] = [
     prompt: "ImageResizePrompt",
     icon: Ratio,
     image: ImageResize,
+    thumb2: ThumbResizer,
+    panel: PanelResize,
     id: "ImageResizeID",
   },
 ];
@@ -109,7 +123,7 @@ function Header() {
   const t = useTranslations("Tools");
   return (
     <FadeIn>
-      <div id="toolsID"/>
+      <div id="toolsID" />
       <Container className="mt-16">
         <Heading className="text-white max-w-md" as="h1">
           {t("Eyebrow")}
@@ -147,20 +161,20 @@ export default function Tools() {
                         <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent   font-medium">
                           {t(tool.eyebrow)}
                         </span>
-                        <h2 className="text-white text-5xl max-w-md font-semibold mt-2">
+                        <h2 className="text-white  text-5xl max-w-md font-semibold mt-2">
                           {t(tool.title)}
                         </h2>
-                        <p className="text-gray-200 text-lg max-w-md mt-4">
+                        <p className="text-gray-200 text-sm max-w-md mt-4">
                           {t(tool.description)}
                         </p>
-                        <Button
+                        {/* <Button
                           variant="secondary-icon-outline"
                           className="mt-10"
                           icon={<ArrowUpRight className="h-5 w-5" />}
                           href="https://app.artivo.ai/"
                         >
                           {t("cta")}
-                        </Button>
+                        </Button> */}
                       </div>
                       <div className="mt-24">
                         <div className=" h-[1px] w-full bg-white/20 mb-5" />
@@ -170,18 +184,42 @@ export default function Tools() {
                       </div>
                     </div>
                   </div>
+
                   <div className=" h-full items-center flex w-full max-w-2xl lg:flex-1/2 flex-col relative ">
-                    <div>
-                      <p className="absolute text-white/50 fomt-medium text-[12px]  bottom-3 leading-3 w-[260px] -translate-x-7/12   md:-translate-x-10/12 md:w-[300px] md:leading-5 md:bottom-8 lg:text-[14px] lg:bottom-4 lg:leading-5 lg:-translate-x-10/12 lg:pl-1 lg:w-[220px] lg:tracking-tighter   xl:-translate-x-7/12 xl:pl-3 xl:w-[440px]  xl:bottom-6  xl:leading-7 xl:text-[19px] xl:font-medium ">
-                        {t(tool.prompt)}
-                      </p>
-                    </div>
                     <Image
                       src={tool.image}
                       alt={tool.name}
                       className="object-cover rounded-3xl h-full w-full"
-                 
                     />
+                    <div className="bg-[#2F2F2F]/50 shadow-2xl px-5 pb-4 pt-5 rounded-3xl md:p-10 lg:p-10 flex flex-row  items-end justify-baseline w-11/12 backdrop-blur-sm absolute bottom-0">
+                      <div className="absolute flex flex-row -top-10 right-12 lg:-top-18 lg:right-17 md:-top-18 md:right-17">
+                        {tool.thumb1 && (
+                          <div className=" ">
+                            <Image
+                              src={tool.thumb1}
+                              alt={tool.name}
+                              className="object-cover rounded-2xl shadow-2xl w-14 lg:w-24 md:w-24"
+                            />
+                          </div>
+                        )}
+                        {tool.thumb2 && (
+                          <div className="">
+                            <Image
+                              src={tool.thumb2}
+                              alt={tool.name}
+                              className="object-cover rounded-2xl shadow-2xl w-14 ml-2 lg:w-24 md:w-24"
+                            />
+                          </div>
+                        )}
+                      </div>
+                   
+                      <div className="flex  text-white/90 mt-2 md:mt-0 lg:mt-0  md:text-lg md:leading-7 text-[13px] lg:pr-4  md:pr-5 leading-4 lg:text-lg lg:leading-6 w-full">
+                        <p> {t(tool.prompt)}</p>
+                      </div>
+                      <div className="bg-white p-3 lg:p-5 md:p-5 flex rounded-full">
+                        <WandSparkles className="w-4 h-4 lg:h-5 lg:w-5 md:h-5 md:w-5" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </FadeIn>

@@ -9,13 +9,13 @@ import { FadeIn } from "@/components/fade-in";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <FadeIn>
+      {/* <FadeIn>
         <Hero />
       </FadeIn>
       <UseCase />
       <FadeIn>
         <BentoSection />
-      </FadeIn>
+      </FadeIn> */}
       <Tools />
       <Pricing />
       <Testimonials />
