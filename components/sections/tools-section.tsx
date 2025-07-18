@@ -172,7 +172,7 @@ export default function Tools() {
                   </div>
                   <div className=" h-full items-center flex w-full max-w-2xl lg:flex-1/2 flex-col relative ">
                     <div>
-                      <p className="absolute text-white/50  text-[10px]  bottom-3 leading-3 w-[160px] -translate-x-11/12   md:-translate-x-10/12 md:w-[300px] md:leading-5 md:bottom-8 lg:text-[14px] lg:bottom-4 lg:leading-5 lg:-translate-x-10/12 lg:pl-1 lg:w-[220px] lg:tracking-tighter   xl:-translate-x-10/12 xl:pl-3 xl:w-[300px]  xl:bottom-6  xl:text-[16px]  ">
+                      <p className="absolute text-white/50 fomt-medium text-[12px]  bottom-3 leading-3 w-[260px] -translate-x-7/12   md:-translate-x-10/12 md:w-[300px] md:leading-5 md:bottom-8 lg:text-[14px] lg:bottom-4 lg:leading-5 lg:-translate-x-10/12 lg:pl-1 lg:w-[220px] lg:tracking-tighter   xl:-translate-x-7/12 xl:pl-3 xl:w-[440px]  xl:bottom-6  xl:leading-7 xl:text-[19px] xl:font-medium ">
                         {t(tool.prompt)}
                       </p>
                     </div>
