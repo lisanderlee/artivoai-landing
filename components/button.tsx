@@ -8,7 +8,7 @@ const baseButton =
 const variants = {
   primary: clsx(
     baseButton,
-    "px-4 py-[calc(--spacing(2)-1px)] rounded-full border border-transparent bg-gray-950 shadow-md text-base text-white",
+    "px-4 py-[calc(--spacing(2)-1px)] rounded-full border border-transparent bg-white shadow-md text-base text-black",
     "data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray-800"
   ),
   secondary: clsx(
@@ -24,8 +24,8 @@ const variants = {
   ),
   "primary-icon": clsx(
     baseButton,
-    "pl-5 py-2 pr-2  rounded-full border border-transparent bg-gray-950 shadow-md text-sm text-white",
-    "data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray-800"
+    "pl-5 py-2 pr-2  rounded-full border border-transparent bg-white shadow-md text-sm text-black",
+    "data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray"
   ),
   "secondary-icon-outline": clsx(
     baseButton,
@@ -81,7 +81,7 @@ export function Button({
     <Link {...props} className={className}>
       {children}
       {icon && (
-        <span className="ml-2 border group-hover:bg-white/50 border-white/30 p-1 rounded-full">
+        <span className="ml-2 border group-hover:bg-white/50 border-black p-1 rounded-full">
           {icon}
         </span>
       )}

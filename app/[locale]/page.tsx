@@ -13,10 +13,11 @@ export default function Home() {
         <Hero />
       </FadeIn>
       <UseCase />
+       <Tools />
       <FadeIn>
         <BentoSection />
       </FadeIn>
-      <Tools />
+     
       <Pricing />
       <Testimonials />
       <FadeIn>

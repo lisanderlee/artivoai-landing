@@ -28,11 +28,13 @@ import {
   Ratio,
   Replace,
   Zap,
+  ArrowUpRight,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import LanguageToggle from "./lenguage-toggle";
 import Logo from "/public/Logo.svg";
+import LogoBlack from "@/public/LogoBlack.svg"
 import { Button } from "./button";
 import Link from "next/link";
 interface MenuItem {
@@ -168,11 +170,13 @@ const Navbar = ({
             <div className="z-50">
               <LanguageToggle />
             </div>
-            <Button variant="secondary">
-              <a href={auth.login.url}>{t(auth.login.title)}</a>
-            </Button>
-            <Button>
-              <a href={auth.signup.url}>{t(auth.signup.title)}</a>
+  
+            <Button
+              variant="primary-icon"
+              icon={<ArrowUpRight className="h-5 w-5" />}
+              href="https://app.artivo.ai/"
+            >
+              {t(auth.signup.title)}
             </Button>
           </div>
         </nav>
@@ -185,14 +189,14 @@ const Navbar = ({
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="secondary">
-                  <Menu className="size-4" />
+                  <Menu className="size-4 text-white" />
                 </Button>
               </SheetTrigger>
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <Image src={Logo} className="w-22 pt-1" alt={logo.alt} />
+                      <Image src={LogoBlack} className="w-22 pt-1" alt={logo.alt} />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -206,7 +210,7 @@ const Navbar = ({
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
-                    <Button variant="secondary">
+                    <Button>
                       <a href={auth.login.url}>{t(auth.login.title)}</a>
                     </Button>
                     <Button>
@@ -230,7 +234,7 @@ const renderMenuItem = (
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className="bg-transparent text-[17px] hover:bg-white/30">
+        <NavigationMenuTrigger className="bg-transparent text-white text-[17px] hover:bg-white/30">
           {t(item.title)}
         </NavigationMenuTrigger>
         <NavigationMenuContent className="bg-popover text-popover-foreground  ">
@@ -248,7 +252,7 @@ const renderMenuItem = (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-[17px] font-medium hover:bg-white/70"
+        className="group inline-flex h-10 w-max items-center text-white justify-center rounded-md px-4 py-2 text-[17px] font-medium hover:bg-white/70"
       >
         {t(item.title)}
       </NavigationMenuLink>

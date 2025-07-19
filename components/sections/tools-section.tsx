@@ -29,7 +29,7 @@ import ThumbRetouchLab from "@/public/tools/ThumbRetouchLab.png";
 import PanelResize from "@/public/tools/PanelResize.png";
 import PanelSlider from "@/public/tools/PanelSlider.png"
 import Image from "next/image";
-
+import { GlowingEffect } from "../glowing-effect";
 type Tool = {
   name: string;
   eyebrow: string;
@@ -149,7 +149,9 @@ export default function Tools() {
             const isReversed = idx % 2 !== 0;
 
             return (
+              
               <FadeIn key={tool.name}>
+     
                 <div
                   key={tool.name}
                   id={tool.id}
@@ -159,8 +161,11 @@ export default function Tools() {
                       : ""
                   } h-full justify-between gap-x-4 md:px-8 lg:px-0 flex lg:flex-row mt-10 lg:mt-32`}
                 >
+                  
                   <div className="flex  lg:flex-1/2 max-w-2xl w-full">
+                  
                     <div className="w-full mt-5  lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-7 lg:p-10  border-white/10 border rounded-3xl text-left lg:text-left">
+                      
                       <div className="h-full ">
                         <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent   font-medium">
                           {t(tool.eyebrow)}
@@ -168,7 +173,7 @@ export default function Tools() {
                         <h2 className="text-white  text-5xl max-w-md font-semibold mt-2">
                           {t(tool.title)}
                         </h2>
-                        <p className="text-gray-200 text-sm max-w-md mt-4">
+                        <p className="text-gray-200 text-lg max-w-md mt-4">
                           {t(tool.description)}
                         </p>
                         <Button

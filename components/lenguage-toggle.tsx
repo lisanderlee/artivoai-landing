@@ -34,9 +34,9 @@ export default function LanguageToggle() {
 
   return (
     <div className="flex h-full">
-    <Select defaultValue={locale} onValueChange={handleChange}>
-      <SelectTrigger>
-        <Globe  size={15} />
+    <Select defaultValue={locale} onValueChange={handleChange}  >
+      <SelectTrigger className="appearance-none outline-none ring-0 focus:outline-none focus:ring-0 border-none bg-transparent text-white">
+        <Globe  size={15} className="text-white"/>
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

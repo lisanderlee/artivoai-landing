@@ -32,7 +32,7 @@ const featuredCases = [
 export default function UseCase() {
   const t = useTranslations("UseCase");
   return (
-    <div className="mt-56 pb-14" >
+    <div className="mt-42 pb-14" >
       <Container>
         <div id="useCaseId" />
         <FadeInStagger>

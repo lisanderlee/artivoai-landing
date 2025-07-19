@@ -4,21 +4,20 @@ import { Container } from "@/components/container";
 import { Gradient } from "@/components/gradient";
 import { Link } from "@/components/link";
 import Image from "next/image";
-import { Subheading } from "@/components/text";
+import LogoBlack from "@/public/LogoBlack.svg"
 import { useTranslations } from "next-intl";
 import Logo from "@/public/Logo.svg";
+import { FooterCta } from "../footer-cta";
 function CallToAction() {
   const t = useTranslations("Footer");
   return (
-    <div className="relative pt-20 pb-16 flex flex-col justify-center text-center sm:py-24">
-      <Subheading className="flex justify-center">{t("Eyebrow")}</Subheading>
-      <div className="w-full flex justify-center">
-        <p className="mt-6 text-6xl lg:max-w-xl  flex w-full text-center justify-center items-center font-bold tracking-tight text-gray-950 sm:text-7xl">
-          {t("title")}
-        </p>
-      </div>
-      <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="https://app.artivo.ai/">
+    <div className="relative pt-20 pb-16 flex flex-col justify-center text-center sm:py-24 overflow-visible">
+      <div className=" font-mono text-xl font-semibold tracking-widest text-black uppercase flex   justify-center mb-5" >{t("Eyebrow")}</div>
+
+      <FooterCta />
+
+      <div className="mt-10">
+        <Button className="w-fit sm:w-auto" href="https://app.artivo.ai/">
           {t("cta")}
         </Button>
       </div>
@@ -154,15 +153,17 @@ export function Footer() {
     <footer>
       <Gradient className="relative rounded-2xl lg:rounded-4xl mx-2  rounded-b-none ">
         <div className="absolute inset-2 rounded-4xl " />
+        <div>
+        <CallToAction />
+        </div>
         <Container>
-          <CallToAction />
           <PlusGrid className="pb-16">
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <a href={"/"} className="flex items-center    ">
-                      <Image src={Logo} className="w-22" alt="Logo Artivo" />
+                      <Image src={LogoBlack} className="w-22" alt="Logo Artivo" />
                     </a>
                   </PlusGridItem>
                 </div>
