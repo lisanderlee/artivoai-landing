@@ -29,7 +29,7 @@ import ThumbRetouchLab from "@/public/tools/ThumbRetouchLab.png";
 import PanelResize from "@/public/tools/PanelResize.png";
 import PanelSlider from "@/public/tools/PanelSlider.png"
 import Image from "next/image";
-import { GlowingEffect } from "../glowing-effect";
+
 type Tool = {
   name: string;
   eyebrow: string;
