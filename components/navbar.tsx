@@ -255,12 +255,14 @@ const renderMenuItem = (
         <NavigationMenuTrigger className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}>
           {t(item.title)}
         </NavigationMenuTrigger>
-        <NavigationMenuContent className={`${navMenuContentBg} w-auto min-w-[320px]`}>
-          {item.items.map((subItem) => (
-            <NavigationMenuLink asChild key={subItem.title} className="w-full">
-              <SubMenuLink item={subItem} t={t} />
-            </NavigationMenuLink>
-          ))}
+        <NavigationMenuContent className={`${navMenuContentBg} w-auto ${item.items.length >= 6 ? 'min-w-[640px]' : 'min-w-[320px]'} p-2`}>
+          <div className={`grid gap-1 ${item.items.length >= 6 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+            {item.items.map((subItem) => (
+              <NavigationMenuLink asChild key={subItem.title} className="w-full">
+                <SubMenuLink item={subItem} t={t} />
+              </NavigationMenuLink>
+            ))}
+          </div>
         </NavigationMenuContent>
       </NavigationMenuItem>
     );
