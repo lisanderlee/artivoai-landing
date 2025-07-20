@@ -1,0 +1,61 @@
+{
+  "name": "Artivo - AI-Powered Creative Suite",
+  "short_name": "Artivo",
+  "description": "Transform your creative workflow with AI-powered design tools",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E0F11",
+  "theme_color": "#0E0F11",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/Logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["productivity", "design", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "i18n": {
+    "lang": "en",
+    "dir": "ltr"
+  },
+  "shortcuts": [
+    {
+      "name": "Image Generation",
+      "short_name": "Generate",
+      "description": "Generate images with AI",
+      "url": "/tools/image-generation",
+      "icons": [
+        {
+          "src": "/Logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Video Creation",
+      "short_name": "Video",
+      "description": "Create videos from images",
+      "url": "/tools/video-generation",
+      "icons": [
+        {
+          "src": "/Logo.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+} 

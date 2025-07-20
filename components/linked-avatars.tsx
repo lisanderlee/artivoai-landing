@@ -1,6 +1,4 @@
 "use client";
-
-import { CheckIcon } from "lucide-react";
 import { clsx } from "clsx";
 import { motion } from "framer-motion";
 import IsoLogo from "@/public/iso_artivo.svg";
@@ -70,24 +68,24 @@ function Checkmark() {
   );
 }
 
-function Photos() {
-  return (
-    <div className="z-10 col-start-1 row-start-1">
-      <div className="mx-auto flex size-full max-w-md items-center justify-around">
-        <img
-          alt=""
-          src="/linked-avatars/customer.jpg"
-          className="size-20 rounded-full bg-white/15 ring-4 ring-white/10"
-        />
-        <img
-          alt=""
-          src="/linked-avatars/manager.jpg"
-          className="size-20 rounded-full bg-white/15 ring-4 ring-white/10"
-        />
-      </div>
-    </div>
-  );
-}
+// function Photos() {
+//   return (
+//     <div className="z-10 col-start-1 row-start-1">
+//       <div className="mx-auto flex size-full max-w-md items-center justify-around">
+//         <img
+//           alt=""
+//           src="/linked-avatars/customer.jpg"
+//           className="size-20 rounded-full bg-white/15 ring-4 ring-white/10"
+//         />
+//         <img
+//           alt=""
+//           src="/linked-avatars/manager.jpg"
+//           className="size-20 rounded-full bg-white/15 ring-4 ring-white/10"
+//         />
+//       </div>
+//     </div>
+//   );
+// }
 
 export function LinkedAvatars() {
   return (

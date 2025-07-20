@@ -29,6 +29,10 @@ import {
   Replace,
   Zap,
   ArrowUpRight,
+  Brush,
+  ShoppingCart,
+  Presentation
+
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -81,19 +85,19 @@ const Navbar = ({
         {
           title: "Creatives",
           description: "CreativesDescription",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <Brush className="size-5 shrink-0" />,
           url: "/use-case/Creatives",
         },
         {
           title: "Ecommerce",
           description: "EcommerceDescription",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <ShoppingCart className="size-5 shrink-0" />,
           url: "/use-case/Ecommerce",
         },
         {
           title: "Marketing",
           description: "MarketingDescription",
-          icon: <Zap className="size-5 shrink-0" />,
+          icon: <Presentation className="size-5 shrink-0" />,
           url: "/use-case/Agency",
         },
       ],
@@ -155,8 +159,8 @@ const Navbar = ({
 
   // Determine text color classes based on mode
   const textColor = mode === "dark" ? "text-white" : "text-black";
-  const hoverBg = mode === "dark" ? "hover:bg-white/10" : "hover:bg-black/10";
-  const navMenuContentBg = mode === "dark" ? "bg-popover text-popover-foreground" : "bg-white text-black";
+  const hoverBg = mode === "dark" ? "hover:bg-white/5" : "hover:bg-black/5";
+  const navMenuContentBg = mode === "dark" ? "bg-white text-black" : "bg-white text-black";
   const logoSrc = mode === "dark" ? Logo : LogoBlack;
   const hoverText = mode === "dark" ? "hover:text-white" : "hover:text-black";
 
@@ -248,12 +252,12 @@ const renderMenuItem = (
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className={`bg-transparent ${textColor} text-[17px] ${hoverBg}`}>
+        <NavigationMenuTrigger className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}>
           {t(item.title)}
         </NavigationMenuTrigger>
-        <NavigationMenuContent className={navMenuContentBg}>
+        <NavigationMenuContent className={`${navMenuContentBg} w-auto min-w-[320px]`}>
           {item.items.map((subItem) => (
-            <NavigationMenuLink asChild key={subItem.title} className="w-80 ">
+            <NavigationMenuLink asChild key={subItem.title} className="w-full">
               <SubMenuLink item={subItem} t={t} />
             </NavigationMenuLink>
           ))}
@@ -266,7 +270,7 @@ const renderMenuItem = (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-4 py-2 text-[17px] font-medium ${hoverBg}`}
+        className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-4 py-2 text-[17px] font-normal ${hoverBg}`}
       >
         {t(item.title)}
       </NavigationMenuLink>
@@ -311,12 +315,12 @@ const SubMenuLink = ({
 }) => {
   return (
     <Link
-      className="hover:bg-orange-50 hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+      className="hover:bg-black/10 hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
       href={`${item.url}`}
     >
-      <div className="text-foreground">{item.icon}</div>
+      <div className="text-black">{item.icon}</div>
       <div>
-        <div className="text-sm font-semibold">{t(item.title)}</div>
+        <div className="text-[16px] font-medium mb-2">{t(item.title)}</div>
         {item.description && (
           <p className="text-muted-foreground text-sm leading-snug">
             {t(item.description)}

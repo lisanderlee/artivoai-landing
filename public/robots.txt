@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /pricing
+Allow: /use-case/
+Allow: /tools
+
+# Sitemap
+Sitemap: https://artivo.ai/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1 

@@ -160,8 +160,101 @@
         "cta": "Try Now"
     },
     "Pricing": {
-        "title": "Hello world!",
-        "about": "Go to the about page"
+        "title": "Pricing that grows with your team size.",
+        "SubTitle": "Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.",
+        "starter": {
+            "name": "Starter",
+            "description": "Everything you need to start selling.",
+            "highlights": [
+                "Unlimited active team members",
+                "Unlimited deal progress boards",
+                "Source leads from over 100 verified platforms",
+                "RadiantAI integrations",
+                "Unlimited competitor analyses"
+            ],
+            "features": {
+                "Features": {
+                    "Accounts": "5",
+                    "Deal progress boards": "1",
+                    "Sourcing platforms": "Select",
+                    "Contacts": "100",
+                    "AI assisted outreach": false
+                },
+                "Analysis": {
+                    "Competitor analysis": false,
+                    "Dashboard reporting": false,
+                    "Community insights": false,
+                    "Performance analysis": false
+                },
+                "Support": {
+                    "Email support": true,
+                    "24 / 7 call center support": false,
+                    "Dedicated account manager": false
+                }
+            }
+        },
+        "growth": {
+            "name": "Growth",
+            "description": "All the extras for your growing team.",
+            "highlights": [
+                "Unlimited active team members",
+                "Unlimited deal progress boards",
+                "Source leads from over 100 verified platforms",
+                "RadiantAI integrations",
+                "Unlimited competitor analyses"
+            ],
+            "features": {
+                "Features": {
+                    "Accounts": "10",
+                    "Deal progress boards": "Unlimited",
+                    "Sourcing platforms": "100+",
+                    "Contacts": "1000",
+                    "AI assisted outreach": true
+                },
+                "Analysis": {
+                    "Competitor analysis": "5 / month",
+                    "Dashboard reporting": true,
+                    "Community insights": true,
+                    "Performance analysis": true
+                },
+                "Support": {
+                    "Email support": true,
+                    "24 / 7 call center support": true,
+                    "Dedicated account manager": false
+                }
+            }
+        },
+        "enterprise": {
+            "name": "Enterprise",
+            "description": "Added flexibility to close deals at scale.",
+            "highlights": [
+                "Unlimited active team members",
+                "Unlimited deal progress boards",
+                "Source leads from over 100 verified platforms",
+                "RadiantAI integrations",
+                "Unlimited competitor analyses"
+            ],
+            "features": {
+                "Features": {
+                    "Accounts": "Unlimited",
+                    "Deal progress boards": "Unlimited",
+                    "Sourcing platforms": "100+",
+                    "Contacts": "Unlimited",
+                    "AI assisted outreach": true
+                },
+                "Analysis": {
+                    "Competitor analysis": "Unlimited",
+                    "Dashboard reporting": true,
+                    "Community insights": true,
+                    "Performance analysis": true
+                },
+                "Support": {
+                    "Email support": true,
+                    "24 / 7 call center support": true,
+                    "Dedicated account manager": true
+                }
+            }
+        }
     },
     "Testimonials": {
         "title": "Trusted by professionals",
@@ -196,6 +289,11 @@
         "User6": {
             "Name": "Maria Mendez",
             "Title": "Marketing Lead, NovaTech",
+            "Quote": "AI keeps our campaigns sharp and on brand."
+        },
+        "CallOut": {
+            "Name": "Robert Menendez",
+            "Title": "Creative Director, Dillie",
             "Quote": "AI keeps our campaigns sharp and on brand."
         }
     },

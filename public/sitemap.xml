@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://artivo.ai/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artivo.ai/"/>
+  </url>
+  
+  <!-- English Homepage -->
+  <url>
+    <loc>https://artivo.ai/en</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artivo.ai/"/>
+  </url>
+  
+  <!-- Spanish Homepage -->
+  <url>
+    <loc>https://artivo.ai/es</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artivo.ai/"/>
+  </url>
+  
+  <!-- Pricing - English -->
+  <url>
+    <loc>https://artivo.ai/en/pricing</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/pricing"/>
+  </url>
+  
+  <!-- Pricing - Spanish -->
+  <url>
+    <loc>https://artivo.ai/es/pricing</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/pricing"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/pricing"/>
+  </url>
+  
+  <!-- Use Cases - Creatives - English -->
+  <url>
+    <loc>https://artivo.ai/en/use-case/creatives</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/creatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/creatives"/>
+  </url>
+  
+  <!-- Use Cases - Creatives - Spanish -->
+  <url>
+    <loc>https://artivo.ai/es/use-case/creatives</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/creatives"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/creatives"/>
+  </url>
+  
+  <!-- Use Cases - Agency - English -->
+  <url>
+    <loc>https://artivo.ai/en/use-case/agency</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/agency"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/agency"/>
+  </url>
+  
+  <!-- Use Cases - Agency - Spanish -->
+  <url>
+    <loc>https://artivo.ai/es/use-case/agency</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/agency"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/agency"/>
+  </url>
+  
+  <!-- Use Cases - Ecommerce - English -->
+  <url>
+    <loc>https://artivo.ai/en/use-case/ecommerce</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/ecommerce"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/ecommerce"/>
+  </url>
+  
+  <!-- Use Cases - Ecommerce - Spanish -->
+  <url>
+    <loc>https://artivo.ai/es/use-case/ecommerce</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artivo.ai/en/use-case/ecommerce"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://artivo.ai/es/use-case/ecommerce"/>
+  </url>
+  
+</urlset> 
