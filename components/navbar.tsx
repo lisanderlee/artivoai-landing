@@ -63,6 +63,7 @@ interface Navbar1Props {
       url: string;
     };
   };
+  mode?: "dark" | "light";
 }
 
 const Navbar = ({
@@ -81,19 +82,19 @@ const Navbar = ({
           title: "Creatives",
           description: "CreativesDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "/use-case/creatives",
+          url: "/use-case/Creatives",
         },
         {
           title: "Ecommerce",
           description: "EcommerceDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "/use-case/ecommerce",
+          url: "/use-case/Ecommerce",
         },
         {
           title: "Marketing",
           description: "MarketingDescription",
           icon: <Zap className="size-5 shrink-0" />,
-          url: "/use-case/marketing",
+          url: "/use-case/Agency",
         },
       ],
     },
@@ -148,20 +149,28 @@ const Navbar = ({
     login: { title: "Login", url: "https://app.artivo.ai/" },
     signup: { title: "cta", url: "https://app.artivo.ai/" },
   },
+  mode = "dark",
 }: Navbar1Props) => {
   const t = useTranslations("Navigation");
+
+  // Determine text color classes based on mode
+  const textColor = mode === "dark" ? "text-white" : "text-black";
+  const hoverBg = mode === "dark" ? "hover:bg-white/10" : "hover:bg-black/10";
+  const navMenuContentBg = mode === "dark" ? "bg-popover text-popover-foreground" : "bg-white text-black";
+  const logoSrc = mode === "dark" ? Logo : LogoBlack;
+  const hoverText = mode === "dark" ? "hover:text-white" : "hover:text-black";
 
   return (
     <section className="py-4 ">
       <div className="container relative flex">
-        <nav className="hidden w-full justify-between lg:flex">
+        <nav className={`hidden w-full justify-between lg:flex`}>
           <a href={logo.url} className="flex items-center    ">
-            <Image src={Logo} className="w-22" alt={logo.alt} />
+            <Image src={logoSrc} className="w-22" alt={logo.alt} width={120} height={40} />
           </a>
           <div className="flex items-center justify-center">
             <NavigationMenu>
               <NavigationMenuList>
-                {menu.map((item) => renderMenuItem(item, t))}
+                {menu.map((item) => renderMenuItem(item, t, textColor, hoverBg, navMenuContentBg, mode, hoverText))}
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -184,7 +193,7 @@ const Navbar = ({
         <div className="block w-full lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-              <Image src={Logo} className="w-22 pl-1" alt={logo.alt} />
+              <Image src={logoSrc} className="w-22 pl-1" alt={logo.alt} width={120} height={40} />
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -196,7 +205,7 @@ const Navbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <Image src={LogoBlack} className="w-22 pt-1" alt={logo.alt} />
+                      <Image src={logoSrc} className="w-22 pt-1" alt={logo.alt} width={120} height={40} />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -206,7 +215,7 @@ const Navbar = ({
                     collapsible
                     className="flex w-full flex-col gap-4"
                   >
-                    {menu.map((item) => renderMobileMenuItem(item, t))}
+                    {menu.map((item) => renderMobileMenuItem(item, t, textColor, hoverBg))}
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
@@ -229,15 +238,20 @@ const Navbar = ({
 
 const renderMenuItem = (
   item: MenuItem,
-  t: ReturnType<typeof useTranslations>
+  t: ReturnType<typeof useTranslations>,
+  textColor: string,
+  hoverBg: string,
+  navMenuContentBg: string,
+  mode: "dark" | "light",
+  hoverText: string
 ) => {
   if (item.items) {
     return (
       <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className="bg-transparent text-white text-[17px] hover:bg-white/30">
+        <NavigationMenuTrigger className={`bg-transparent ${textColor} text-[17px] ${hoverBg}`}>
           {t(item.title)}
         </NavigationMenuTrigger>
-        <NavigationMenuContent className="bg-popover text-popover-foreground  ">
+        <NavigationMenuContent className={navMenuContentBg}>
           {item.items.map((subItem) => (
             <NavigationMenuLink asChild key={subItem.title} className="w-80 ">
               <SubMenuLink item={subItem} t={t} />
@@ -252,7 +266,7 @@ const renderMenuItem = (
     <NavigationMenuItem key={item.title}>
       <NavigationMenuLink
         href={item.url}
-        className="group inline-flex h-10 w-max items-center text-white justify-center rounded-md px-4 py-2 text-[17px] font-medium hover:bg-white/70"
+        className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-4 py-2 text-[17px] font-medium ${hoverBg}`}
       >
         {t(item.title)}
       </NavigationMenuLink>
@@ -262,7 +276,9 @@ const renderMenuItem = (
 
 const renderMobileMenuItem = (
   item: MenuItem,
-  t: ReturnType<typeof useTranslations>
+  t: ReturnType<typeof useTranslations>,
+  textColor: string,
+  hoverBg: string
 ) => {
   if (item.items) {
     return (
@@ -280,7 +296,7 @@ const renderMobileMenuItem = (
   }
 
   return (
-    <a key={item.title} href={item.url} className="text-md font-semibold">
+    <a key={item.title} href={item.url} className={`text-md font-semibold ${textColor}`}>
       {t(item.title)}
     </a>
   );
@@ -295,7 +311,7 @@ const SubMenuLink = ({
 }) => {
   return (
     <Link
-      className="hover:bg-orange-50 hover:text-accent-foreground   flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
+      className="hover:bg-orange-50 hover:text-accent-foreground flex select-none flex-row items-center gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors"
       href={`${item.url}`}
     >
       <div className="text-foreground">{item.icon}</div>

@@ -3,10 +3,11 @@
 import { CheckIcon } from "lucide-react";
 import { clsx } from "clsx";
 import { motion } from "framer-motion";
- import type { Transition } from "framer-motion";
+import IsoLogo from "@/public/iso_artivo.svg";
+import Image from "next/image";
+import type { Transition } from "framer-motion";
 
-
- const transition: Transition = {
+const transition: Transition = {
   duration: 0.75,
   repeat: Infinity,
   repeatDelay: 1.25,
@@ -24,6 +25,8 @@ function Rings() {
     >
       {Array.from(Array(42).keys()).map((n) => (
         <motion.circle
+          initial="idle"
+          animate="active"
           variants={{
             idle: {
               scale: 1,
@@ -50,16 +53,18 @@ function Checkmark() {
   return (
     <div className="z-10 col-start-1 row-start-1 flex items-center justify-center">
       <motion.div
+        initial="idle"
+        animate="active"
         variants={{
           idle: { scale: 1 },
           active: {
-            scale: [1, 1.15, 1],
+            scale: [1, 1.1, 1],
             transition: { ...transition, duration: 0.75 },
           },
         }}
-        className="flex size-6 items-center justify-center rounded-full bg-linear-to-t from-green-500 to-green-300 shadow-sm"
+        className="flex size-14 items-center justify-center rounded-full shadow-sm"
       >
-        <CheckIcon className="size-4 fill-white" />
+        <Image src={IsoLogo} alt="Artivo Logo" />
       </motion.div>
     </div>
   );
@@ -88,7 +93,7 @@ export function LinkedAvatars() {
   return (
     <div aria-hidden="true" className="isolate mx-auto grid h-full grid-cols-1">
       <Rings />
-      <Photos />
+
       <Checkmark />
     </div>
   );

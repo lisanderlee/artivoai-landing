@@ -10,21 +10,21 @@ import { Button } from "../button";
 import { ArrowUpRight } from "lucide-react";
 const featuredCases = [
   {
-    title: "Creatives",
-    description: "CreativesDescription",
-    link: "marketing",
+    title: "Creatives.Thumbnail.Title",
+    description: "Creatives.Thumbnail.CreativesDescription",
+    link: "Creatives",
     image: CreativeUse,
   },
   {
-    title: "Ecommerce",
-    description: "EcommerceDescription",
-    link: "ecommerce",
+    title: "Ecommerce.Thumbnail.Title",
+    description: "Ecommerce.Thumbnail.EcommerceDescription",
+    link: "Ecommerce",
     image: EcommerceUse,
   },
   {
-    title: "Marketing",
-    description: "MarketingDescription",
-    link: "agency",
+    title: "Agency.Thumbnail.Title",
+    description: "Agency.Thumbnail.AgencyDescription",
+    link: "Agency",
     image: AgencyUse,
   },
 ];

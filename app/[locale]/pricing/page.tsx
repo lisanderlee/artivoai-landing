@@ -487,7 +487,7 @@ export default function Pricing() {
     <main className="overflow-hidden bg-white">
       <GradientBackground />
       <Container>
-        <Navbar />
+      <Navbar mode="light" />
       </Container>
       <Header />
       <PricingCards />

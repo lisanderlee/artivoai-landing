@@ -30,16 +30,77 @@
         "badge": "Introducing Artivo v2.0",
         "title": "Create Professional Images and Videos",
         "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
-        "highlight":"One subscription, all the models.",
+        "highlight": "One subscription, all the models.",
         "cta": "Try Now"
     },
     "UseCase": {
-        "Creatives": "Creatives and Designers",
-        "Ecommerce": "E-commerce",
-        "Marketing": "Angencies and Marketing Teams",
-        "CreativesDescription": "Explore new ideas and create image variations with AI in seconds.",
-        "EcommerceDescription": "Boost your online store’s conversion with optimized visual content.",
-        "MarketingDescription": "Save time and deliver impactful visual content faster."
+        "Creatives": {
+            "Thumbnail": {
+                "Title": "Creatives and Designers",
+                "CreativesDescription": "Explore new ideas and create image variations with AI in seconds."
+            },
+            "headline": "Streamline and Accelerate Your Workflow with Artivo.Ai",
+            "title": "How Designers and Creatives Speed Up Their Workflow with AI",
+            "subtitle": "Explore new ideas and generate image variations with AI in seconds. Reduce editing time and streamline your creative process.",
+            "challengeTitle": "Challenge:",
+            "challenge": "Designers and creatives spend countless hours editing visuals and developing concepts. Traditional workflows involve multiple tools, rounds of revisions, and manual effort, which slow down production and limit innovation. Working with clients also requires generating several content versions to meet expectations.",
+            "solutionTitle": "Solution with Artivo.Ai:",
+            "solution": {
+                "item1": "Automate image creation while maintaining full creative control.",
+                "item2": "Generate style and visual variations in seconds—no lengthy manual work required.",
+                "item3": "Easily optimize images for branding, presentations, and campaigns.",
+                "item4": "Test new concepts and ideas quickly to speed up your creative process."
+            },
+            "resultsTitle": "Results:",
+            "results": "Designers reduced image production time by 60%, allowing them to focus on creativity and strategy instead of repetitive tasks. Fast generation of image variations also improved collaboration with clients and internal teams.",
+            "conclusionTitle": "Conclusion:",
+            "conclusion": "AI is transforming the creative industry, allowing designers to focus on innovation rather than repetition. A recent study shows 76% of designers using AI tools report higher efficiency and creativity. With Artivo.Ai, creatives can generate unlimited image variations and optimize their workflow—cutting production time by 60%."
+        },
+        "Agency": {
+            "Thumbnail": {
+                "Title": "Angencies and Marketing Teams",
+                "AgencyDescription": "Save time and deliver impactful visual content faster."
+            },
+            "headline": "Streamline and Accelerate Your Workflow with Artivo.Ai",
+            "title": "How a Creative Agency Accelerated Content Production with AI",
+            "subtitle": "Speed up image creation for ad campaigns without relying on photographers or designers. Save time and deliver stunning visuals faster.",
+            "challengeTitle": "Challenge:",
+            "challenge": "Ad agencies must deliver high-quality visuals for multiple clients and campaigns, often under tight deadlines. Traditional photoshoots and editing create bottlenecks, slowing production and increasing costs. On top of that, adapting visuals to different formats for social media, ads, and marketing materials adds complexity.",
+            "solutionTitle": "Solution with Artivo.Ai:",
+            "solution": {
+                "item1": "Cut visual production time by 70% by generating high-quality images with AI.",
+                "item2": "Test multiple image variations in seconds, optimizing content for different platforms and audiences.",
+                "item3": "Eliminate reliance on photographers and expensive studios, allowing greater creative flexibility.",
+                "item4": "Create personalized images for each client using specific prompts for unique and differentiated content."
+            },
+            "resultsTitle": "Results:",
+            "results": "The agency sped up campaign delivery without compromising quality, increased client satisfaction, and reduced operating costs. With a more efficient workflow, the team focused more on strategy and creativity rather than production logistics.",
+            "conclusionTitle": "Conclusion:",
+            "conclusion": "Agencies using AI in content creation can accelerate production by up to 70%, delivering campaigns faster and using resources more efficiently. According to marketing reports, 63% of advertising professionals already use AI to generate visual content. With Artivo.Ai, agencies can scale their creative output without sacrificing quality or originality."
+        },
+        "Ecommerce": {
+            "Thumbnail": {
+                "Title": "E-commerce",
+                "EcommerceDescription": "Boost your online store’s conversion with optimized visual content."
+            },
+            "title": "Optimize and Accelerate Your Workflow with Artivo.Ai",
+            "headline": "How an Online Store Owner Boosted Sales with AI Images",
+            "subtitle": "Create high-quality product images in seconds without production costs. Improve conversion in your online store with optimized visual content.",
+            "challengeTitle": "Challenge",
+            "challenge": "Online store owners face a major challenge: the need for attractive, high-quality product images to capture customer attention and increase conversions. However, creating professional visual content is expensive and requires photo shoots, models, photographers, and editors—driving up production time and cost. Competing on platforms like Amazon, Shopify, and social media also demands constant image updates to stay relevant and improve conversion rates.",
+            "solutionTitle": "Solution with Artivo.Ai",
+            "solution": {
+                "item1": "Generate professional images with AI in seconds, eliminating the need for photo shoots.",
+                "item2": "Customize backgrounds and settings without reshooting products.",
+                "item3": "Optimize visuals for marketplaces and social media in multiple formats and styles.",
+                "item4": "Reduce production costs without sacrificing quality.",
+                "item5": "Accelerate new product launches, improving catalog rotation."
+            },
+            "resultsTitle": "Results",
+            "results": "The business saw a 30% increase in conversions by improving the visual quality of its catalog without raising costs. The ability to generate images quickly enabled more efficient A/B testing and better content personalization for different audiences.",
+            "conclusionTitle": "Conclusion",
+            "conclusion": "Implementing AI in e-commerce has proven to be an effective strategy for boosting conversions and enhancing customer experience. Studies show that 91% of consumers prefer shopping on sites with high-quality visuals, and optimized visual content can increase conversion rates by up to 30%. Artivo.Ai empowers store owners to generate compelling product images without added costs, improving product presentation and increasing sales."
+        }
     },
     "BentoSection": {
         "title": "All the Visual AI Tools You Need. In One Place.",
@@ -105,8 +166,8 @@
     "Testimonials": {
         "title": "Trusted by professionals",
         "Eyebrow": "What everyone is saying",
-        "Claim":"Join top creators and brands already using Artivo to produce stunning content—faster, smarter, and at scale.",
-        "cta":"Try Now",
+        "Claim": "Join top creators and brands already using Artivo to produce stunning content—faster, smarter, and at scale.",
+        "cta": "Try Now",
         "User1": {
             "Name": "Sofia Ramos",
             "Title": "Social Media Manager, FreshGlow",
@@ -152,7 +213,7 @@
         "Product": "Product",
         "Support": "Support",
         "Terms": "Terms",
-        "Tools":"Tools",
-        "UseCase":"Use Case"
+        "Tools": "Tools",
+        "UseCase": "Use Case"
     }
 }
