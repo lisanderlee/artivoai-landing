@@ -31,14 +31,13 @@ import {
   ArrowUpRight,
   Brush,
   ShoppingCart,
-  Presentation
-
+  Presentation,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import LanguageToggle from "./lenguage-toggle";
 import Logo from "/public/Logo.svg";
-import LogoBlack from "@/public/LogoBlack.svg"
+import LogoBlack from "@/public/LogoBlack.svg";
 import { Button } from "./button";
 import Link from "next/link";
 interface MenuItem {
@@ -160,7 +159,8 @@ const Navbar = ({
   // Determine text color classes based on mode
   const textColor = mode === "dark" ? "text-white" : "text-black";
   const hoverBg = mode === "dark" ? "hover:bg-white/5" : "hover:bg-black/5";
-  const navMenuContentBg = mode === "dark" ? "bg-white text-black" : "bg-white text-black";
+  const navMenuContentBg =
+    mode === "dark" ? "bg-white text-black" : "bg-white text-black";
   const logoSrc = mode === "dark" ? Logo : LogoBlack;
   const hoverText = mode === "dark" ? "hover:text-white" : "hover:text-black";
 
@@ -169,12 +169,28 @@ const Navbar = ({
       <div className="container relative flex">
         <nav className={`hidden w-full justify-between lg:flex`}>
           <a href={logo.url} className="flex items-center    ">
-            <Image src={logoSrc} className="w-22" alt={logo.alt} width={120} height={40} />
+            <Image
+              src={logoSrc}
+              className="w-22"
+              alt={logo.alt}
+              width={120}
+              height={40}
+            />
           </a>
           <div className="flex items-center justify-center">
             <NavigationMenu>
               <NavigationMenuList>
-                {menu.map((item) => renderMenuItem(item, t, textColor, hoverBg, navMenuContentBg, mode, hoverText))}
+                {menu.map((item) =>
+                  renderMenuItem(
+                    item,
+                    t,
+                    textColor,
+                    hoverBg,
+                    navMenuContentBg,
+                    mode,
+                    hoverText
+                  )
+                )}
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -183,7 +199,7 @@ const Navbar = ({
             <div className="z-50">
               <LanguageToggle />
             </div>
-  
+
             <Button
               variant="primary-icon"
               icon={<ArrowUpRight className="h-5 w-5" />}
@@ -197,7 +213,13 @@ const Navbar = ({
         <div className="block w-full lg:hidden">
           <div className="flex items-center justify-between">
             <a href={logo.url} className="flex items-center gap-2">
-              <Image src={logoSrc} className="w-22 pl-1" alt={logo.alt} width={120} height={40} />
+              <Image
+                src={logoSrc}
+                className="w-22 pl-1"
+                alt={logo.alt}
+                width={120}
+                height={40}
+              />
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -209,7 +231,13 @@ const Navbar = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <Image src={logoSrc} className="w-22 pt-1" alt={logo.alt} width={120} height={40} />
+                      <Image
+                        src={logoSrc}
+                        className="w-22 pt-1"
+                        alt={logo.alt}
+                        width={120}
+                        height={40}
+                      />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
@@ -219,7 +247,9 @@ const Navbar = ({
                     collapsible
                     className="flex w-full flex-col gap-4"
                   >
-                    {menu.map((item) => renderMobileMenuItem(item, t, textColor, hoverBg))}
+                    {menu.map((item) =>
+                      renderMobileMenuItem(item, t, textColor, hoverBg)
+                    )}
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
@@ -250,22 +280,59 @@ const renderMenuItem = (
   hoverText: string
 ) => {
   if (item.items) {
-    return (
-      <NavigationMenuItem key={item.title}>
-        <NavigationMenuTrigger className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}>
-          {t(item.title)}
-        </NavigationMenuTrigger>
-        <NavigationMenuContent className={`${navMenuContentBg} w-auto ${item.items.length >= 6 ? 'min-w-[640px]' : 'min-w-[320px]'} p-2`}>
-          <div className={`grid gap-1 ${item.items.length >= 6 ? 'grid-cols-2' : 'grid-cols-1'}`}>
-            {item.items.map((subItem) => (
-              <NavigationMenuLink asChild key={subItem.title} className="w-full">
-                <SubMenuLink item={subItem} t={t} />
-              </NavigationMenuLink>
-            ))}
-          </div>
-        </NavigationMenuContent>
-      </NavigationMenuItem>
-    );
+    if (item.items.length >= 6) {
+      // 6 or more items: wide two-column grid
+      return (
+        <NavigationMenuItem key={item.title}>
+          <NavigationMenuTrigger
+            className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}
+          >
+            {t(item.title)}
+          </NavigationMenuTrigger>
+          <NavigationMenuContent
+            className={`${navMenuContentBg} w-[800px] p-2`}
+          >
+            <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {item.items.map((subItem) => (
+                <NavigationMenuLink
+                  asChild
+                  key={subItem.title}
+                  className="w-full"
+                >
+                  <SubMenuLink item={subItem} t={t} />
+                </NavigationMenuLink>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      );
+    } else {
+      // Less than 6 items: two-column flex, first column is text
+      return (
+        <NavigationMenuItem key={item.title}>
+          <NavigationMenuTrigger
+            className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}
+          >
+            {t(item.title)}
+          </NavigationMenuTrigger>
+          <NavigationMenuContent
+            className={`${navMenuContentBg} w-[800px] p-2`}
+          >
+            <ul className="grid w-[300px] gap-2">
+              {item.items.map((subItem) => (
+                <NavigationMenuLink
+                  asChild
+                  key={subItem.title}
+                  className="w-full"
+                >
+                  <SubMenuLink item={subItem} t={t} />
+                </NavigationMenuLink>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      );
+    }
   }
 
   return (
@@ -302,7 +369,11 @@ const renderMobileMenuItem = (
   }
 
   return (
-    <a key={item.title} href={item.url} className={`text-md font-semibold ${textColor}`}>
+    <a
+      key={item.title}
+      href={item.url}
+      className={`text-md font-semibold ${textColor}`}
+    >
       {t(item.title)}
     </a>
   );
