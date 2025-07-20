@@ -10,18 +10,20 @@ import { PricingCard } from "@/components/pricing/pricing-card";
 const tierSlugs = ["starter", "growth", "enterprise"] as const;
 
 function CallToAction() {
+  const t = useTranslations("Pricing");
   return (
     <div>
-      <div className="mt-10 ml-5 lg:ml-0">
-        <Link
-          href="/pricing"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
-        >
-          See Pricing
-          <ArrowRight className="size-5" />
-        </Link>
-      </div>
+    <p className=" mt-10 max-w-sm text-sm/6 text-gray-600">{t("cta-text")}</p>
+    <div className="mt-2">
+      <Link
+        href="/pricing"
+        className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
+      >
+        {t("cta")}
+        <ArrowRight className="size-5" />
+      </Link>
     </div>
+  </div>
   );
 }
 
@@ -64,7 +66,7 @@ function PricingCards() {
 
 export default function Pricing() {
   return (
-    <main className="overflow-hidden mt-32">
+    <main className="overflow-hidden ">
       <Header />
       <PricingCards />
     </main>

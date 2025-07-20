@@ -162,6 +162,9 @@
     "Pricing": {
         "title": "Pricing that grows with your team size.",
         "SubTitle": "Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.",
+        "cta": "See full plan details",
+        "cta-text":"Discover everything included in each plan — view full pricing details.",
+        "cta-button":"Select Plan",
         "starter": {
             "name": "Starter",
             "description": "Everything you need to start selling.",
@@ -298,8 +301,9 @@
         }
     },
     "Footer": {
-        "Eyebrow": "Get started",
-        "title": "Ready to dive in? Start your free trial today 🚀 ",
+        "Eyebrow": "Get started 🚀",
+        "title-line-1": "Ready to dive in?",
+        "title-line-2": " Start creating today.",
         "cta": "Try Now",
         "Pricing": "Pricing",
         "Blog": "Blog",
@@ -313,5 +317,152 @@
         "Terms": "Terms",
         "Tools": "Tools",
         "UseCase": "Use Case"
-    }
+    },
+    "Terms": {
+        "title": "Terms and Conditions",
+        "effectiveDate": "Effective Date: July 20, 2025",
+        "intro": "Welcome to Artivo.Ai ('Artivo', 'we', 'our', or 'us'). These Terms and Conditions ('Terms') govern your use of our website, platform, and services. By accessing or using Artivo, you agree to be bound by these Terms and our Privacy Policy. If you do not agree, do not use our Service.",
+        "sections": {
+            "eligibility": {
+                "title": "1. Eligibility",
+                "body": "You must be at least 18 years old or the age of majority in your jurisdiction to use Artivo. By using the Service, you confirm you can legally enter into a binding agreement."
+            },
+            "use": {
+                "title": "2. Use of the Service",
+                "body": "Artivo allows users to create visual content using AI. We grant you a limited, non-exclusive license to use the Service for lawful purposes, subject to these Terms."
+            },
+            "acceptableUse": {
+                "title": "2.1 Acceptable Use",
+                "list": [
+                    "Do not use Artivo for illegal, harmful, or fraudulent activities.",
+                    "Do not generate or share content that violates laws or third-party rights.",
+                    "Do not attempt to reverse-engineer or misuse our AI systems.",
+                    "Do not upload malware or disrupt the Service."
+                ]
+            },
+            "accounts": {
+                "title": "3. User Accounts",
+                "body": "You are responsible for keeping your login secure. Notify us immediately of unauthorized access. We are not liable for account misuse."
+            },
+            "payments": {
+                "title": "4. Payment and Credits",
+                "body": "Artivo uses subscriptions and credits. By purchasing, you agree to the fees. Payments are non-refundable unless stated otherwise."
+            },
+            "credits": {
+                "title": "4.1 Credit Usage",
+                "body": "Actions like image generation or animations consume credits based on your plan. Credits may not roll over unless stated."
+            },
+            "ownership": {
+                "title": "5. AI-Generated Content and Ownership",
+                "body": "You own your input prompts. We grant you rights to use generated content, unless restricted by third-party laws. Outputs are not exclusive and Artivo does not ensure uniqueness."
+            },
+            "intellectualProperty": {
+                "title": "6. Intellectual Property",
+                "body": "All IP rights to Artivo’s tools, software, and branding belong to us or our licensors. These Terms do not grant you any ownership."
+            },
+            "thirdParty": {
+                "title": "7. Third-Party Integrations",
+                "body": "Artivo may link to or integrate third-party tools. We are not responsible for their content or policies."
+            },
+            "termination": {
+                "title": "8. Termination",
+                "body": "We may suspend or terminate your account if you violate these Terms. You must stop using the Service upon termination."
+            },
+            "disclaimer": {
+                "title": "9. Disclaimers",
+                "body": "The Service is provided 'as is'. We do not guarantee uptime, error-free content, or legal compliance of your outputs. Artivo offers no legal, medical, or financial advice."
+            },
+            "liability": {
+                "title": "10. Limitation of Liability",
+                "body": "To the fullest extent allowed by law, we are not liable for indirect or consequential damages. Our maximum liability is limited to what you paid in the last 6 months."
+            },
+            "indemnity": {
+                "title": "11. Indemnification",
+                "body": "You agree to indemnify Artivo and its team against claims from your use of the Service or violation of these Terms."
+            },
+            "modifications": {
+                "title": "12. Modifications",
+                "body": "We may update these Terms at any time. Continued use means you accept the changes. The updated Terms will include a new effective date."
+            },
+            "governingLaw": {
+                "title": "13. Governing Law and Jurisdiction",
+                "body": "These Terms are governed by the laws of [Insert Jurisdiction]. Any disputes will be resolved in its courts."
+            },
+            "contact": {
+                "title": "14. Contact",
+                "body": "If you have questions about these Terms, contact us at legal@artivo.ai."
+            }
+        }
+    },
+    
+        "PrivacyPolicy": {
+            "title": "Privacy Policy",
+            "sections": [
+                {
+                    "title": "1. Information We Collect",
+                    "content": [
+                        "When you sign up, we collect your name, email address, password, and other account-related details.",
+                        "We collect data about how you use the platform, including generated content, prompts, preferences, and analytics.",
+                        "If you subscribe to a paid plan, we collect billing information via our third-party payment processors (e.g., Stripe). We do not store your credit card details.",
+                        "We use cookies and similar technologies to improve functionality and user experience."
+                    ]
+                },
+                {
+                    "title": "2. How We Use Your Information",
+                    "content": [
+                        "To provide, maintain, and improve the functionality of Artivo.Ai.",
+                        "To contact you about your account, service updates, and support requests.",
+                        "To personalize your experience and recommend features or workflows.",
+                        "To comply with legal obligations or defend against legal claims."
+                    ]
+                },
+                {
+                    "title": "3. How We Share Your Information",
+                    "content": [
+                        "We may share information with trusted third-party service providers who help us operate our platform (e.g., hosting, payments, analytics).",
+                        "We may disclose information if required by law or in response to valid legal requests.",
+                        "In case of a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction."
+                    ]
+                },
+                {
+                    "title": "4. Data Security",
+                    "content": [
+                        "We implement industry-standard security measures to protect your information. However, no system is 100% secure. Use the platform at your own risk."
+                    ]
+                },
+                {
+                    "title": "5. Your Rights",
+                    "content": [
+                        "You have the right to access and update your personal data.",
+                        "You can request deletion of your data by contacting us at support@artivo.ai.",
+                        "You can opt out of marketing emails anytime by clicking 'unsubscribe' in our communications."
+                    ]
+                },
+                {
+                    "title": "6. Data Retention",
+                    "content": [
+                        "We retain your information as long as your account is active or as needed to provide our services and comply with legal obligations."
+                    ]
+                },
+                {
+                    "title": "7. Children’s Privacy",
+                    "content": [
+                        "Artivo.Ai is not intended for use by individuals under 13 years of age. We do not knowingly collect personal information from children."
+                    ]
+                },
+                {
+                    "title": "8. Updates to this Policy",
+                    "content": [
+                        "We may update this Privacy Policy from time to time. You will be notified of material changes via email or in-app notification."
+                    ]
+                },
+                {
+                    "title": "9. Contact Us",
+                    "content": [
+                        "If you have questions about this policy, contact us at support@artivo.ai."
+                    ]
+                }
+            ]
+        }
+   
 }

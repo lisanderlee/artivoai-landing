@@ -14,7 +14,7 @@ export default function Hero() {
     <div className="relative">
       <Container className="relative">
         <Navbar />
-        <div className="pb-24 flex flex-col items-center pt-16 sm:pb-32 sm:pt-24 md:pb-32">
+        <div className="lg:pb-20  flex flex-col items-center pt-16  ">
           <div className="flex relative mb-5">
             <div>
               <HeroBadge />
@@ -26,13 +26,14 @@ export default function Hero() {
           <p className="mt-8 max-w-2xl text-xl/7 text-center font-medium text-white/50 sm:text-2xl/8">
             {t("description")}
           </p>
-          <div className="mt-12 flex items-center flex-row gap-x-6 gap-y-4 sm:flex-row">
+          <div className="mt-12 flex items-center lg:flex-row gap-x-6 gap-y-4 flex-col">
             <div className=" bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent  text-md font-normal">
             {t("highlight")}
             </div>
             <Button
               variant="primary-icon"
               icon={<ArrowUpRight className="h-5 w-5" />}
+              className="group"
               href="https://app.artivo.ai/"
             >
               {t("cta")}

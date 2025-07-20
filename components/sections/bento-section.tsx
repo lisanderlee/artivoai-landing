@@ -23,7 +23,7 @@ export default function BentoSection() {
             title={t("BotTitle")}
             description={t("BotDescription")}
             graphic={
-              <div className="bg-size-[851px_344px] h-80 bg-[url(/screenshots/networking.png)] bg-no-repeat" />
+              <div className="bg-size-[851px_344px] h-80 bg-[url(/screenshots/ChatBotImage.png)] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:rounded-tl-4xl lg:col-span-4"
@@ -51,7 +51,7 @@ export default function BentoSection() {
              title={t("WorkflowTitle")}
             description={t("WorkflowDescription")}
             graphic={
-              <div className="bg-size-[851px_344px] h-80 bg-[url(/screenshots/engagement.png)] bg-no-repeat" />
+              <div className="bg-size-[851px_344px] h-80 bg-[url(/screenshots/Workflows.png)] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:rounded-br-4xl lg:col-span-4"

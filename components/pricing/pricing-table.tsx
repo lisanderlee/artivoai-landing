@@ -97,7 +97,7 @@ export function PricingTable() {
               </div>
             </td>
             <td colSpan={3} className="p-0 text-right">
-              <Button variant="outline" href="#">
+              <Button variant="pricing-button" href="#">
                 Get started
               </Button>
             </td>
@@ -112,7 +112,7 @@ export function PricingTable() {
                 data-selected={selectedTier === tier ? true : undefined}
                 className="px-0 pt-4 pb-0 data-selected:table-cell max-sm:hidden"
               >
-                <Button variant="outline" href="#">
+                <Button variant="pricing-button" href="#">
                   Get started
                 </Button>
               </td>

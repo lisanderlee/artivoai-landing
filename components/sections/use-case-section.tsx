@@ -52,7 +52,7 @@ export default function UseCase() {
                           className="aspect-3/2 w-full rounded-2xl object-cover "
                         />
                         <div className="absolute bottom-1 right-2">
-                          <div className="bg-black p-2 rounded-full group-hover:bg-white">
+                          <div className="bg-black p-2 rounded-full group-hover:bg-white/50 group-hover:rotate-45 transition-transform duration-300 ease-in-out ">
                             <ArrowUpRight className="h-5 w-5 stroke-white group-hover:stroke-black" />
                           </div>
                         </div>

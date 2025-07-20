@@ -163,7 +163,7 @@ const Navbar = ({
     mode === "dark" ? "bg-white text-black" : "bg-white text-black";
   const logoSrc = mode === "dark" ? Logo : LogoBlack;
   const hoverText = mode === "dark" ? "hover:text-white" : "hover:text-black";
-
+const buttonVariant = mode === "dark" ? "secondary-outline" : "secondary-outline-gray"
   return (
     <section className="py-4 ">
       <div className="container relative flex">
@@ -177,7 +177,7 @@ const Navbar = ({
               height={40}
             />
           </a>
-          <div className="flex items-center justify-center">
+          <div className="flex ml-42 items-center justify-center">
             <NavigationMenu>
               <NavigationMenuList>
                 {menu.map((item) =>
@@ -197,13 +197,21 @@ const Navbar = ({
 
           <div className="flex items-center gap-2">
             <div className="z-50">
-              <LanguageToggle />
+            <LanguageToggle mode={mode} />
             </div>
-
+            <Button
+              variant={buttonVariant}
+              icon={<ArrowUpRight className="h-5 w-5" />}
+              href="https://app.artivo.ai/"
+              className="group"
+            >
+              {t(auth.login.title)}
+            </Button>
             <Button
               variant="primary-icon"
               icon={<ArrowUpRight className="h-5 w-5" />}
               href="https://app.artivo.ai/"
+              className="group"
             >
               {t(auth.signup.title)}
             </Button>
@@ -223,7 +231,7 @@ const Navbar = ({
             </a>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="secondary">
+                <Button variant="secondary-outline">
                   <Menu className="size-4 text-white" />
                 </Button>
               </SheetTrigger>
@@ -232,7 +240,7 @@ const Navbar = ({
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
                       <Image
-                        src={logoSrc}
+                        src={LogoBlack}
                         className="w-22 pt-1"
                         alt={logo.alt}
                         width={120}
@@ -253,10 +261,10 @@ const Navbar = ({
                   </Accordion>
 
                   <div className="flex flex-col gap-3">
-                    <Button>
+                  <Button variant="secondary-outline-gray" >
                       <a href={auth.login.url}>{t(auth.login.title)}</a>
                     </Button>
-                    <Button>
+                    <Button variant="primary-icon-dark" >
                       <a href={auth.signup.url}>{t(auth.signup.title)}</a>
                     </Button>
                   </div>
@@ -372,7 +380,7 @@ const renderMobileMenuItem = (
     <a
       key={item.title}
       href={item.url}
-      className={`text-md font-semibold ${textColor}`}
+      className={`text-md font-semibold text-black`}
     >
       {t(item.title)}
     </a>

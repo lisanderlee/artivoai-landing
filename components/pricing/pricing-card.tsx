@@ -2,7 +2,7 @@ import { Button } from "@/components/button";
 import { Subheading } from "@/components/text";
 import { useTranslations } from "next-intl";
 import { PlusIcon } from "./plus-icon";
-
+import {ArrowUpRight} from "lucide-react"
 interface PricingCardProps {
   slug: "starter" | "growth" | "enterprise";
 }
@@ -32,7 +32,14 @@ export function PricingCard({ slug }: PricingCardProps) {
             </div>
           </div>
           <div className="mt-8">
-            <Button href="#">Start a free trial</Button>
+          <Button
+              variant="pricing-button"
+          
+              href="https://app.artivo.ai/"
+              className="group"
+            >
+        {t("cta-button")}
+        </Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">

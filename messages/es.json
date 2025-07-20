@@ -1,44 +1,106 @@
 {
-  "Navigation": {
-    "Home": "Inicio",
-    "UseCases": "Casos de uso",
-    "Features": "Funciones",
-    "Tools": "Herramientas",
-    "Pricing": "Precios",
-    "Login": "Iniciar sesión",
-    "cta": "Crear cuenta",
-    "ImageGeneration": "Generación de imágenes",
-    "ImageToVideo": "Imagen a video",
-    "BakckgroundChange": "Cambio de fondo",
-    "ImageResize": "Redimensionar imagen",
-    "ImageUpscale": "Aumento de resolución",
-    "ProductTransfer": "Integración de producto",
-    "Creatives": "Creativos y diseñadores",
-    "Ecommerce": "E-commerce",
-    "Marketing": "Agencias y equipos de marketing",
-    "ImageGenerationDescription": "Generá imágenes de alta calidad a partir de texto.",
-    "ImageToVideoDescription": "Convertí cualquier imagen en un video animado.",
-    "BakckgroundChangeDescription": "Cambiá fondos de productos con un prompt o imagen.",
-    "ImageResizeDescription": "Redimensionar imagen.",
-    "ImageUpscaleDescription": "Agrandá y mejorá imágenes sin perder calidad.",
-    "ProductTransferDescription": "Colocá tu producto en cualquier escena.",
-    "CreativesDescription": "Explorá nuevas ideas y creá variaciones de imágenes con IA en segundos.",
-    "EcommerceDescription": "Mejorá la conversión de tu tienda online con contenido visual optimizado.",
-    "MarketingDescription": "Ahorrá tiempo y generá contenido visual impactante más rápido."
-  },
-  "HeroSection": {
-    "title": "Creá imágenes y videos profesionales",
-    "description": "Olvidate de producciones costosas o flujos de trabajo complejos. Usá IA para crear visuales de producto para e-commerce, redes y publicidad — en minutos.",
-    "cta": "Empezar ahora"
-  },
+"Navigation": {
+  "Home": "Inicio",
+  "UseCases": "Casos de uso",
+  "Features": "Funciones",
+  "Tools": "Herramientas",
+  "Pricing": "Precios",
+  "Login": "Iniciar sesión",
+  "cta": "Probar ahora",
+  "ImageGeneration": "Generación de imágenes",
+  "VideoGeneration": "Generación de videos",
+  "BakckgroundChange": "Cambio de fondo",
+  "ImageResize": "Redimensionar imagen",
+  "RetouchLab": "Laboratorio de retoque",
+  "ProductTransfer": "Colocación de producto",
+  "Creatives": "Creativos y diseñadores",
+  "Ecommerce": "E-commerce",
+  "Marketing": "Agencias y equipos de marketing",
+  "ImageGenerationDescription": "Genera imágenes de alta calidad a partir de texto.",
+  "VideoGenerationDescription": "Convierte cualquier imagen en un video en movimiento.",
+  "BakckgroundChangeDescription": "Cambia el fondo de productos con un prompt o imagen.",
+  "ImageResizeDescription": "Redimensiona rápidamente tus visuales para cualquier formato o plataforma.",
+  "RetouchLabDescription": "Mejora, afina y escala tus imágenes con las herramientas de retoque.",
+  "ProductTransferDescription": "Coloca tu producto en cualquier escena.",
+  "CreativesDescription": "Explora ideas nuevas y crea variaciones visuales con IA en segundos.",
+  "EcommerceDescription": "Aumenta la conversión de tu tienda online con contenido visual optimizado.",
+  "MarketingDescription": "Ahorra tiempo y entrega contenido visual impactante más rápido."
+},
+ "HeroSection": {
+  "badge": "Presentamos Artivo v2.0",
+  "title": "Crea Imágenes y Videos Profesionales",
+  "description": "Olvídate de producciones costosas o flujos de trabajo complejos. Usa IA para crear visuales de producto para e-commerce, redes sociales y anuncios—rápido.",
+  "highlight": "Una suscripción, todos los modelos.",
+  "cta": "Probar ahora"
+},
   "UseCase": {
-    "Creatives": "Creativos y diseñadores",
-    "Ecommerce": "E-commerce",
-    "Marketing": "Agencias y equipos de marketing",
-    "CreativesDescription": "Explorá nuevas ideas y creá variaciones de imágenes con IA en segundos.",
-    "EcommerceDescription": "Mejorá la conversión de tu tienda online con contenido visual optimizado.",
-    "MarketingDescription": "Ahorrá tiempo y generá contenido visual impactante más rápido.",
-    "cta": "Empezar ahora"
+    "Creatives": {
+      "Thumbnail": {
+        "Title": "Creativos y Diseñadores",
+        "CreativesDescription": "Explora nuevas ideas y crea variaciones de imágenes con IA en segundos."
+      },
+      "headline": "Agiliza y acelera tu flujo de trabajo con Artivo.Ai",
+      "title": "Cómo los diseñadores y creativos aceleran su flujo de trabajo con IA",
+      "subtitle": "Explora nuevas ideas y genera variaciones de imágenes con IA en segundos. Reduce el tiempo de edición y optimiza tu proceso creativo.",
+      "challengeTitle": "Desafío:",
+      "challenge": "Los diseñadores y creativos dedican incontables horas a editar imágenes y desarrollar conceptos. Los flujos de trabajo tradicionales implican múltiples herramientas, varias rondas de revisiones y esfuerzo manual, lo que ralentiza la producción y limita la innovación. Además, trabajar con clientes requiere generar múltiples versiones de contenido para cumplir con sus expectativas.",
+      "solutionTitle": "Solución con Artivo.Ai:",
+      "solution": {
+        "item1": "Automatiza la creación de imágenes sin perder el control creativo.",
+        "item2": "Genera variaciones de estilo y visuales en segundos—sin trabajo manual extenso.",
+        "item3": "Optimiza imágenes fácilmente para marcas, presentaciones y campañas.",
+        "item4": "Prueba conceptos e ideas rápidamente para acelerar tu proceso creativo."
+      },
+      "resultsTitle": "Resultados:",
+      "results": "Los diseñadores redujeron el tiempo de producción de imágenes en un 60%, lo que les permitió enfocarse en la creatividad y la estrategia en lugar de tareas repetitivas. La generación rápida de variaciones también mejoró la colaboración con clientes y equipos internos.",
+      "conclusionTitle": "Conclusión:",
+      "conclusion": "La IA está transformando la industria creativa, permitiendo a los diseñadores enfocarse en la innovación en lugar de la repetición. Un estudio reciente muestra que el 76% de los diseñadores que usan herramientas de IA reportan mayor eficiencia y creatividad. Con Artivo.Ai, los creativos pueden generar variaciones ilimitadas de imágenes y optimizar su flujo de trabajo—reduciendo el tiempo de producción en un 60%."
+    },
+    "Agency": {
+      "Thumbnail": {
+        "Title": "Agencias y Equipos de Marketing",
+        "AgencyDescription": "Ahorra tiempo y entrega contenido visual impactante más rápido."
+      },
+      "headline": "Agiliza y acelera tu flujo de trabajo con Artivo.Ai",
+      "title": "Cómo una agencia creativa aceleró la producción de contenido con IA",
+      "subtitle": "Acelera la creación de imágenes para campañas publicitarias sin depender de fotógrafos o diseñadores. Ahorra tiempo y entrega visuales impresionantes más rápido.",
+      "challengeTitle": "Desafío:",
+      "challenge": "Las agencias de publicidad deben entregar contenido visual de alta calidad para múltiples clientes y campañas, a menudo con plazos ajustados. Las sesiones fotográficas tradicionales y la edición generan cuellos de botella, ralentizando la producción y elevando los costos. Además, adaptar visuales a distintos formatos para redes sociales, anuncios y materiales de marketing agrega complejidad.",
+      "solutionTitle": "Solución con Artivo.Ai:",
+      "solution": {
+        "item1": "Reduce el tiempo de producción visual en un 70% generando imágenes de alta calidad con IA.",
+        "item2": "Prueba múltiples variaciones de imágenes en segundos, optimizando contenido para diferentes plataformas y audiencias.",
+        "item3": "Elimina la dependencia de fotógrafos y estudios costosos, ganando flexibilidad creativa.",
+        "item4": "Crea imágenes personalizadas para cada cliente usando prompts específicos para un contenido único y diferenciado."
+      },
+      "resultsTitle": "Resultados:",
+      "results": "La agencia aceleró la entrega de campañas sin comprometer la calidad, aumentó la satisfacción del cliente y redujo los costos operativos. Con un flujo de trabajo más eficiente, el equipo pudo centrarse más en la estrategia y la creatividad en lugar de la logística de producción.",
+      "conclusionTitle": "Conclusión:",
+      "conclusion": "Las agencias que usan IA en la creación de contenido pueden acelerar la producción hasta en un 70%, entregando campañas más rápido y utilizando los recursos de forma más eficiente. Según reportes de marketing, el 63% de los profesionales publicitarios ya usan IA para generar contenido visual. Con Artivo.Ai, las agencias pueden escalar su producción creativa sin sacrificar calidad ni originalidad."
+    },
+    "Ecommerce": {
+      "Thumbnail": {
+        "Title": "E-commerce",
+        "EcommerceDescription": "Aumenta la conversión de tu tienda online con contenido visual optimizado."
+      },
+      "title": "Optimiza y acelera tu flujo de trabajo con Artivo.Ai",
+      "headline": "Cómo un dueño de tienda online aumentó sus ventas con imágenes generadas por IA",
+      "subtitle": "Crea imágenes de producto de alta calidad en segundos sin costos de producción. Mejora la conversión de tu tienda online con contenido visual optimizado.",
+      "challengeTitle": "Desafío",
+      "challenge": "Los dueños de tiendas online enfrentan un gran reto: la necesidad de imágenes de producto atractivas y de alta calidad para captar la atención de los clientes y aumentar las conversiones. Sin embargo, crear contenido visual profesional es costoso y requiere sesiones de fotos, modelos, fotógrafos y editores—lo que incrementa el tiempo y el costo de producción. Competir en plataformas como Amazon, Shopify y redes sociales también exige actualizaciones constantes de imágenes para mantenerse relevantes y mejorar las tasas de conversión.",
+      "solutionTitle": "Solución con Artivo.Ai",
+      "solution": {
+        "item1": "Genera imágenes profesionales con IA en segundos, sin necesidad de sesiones de fotos.",
+        "item2": "Personaliza fondos y escenarios sin volver a fotografiar productos.",
+        "item3": "Optimiza visuales para marketplaces y redes sociales en múltiples formatos y estilos.",
+        "item4": "Reduce costos de producción sin sacrificar calidad.",
+        "item5": "Acelera el lanzamiento de nuevos productos, mejorando la rotación del catálogo."
+      },
+      "resultsTitle": "Resultados",
+      "results": "El negocio aumentó sus conversiones en un 30% al mejorar la calidad visual de su catálogo sin incrementar costos. La capacidad de generar imágenes rápidamente permitió realizar pruebas A/B más eficientes y personalizar mejor el contenido para diferentes audiencias.",
+      "conclusionTitle": "Conclusión",
+      "conclusion": "Implementar IA en e-commerce ha demostrado ser una estrategia efectiva para aumentar conversiones y mejorar la experiencia del cliente. Estudios muestran que el 91% de los consumidores prefieren comprar en sitios con contenido visual de alta calidad, y que optimizar visuales puede aumentar las conversiones hasta en un 30%. Artivo.Ai permite a los dueños de tiendas generar imágenes de producto atractivas sin costos adicionales, mejorando la presentación y aumentando las ventas."
+    }
   },
   "BentoSection": {
     "title": "Todas las herramientas de IA visual. En un solo lugar.",
@@ -97,10 +159,107 @@
     "ImageResizePrompt": "",
     "cta": "Probar ahora"
   },
-  "Pricing": {
-    "title": "¡Hola mundo!",
-    "about": "Ir a la página de información"
-  },
+
+    "Pricing": {
+      "title": "Precios que crecen con el tamaño de tu equipo.",
+      "SubTitle": "Empresas de todo el mundo han cerrado millones de acuerdos con Radiant. Regístrate hoy y empieza a vender de forma más inteligente.",
+      "cta": "Ver detalles completos del plan",
+      "cta-text": "Descubre todo lo que incluye cada plan — consulta los detalles completos de precios.",
+      "cta-button": "Seleccionar plan",
+      "starter": {
+        "name": "Starter",
+        "description": "Todo lo que necesitas para empezar a vender.",
+        "highlights": [
+          "Miembros del equipo activos ilimitados",
+          "Tableros de progreso de acuerdos ilimitados",
+          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
+          "Integraciones con RadiantAI",
+          "Análisis de competidores ilimitados"
+        ],
+        "features": {
+          "Features": {
+            "Accounts": "5",
+            "Deal progress boards": "1",
+            "Sourcing platforms": "Seleccionar",
+            "Contacts": "100",
+            "AI assisted outreach": false
+          },
+          "Analysis": {
+            "Competitor analysis": false,
+            "Dashboard reporting": false,
+            "Community insights": false,
+            "Performance analysis": false
+          },
+          "Support": {
+            "Email support": true,
+            "24 / 7 call center support": false,
+            "Dedicated account manager": false
+          }
+        }
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "Todo lo adicional que necesita tu equipo en crecimiento.",
+        "highlights": [
+          "Miembros del equipo activos ilimitados",
+          "Tableros de progreso de acuerdos ilimitados",
+          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
+          "Integraciones con RadiantAI",
+          "Análisis de competidores ilimitados"
+        ],
+        "features": {
+          "Features": {
+            "Accounts": "10",
+            "Deal progress boards": "Ilimitado",
+            "Sourcing platforms": "100+",
+            "Contacts": "1000",
+            "AI assisted outreach": true
+          },
+          "Analysis": {
+            "Competitor analysis": "5 / mes",
+            "Dashboard reporting": true,
+            "Community insights": true,
+            "Performance analysis": true
+          },
+          "Support": {
+            "Email support": true,
+            "24 / 7 call center support": true,
+            "Dedicated account manager": false
+          }
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Flexibilidad adicional para cerrar acuerdos a gran escala.",
+        "highlights": [
+          "Miembros del equipo activos ilimitados",
+          "Tableros de progreso de acuerdos ilimitados",
+          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
+          "Integraciones con RadiantAI",
+          "Análisis de competidores ilimitados"
+        ],
+        "features": {
+          "Features": {
+            "Accounts": "Ilimitado",
+            "Deal progress boards": "Ilimitado",
+            "Sourcing platforms": "100+",
+            "Contacts": "Ilimitado",
+            "AI assisted outreach": true
+          },
+          "Analysis": {
+            "Competitor analysis": "Ilimitado",
+            "Dashboard reporting": true,
+            "Community insights": true,
+            "Performance analysis": true
+          },
+          "Support": {
+            "Email support": true,
+            "24 / 7 call center support": true,
+            "Dedicated account manager": true
+          }
+        }
+      }
+    },
   "Testimonials": {
     "title": "Confiado por profesionales",
     "Eyebrow": "Lo que todos están diciendo",
@@ -137,21 +296,167 @@
       "Quote": "La IA mantiene nuestras campañas frescas y en línea con la marca."
     }
   },
-  "Footer": {
-    "Eyebrow": "Empieza ahora",
-    "title": "¿Listo para comenzar? Prueba gratis hoy mismo.",
-    "cta": "Probar ahora",
-    "Pricing": "Precios",
-    "Blog": "Blog",
-    "Faq": "Preguntas frecuentes",
-    "TermsAndCoditions": "Términos y condiciones",
-    "Company": "Empresa",
-    "Carreers": "Carreras",
-    "PrivacyPolicy": "Política de privacidad",
-    "Product": "Producto",
-    "Support": "Soporte",
-    "Terms": "Términos",
-    "Tools": "Herramientas",
-    "UseCase": "Casos de uso"
+"Footer": {
+  "Eyebrow": "Comienza ahora 🚀",
+  "title-line-1": "¿Listo para comenzar?",
+  "title-line-2": "Empieza a crear hoy.",
+  "cta": "Probar ahora",
+  "Pricing": "Precios",
+  "Blog": "Blog",
+  "Faq": "Preguntas frecuentes",
+  "TermsAndCoditions": "Términos y condiciones",
+  "Company": "Compañía",
+  "Carreers": "Carreras",
+  "PrivacyPolicy": "Política de privacidad",
+  "Product": "Producto",
+  "Support": "Soporte",
+  "Terms": "Términos",
+  "Tools": "Herramientas",
+  "UseCase": "Casos de uso"
+},
+  "Terms": {
+    "title": "Términos y Condiciones",
+    "effectiveDate": "Fecha de entrada en vigor: 20 de julio de 2025",
+    "intro": "Bienvenido a Artivo.Ai ('Artivo', 'nosotros' o 'nuestro'). Estos Términos y Condiciones ('Términos') rigen el uso de nuestro sitio web, plataforma y servicios. Al acceder o utilizar Artivo, aceptas estar sujeto a estos Términos y a nuestra Política de Privacidad. Si no estás de acuerdo, no utilices nuestro Servicio.",
+    "sections": {
+      "eligibility": {
+        "title": "1. Elegibilidad",
+        "body": "Debes tener al menos 18 años o la mayoría de edad legal en tu jurisdicción para usar Artivo. Al utilizar el Servicio, confirmas que puedes celebrar legalmente un acuerdo vinculante."
+      },
+      "use": {
+        "title": "2. Uso del Servicio",
+        "body": "Artivo permite a los usuarios crear contenido visual usando inteligencia artificial. Te otorgamos una licencia limitada y no exclusiva para utilizar el Servicio con fines legales, sujeto a estos Términos."
+      },
+      "acceptableUse": {
+        "title": "2.1 Uso Aceptable",
+        "list": [
+          "No utilices Artivo para actividades ilegales, dañinas o fraudulentas.",
+          "No generes ni compartas contenido que infrinja leyes o derechos de terceros.",
+          "No intentes aplicar ingeniería inversa ni hacer un uso indebido de nuestros sistemas de IA.",
+          "No subas malware ni interfieras con el funcionamiento del Servicio."
+        ]
+      },
+      "accounts": {
+        "title": "3. Cuentas de Usuario",
+        "body": "Eres responsable de mantener segura tu información de inicio de sesión. Notifícanos de inmediato cualquier acceso no autorizado. No somos responsables del mal uso de tu cuenta."
+      },
+      "payments": {
+        "title": "4. Pagos y Créditos",
+        "body": "Artivo funciona mediante suscripciones y créditos. Al realizar una compra, aceptas las tarifas correspondientes. Los pagos no son reembolsables, salvo que se indique lo contrario."
+      },
+      "credits": {
+        "title": "4.1 Uso de Créditos",
+        "body": "Acciones como la generación de imágenes o animaciones consumen créditos según tu plan. Los créditos pueden no acumularse al siguiente período, salvo que se indique lo contrario."
+      },
+      "ownership": {
+        "title": "5. Contenido Generado por IA y Propiedad",
+        "body": "Eres dueño de tus prompts de entrada. Te otorgamos derechos para usar el contenido generado, salvo restricciones legales de terceros. Los resultados no son exclusivos y Artivo no garantiza su unicidad."
+      },
+      "intellectualProperty": {
+        "title": "6. Propiedad Intelectual",
+        "body": "Todos los derechos de propiedad intelectual sobre las herramientas, software y marca de Artivo nos pertenecen a nosotros o a nuestros licenciantes. Estos Términos no te otorgan propiedad alguna."
+      },
+      "thirdParty": {
+        "title": "7. Integraciones de Terceros",
+        "body": "Artivo puede enlazar o integrarse con herramientas de terceros. No somos responsables por su contenido ni por sus políticas."
+      },
+      "termination": {
+        "title": "8. Terminación",
+        "body": "Podemos suspender o cancelar tu cuenta si violas estos Términos. Debes dejar de usar el Servicio tras la terminación."
+      },
+      "disclaimer": {
+        "title": "9. Exención de Responsabilidad",
+        "body": "El Servicio se proporciona 'tal cual'. No garantizamos disponibilidad, ausencia de errores ni cumplimiento legal de los resultados. Artivo no ofrece asesoramiento legal, médico ni financiero."
+      },
+      "liability": {
+        "title": "10. Limitación de Responsabilidad",
+        "body": "En la máxima medida permitida por la ley, no somos responsables por daños indirectos o consecuentes. Nuestra responsabilidad máxima se limita al monto que hayas pagado en los últimos 6 meses."
+      },
+      "indemnity": {
+        "title": "11. Indemnización",
+        "body": "Aceptas indemnizar a Artivo y su equipo frente a cualquier reclamo derivado del uso del Servicio o por la violación de estos Términos."
+      },
+      "modifications": {
+        "title": "12. Modificaciones",
+        "body": "Podemos actualizar estos Términos en cualquier momento. El uso continuo del Servicio implica que aceptas los cambios. Los Términos actualizados incluirán una nueva fecha de entrada en vigor."
+      },
+      "governingLaw": {
+        "title": "13. Ley Aplicable y Jurisdicción",
+        "body": "Estos Términos se rigen por las leyes de [Insertar Jurisdicción]. Cualquier disputa se resolverá en sus tribunales."
+      },
+      "contact": {
+        "title": "14. Contacto",
+        "body": "Si tienes preguntas sobre estos Términos, contáctanos en legal@artivo.ai."
+      }
+    }
+  },
+  "PrivacyPolicy": {
+    "title": "Política de Privacidad",
+    "sections": [
+      {
+        "title": "1. Información que recopilamos",
+        "content": [
+          "Cuando te registras, recopilamos tu nombre, dirección de correo electrónico, contraseña y otros detalles relacionados con la cuenta.",
+          "Recopilamos datos sobre cómo usas la plataforma, incluyendo contenido generado, prompts, preferencias y analíticas.",
+          "Si te suscribes a un plan de pago, recopilamos información de facturación a través de nuestros procesadores de pago externos (por ejemplo, Stripe). No almacenamos los datos de tu tarjeta de crédito.",
+          "Utilizamos cookies y tecnologías similares para mejorar la funcionalidad y la experiencia del usuario."
+        ]
+      },
+      {
+        "title": "2. Cómo usamos tu información",
+        "content": [
+          "Para proporcionar, mantener y mejorar la funcionalidad de Artivo.Ai.",
+          "Para contactarte sobre tu cuenta, actualizaciones del servicio y solicitudes de soporte.",
+          "Para personalizar tu experiencia y recomendarte funciones o flujos de trabajo.",
+          "Para cumplir con obligaciones legales o defendernos ante reclamaciones legales."
+        ]
+      },
+      {
+        "title": "3. Cómo compartimos tu información",
+        "content": [
+          "Podemos compartir información con proveedores de servicios externos confiables que nos ayudan a operar la plataforma (por ejemplo, alojamiento, pagos, analíticas).",
+          "Podemos divulgar información si es requerido por la ley o en respuesta a solicitudes legales válidas.",
+          "En caso de fusión, adquisición o venta de activos, tus datos pueden ser transferidos como parte de la transacción."
+        ]
+      },
+      {
+        "title": "4. Seguridad de los datos",
+        "content": [
+          "Implementamos medidas de seguridad estándar de la industria para proteger tu información. Sin embargo, ningún sistema es 100% seguro. Usa la plataforma bajo tu propio riesgo."
+        ]
+      },
+      {
+        "title": "5. Tus derechos",
+        "content": [
+          "Tienes derecho a acceder y actualizar tus datos personales.",
+          "Puedes solicitar la eliminación de tus datos contactándonos en support@artivo.ai.",
+          "Puedes darte de baja de los correos electrónicos de marketing en cualquier momento haciendo clic en 'cancelar suscripción' en nuestras comunicaciones."
+        ]
+      },
+      {
+        "title": "6. Retención de datos",
+        "content": [
+          "Conservamos tu información mientras tu cuenta esté activa o según sea necesario para proporcionar nuestros servicios y cumplir con obligaciones legales."
+        ]
+      },
+      {
+        "title": "7. Privacidad de los menores",
+        "content": [
+          "Artivo.Ai no está destinado a personas menores de 13 años. No recopilamos intencionalmente información personal de menores."
+        ]
+      },
+      {
+        "title": "8. Actualizaciones de esta política",
+        "content": [
+          "Podemos actualizar esta Política de Privacidad periódicamente. Se te notificará sobre cambios importantes por correo electrónico o mediante notificación en la aplicación."
+        ]
+      },
+      {
+        "title": "9. Contáctanos",
+        "content": [
+          "Si tienes preguntas sobre esta política, contáctanos en support@artivo.ai."
+        ]
+      }
+    ]
   }
 }

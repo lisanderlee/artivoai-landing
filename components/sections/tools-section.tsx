@@ -167,10 +167,10 @@ export default function Tools() {
                     <div className="w-full mt-5  lg:mt-0 h-full flex-1/2 flex flex-col justify-between bg-white/5 p-7 lg:p-10  border-white/10 border rounded-3xl text-left lg:text-left">
                       
                       <div className="h-full ">
-                        <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent   font-medium">
+                        <span className="uppercase bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent  text-sm lg:text-lg  font-medium">
                           {t(tool.eyebrow)}
                         </span>
-                        <h2 className="text-white  text-5xl max-w-md font-semibold mt-2">
+                        <h2 className="text-white  text-4xl lg:text-5xl max-w-md font-semibold mt-2">
                           {t(tool.title)}
                         </h2>
                         <p className="text-gray-200 text-lg max-w-md mt-4">
