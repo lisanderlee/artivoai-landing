@@ -27,7 +27,7 @@ export default function Hero() {
             {t("description")}
           </p>
           <div className="mt-12 flex items-center lg:flex-row gap-x-6 gap-y-4 flex-col">
-            <div className=" bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent  text-md font-normal">
+            <div className=" bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent  text-xl font-normal">
             {t("highlight")}
             </div>
             <Button

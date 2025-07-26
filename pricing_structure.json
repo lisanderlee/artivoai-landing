@@ -1,0 +1,171 @@
+{
+  "Pricing": {
+    "title": "One Subscription. Endless Creativity.",
+    "SubTitle": "From posters to product videos, get every tool and model with just one plan. Say goodbye to extra fees.",
+    "cta": "See full plan details",
+    "cta-text": "Discover everything included in each plan \u2014 view full pricing details.",
+    "cta-button": "Select Plan",
+    "starter": {
+      "name": "Free",
+      "description": "Try basic tools for images and videos.",
+      "highlights": [
+        "100 free credits",
+        "Access to Flux Schnell and Ray 2 Flash",
+        "Basic background change and upscaling",
+        "Limited access to Artivo tools",
+        "Try before upgrading"
+      ],
+      "features": {
+        "Image Generation": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2a Turbo": false,
+          "Flux 1.1": false,
+          "Juggernaut Flux Pro": false,
+          "Flux 1.1 Ultra": false,
+          "Imagen 4 Ultra": false
+        },
+        "Video Generation": {
+          "Ray 2 Flash": true,
+          "Kling 2.1 Pro": false,
+          "Kling 2.1 Standard": false,
+          "Veo 3": false
+        },
+        "Retouch Lab": {
+          "Image Upscale": true,
+          "Style Transfer": true,
+          "Face Enhancement": false,
+          "Object Removal": false,
+          "Professional Portrait": true,
+          "Retouch": false
+        },
+        "Background Change": {
+          "FAL Composition": false,
+          "FAL Background Change": true,
+          "Bria Background Change": false
+        },
+        "Other Tools": {
+          "Product Transfer": false,
+          "Image Resize": false,
+          "Prompt Assistant": false
+        },
+        "Support & Access": {
+          "Commercial License": false,
+          "Email Support": true,
+          "Priority Queue": false,
+          "Concurrent Image Generation": false,
+          "Concurrent Video Generation": false,
+          "Credit Packs": false
+        }
+      }
+    },
+    "growth": {
+      "name": "Basic",
+      "description": "Access advanced tools and models.",
+      "highlights": [
+        "Commercial license included",
+        "Priority queue and faster generation",
+        "Access to Kling 2.1 and advanced models",
+        "Use credit packs",
+        "Prompt assistant and product transfer tools"
+      ],
+      "features": {
+        "Image Generation": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2a Turbo": true,
+          "Flux 1.1": true,
+          "Juggernaut Flux Pro": true,
+          "Flux 1.1 Ultra": true,
+          "Imagen 4 Ultra": true
+        },
+        "Video Generation": {
+          "Ray 2 Flash": true,
+          "Kling 2.1 Pro": true,
+          "Kling 2.1 Standard": true,
+          "Veo 3": false
+        },
+        "Retouch Lab": {
+          "Image Upscale": true,
+          "Style Transfer": true,
+          "Face Enhancement": true,
+          "Object Removal": true,
+          "Professional Portrait": true,
+          "Retouch": true
+        },
+        "Background Change": {
+          "FAL Composition": true,
+          "FAL Background Change": true,
+          "Bria Background Change": true
+        },
+        "Other Tools": {
+          "Product Transfer": true,
+          "Image Resize": true,
+          "Prompt Assistant": true
+        },
+        "Support & Access": {
+          "Commercial License": true,
+          "Email Support": true,
+          "Priority Queue": true,
+          "Concurrent Image Generation": true,
+          "Concurrent Video Generation": true,
+          "Credit Packs": true
+        }
+      }
+    },
+    "enterprise": {
+      "name": "Pro",
+      "description": "Get all tools, top models, and priority speed.",
+      "highlights": [
+        "Access to all current and future models",
+        "Top-tier video tools including Veo 3",
+        "Full access to retouch and background tools",
+        "Max generation speed and concurrency",
+        "Discounted credit packs"
+      ],
+      "features": {
+        "Image Generation": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2a Turbo": true,
+          "Flux 1.1": true,
+          "Juggernaut Flux Pro": true,
+          "Flux 1.1 Ultra": true,
+          "Imagen 4 Ultra": true
+        },
+        "Video Generation": {
+          "Ray 2 Flash": true,
+          "Kling 2.1 Pro": true,
+          "Kling 2.1 Standard": true,
+          "Veo 3": true
+        },
+        "Retouch Lab": {
+          "Image Upscale": true,
+          "Style Transfer": true,
+          "Face Enhancement": true,
+          "Object Removal": true,
+          "Professional Portrait": true,
+          "Retouch": true
+        },
+        "Background Change": {
+          "FAL Composition": true,
+          "FAL Background Change": true,
+          "Bria Background Change": true
+        },
+        "Other Tools": {
+          "Product Transfer": true,
+          "Image Resize": true,
+          "Prompt Assistant": true
+        },
+        "Support & Access": {
+          "Commercial License": true,
+          "Email Support": true,
+          "Priority Queue": true,
+          "Concurrent Image Generation": true,
+          "Concurrent Video Generation": true,
+          "Credit Packs": "Discounted"
+        }
+      }
+    }
+  }
+}

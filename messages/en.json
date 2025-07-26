@@ -10,9 +10,9 @@
         "ImageGeneration": "Image Generation",
         "VideoGeneration": "Video Generation",
         "BakckgroundChange": "Background Change",
-        "ImageResize": "Image Resizer",
+        "ImageResize": "Image Resize",
         "RetouchLab": "Retouch Lab",
-        "ProductTransfer": " Product Placement",
+        "ProductTransfer": "Product Placement",
         "Creatives": "Creatives and Designers",
         "Ecommerce": "E-commerce",
         "Marketing": "Angencies and Marketing Teams",
@@ -28,7 +28,7 @@
     },
     "HeroSection": {
         "badge": "Introducing Artivo v2.0",
-        "title": "Create Professional Images and Videos",
+        "title": "AI-Powered Images & Videos in Seconds",
         "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
         "highlight": "One subscription, all the models.",
         "cta": "Try Now"
@@ -160,104 +160,210 @@
         "cta": "Try Now"
     },
     "Pricing": {
-        "title": "Pricing that grows with your team size.",
-        "SubTitle": "Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.",
+        "title": "One Subscription. Endless Creativity.",
+        "SubTitle": "From posters to product videos, get every tool and model with just one plan. Say goodbye to extra fees.",
         "cta": "See full plan details",
-        "cta-text":"Discover everything included in each plan — view full pricing details.",
-        "cta-button":"Select Plan",
+        "cta-text": "Discover everything included in each plan — view full pricing details.",
+        "cta-button": "Select Plan",
+        "startcreating": "Start Creating with",
         "starter": {
-            "name": "Starter",
-            "description": "Everything you need to start selling.",
+            "name": "Free",
+            "description": "Try basic tools for images and videos.",
             "highlights": [
-                "Unlimited active team members",
-                "Unlimited deal progress boards",
-                "Source leads from over 100 verified platforms",
-                "RadiantAI integrations",
-                "Unlimited competitor analyses"
+                "100 free credits",
+                "Access to Flux Schnell and Ray 2 Flash",
+                "Limited access to Artivo tools",
+                "Try before upgrading"
             ],
             "features": {
-                "Features": {
-                    "Accounts": "5",
-                    "Deal progress boards": "1",
-                    "Sourcing platforms": "Select",
-                    "Contacts": "100",
-                    "AI assisted outreach": false
+                "Image Generation": {
+                    "Flux Schnell": true,
+                    "Juggernaut Flux Lightning": true,
+                    "Ideogram V2 Turbo": false,
+                    "Flux v1 Pro": false,
+                    "Juggernaut Flux Pro": false,
+                    "Flux v1 Ultra": false,
+                    "Imagen 4 Ultra": false
                 },
-                "Analysis": {
-                    "Competitor analysis": false,
-                    "Dashboard reporting": false,
-                    "Community insights": false,
-                    "Performance analysis": false
+                "Video Generation": {
+                    "Ray 2 Flash": true,
+                    "Kling 2 Pro": false,
+                    "Kling 2 Standard": false,
+                    "Veo 3": false
                 },
-                "Support": {
-                    "Email support": true,
-                    "24 / 7 call center support": false,
-                    "Dedicated account manager": false
+                "Retouch Lab": {
+                    "Image Upscale": true,
+                    "Style Transfer": false,
+                    "Face Enhancement": false,
+                    "Object Removal": false,
+                    "Professional Portrait": false,
+                    "Retouch": false
+                },
+                "Background Change": {
+                    "Advance Composition": false,
+                    "Background Change": true,
+                    "Basic Background Change": false
+                },
+                "Specilized Workflows": {
+                    "Product Transfer": false,
+                    "Image Resize": false,
+                    "Smart Prompt Assistant": false
+                },
+                "Support & Access": {
+                    "Commercial License": false,
+                    "Email Support": true,
+                    "Priority Queue": false,
+                    "Concurrent Image Generation": false,
+                    "Concurrent Video Generation": false,
+                    "Credit Packs": false
                 }
             }
         },
         "growth": {
-            "name": "Growth",
-            "description": "All the extras for your growing team.",
+            "name": "Basic",
+            "description": "Access advanced tools and models.",
             "highlights": [
-                "Unlimited active team members",
-                "Unlimited deal progress boards",
-                "Source leads from over 100 verified platforms",
-                "RadiantAI integrations",
-                "Unlimited competitor analyses"
+                "800 credits per month",
+                "Access to Kling 2.1 and all advanced models",
+                "Prompt assistant and product transfer tools",
+                "Buy credit packs",
+                "Priority queue and faster generation",
+                "Commercial license included"
             ],
             "features": {
-                "Features": {
-                    "Accounts": "10",
-                    "Deal progress boards": "Unlimited",
-                    "Sourcing platforms": "100+",
-                    "Contacts": "1000",
-                    "AI assisted outreach": true
+                "Image Generation": {
+                    "Flux Schnell": true,
+                    "Juggernaut Flux Lightning": true,
+                    "Ideogram V2 Turbo": true,
+                    "Flux v1 Pro": true,
+                    "Juggernaut Flux Pro": true,
+                    "Flux v1 Ultra": true,
+                    "Imagen 4 Ultra": true
                 },
-                "Analysis": {
-                    "Competitor analysis": "5 / month",
-                    "Dashboard reporting": true,
-                    "Community insights": true,
-                    "Performance analysis": true
+                "Video Generation": {
+                    "Ray 2 Flash": true,
+                    "Kling 2 Pro": true,
+                    "Kling 2 Standard": true,
+                    "Veo 3": false
                 },
-                "Support": {
-                    "Email support": true,
-                    "24 / 7 call center support": true,
-                    "Dedicated account manager": false
+                "Retouch Lab": {
+                    "Image Upscale": true,
+                    "Style Transfer": true,
+                    "Face Enhancement": true,
+                    "Object Removal": true,
+                    "Professional Portrait": true,
+                    "Retouch": true
+                },
+                "Background Change": {
+                    "Advance Composition": true,
+                    "Background Change": true,
+                    "Basic Background Change": true
+                },
+                "Specilized Workflows": {
+                    "Product Transfer": true,
+                    "Image Resize": true,
+                    "Smart Prompt Assistant": "Limited"
+                },
+                "Support & Access": {
+                    "Commercial License": true,
+                    "Email Support": true,
+                    "Priority Queue": false,
+                    "Concurrent Image Generation": true,
+                    "Concurrent Video Generation": false,
+                    "Credit Packs": true
                 }
             }
         },
         "enterprise": {
-            "name": "Enterprise",
-            "description": "Added flexibility to close deals at scale.",
+            "name": "Pro",
+            "description": "Get all tools, top models, and priority speed.",
             "highlights": [
-                "Unlimited active team members",
-                "Unlimited deal progress boards",
-                "Source leads from over 100 verified platforms",
-                "RadiantAI integrations",
-                "Unlimited competitor analyses"
+                "3500 credits per month",
+                "Full access to all tools",
+                "Access to all current and future models",
+                "Top-tier video tools including Veo 3",
+                "Max generation speed and concurrency",
+                "Discounted credit packs",
+                "Commercial license included"
             ],
             "features": {
-                "Features": {
-                    "Accounts": "Unlimited",
-                    "Deal progress boards": "Unlimited",
-                    "Sourcing platforms": "100+",
-                    "Contacts": "Unlimited",
-                    "AI assisted outreach": true
+                "Image Generation": {
+                    "Flux Schnell": true,
+                    "Juggernaut Flux Lightning": true,
+                    "Ideogram V2 Turbo": true,
+                    "Flux v1 Pro": true,
+                    "Juggernaut Flux Pro": true,
+                    "Flux v1 Ultra": true,
+                    "Imagen 4 Ultra": true
                 },
-                "Analysis": {
-                    "Competitor analysis": "Unlimited",
-                    "Dashboard reporting": true,
-                    "Community insights": true,
-                    "Performance analysis": true
+                "Video Generation": {
+                    "Ray 2 Flash": true,
+                    "Kling 2 Pro": true,
+                    "Kling 2 Standard": true,
+                    "Veo 3": true
                 },
-                "Support": {
-                    "Email support": true,
-                    "24 / 7 call center support": true,
-                    "Dedicated account manager": true
+                "Retouch Lab": {
+                    "Image Upscale": true,
+                    "Style Transfer": true,
+                    "Face Enhancement": true,
+                    "Object Removal": true,
+                    "Professional Portrait": true,
+                    "Retouch": true
+                },
+                "Background Change": {
+                    "Advance Composition": true,
+                    "Background Change": true,
+                    "Basic Background Change": true
+                },
+                "Specilized Workflows": {
+                    "Product Transfer": true,
+                    "Image Resize": true,
+                    "Smart Prompt Assistant": "Unlimited"
+                },
+                "Support & Access": {
+                    "Commercial License": true,
+                    "Email Support": true,
+                    "Priority Queue": true,
+                    "Concurrent Image Generation": true,
+                    "Concurrent Video Generation": true,
+                    "Credit Packs": "Discounted"
                 }
             }
         }
+    },
+    "PricingFaqs": {
+        "title": "All about credits",
+        "subtitle": "Frequently Asked Questions",
+        "items": [
+            {
+                "question": "What are credits?",
+                "answer": "Credits are a measure of computational resources used to generate images or videos. They represent the processing power, memory, and time required for each creation. Different tasks consume varying amounts of credits based on their complexity and output quality. For example, generating a high-resolution image or a longer video will use more credits than a smaller image or shorter video."
+            },
+            {
+                "question": "Can I roll over unused credits to the following month?",
+                "answer": "Credits do not accumulate or carry over between billing cycles. At the start of each month, your compute unit balance is reset to your plan’s allocated amount, regardless of any unused units from the previous month. This ensures a fresh start and consistent resource availability for all users each month."
+            },
+            {
+                "question": "What options do I have if I exceed my compute unit limit?",
+                "answer": "If you exceed your compute unit limit, you have several options to continue your work:\n1. Upgrade to a higher-tier subscription with increased credits.\n2. Purchase additional credits to complement your current plan.\n3. Utilize your daily free credits, which automatically refresh each day."
+            },
+            {
+                "question": "How can I get additional credits?",
+                "answer": "Additional credits are available on the compute packs page to users with a subscription. These supplementary units serve as a backup, activating only when your plan’s allocated units are depleted. Once purchased, they remain available for use within 90 days."
+            },
+            {
+                "question": "How can I monitor my remaining credits?",
+                "answer": "To monitor your compute unit usage, click your profile picture in the top-right corner to view a quick summary. For a more detailed breakdown, visit your account usage page, where you can track your consumption over time and manage your resources effectively."
+            },
+            {
+                "question": "Is it possible to modify my subscription plan?",
+                "answer": "Yes! You can easily modify your subscription plan at any time. Simply navigate to your account page, where you’ll find options to manage and adjust your current plan to better suit your needs."
+            },
+            {
+                "question": "What is Artivos's refund policy?",
+                "answer": "Users with an active subscription who have used less than 650 lifetime credits are eligible for a refund and can request one on the account page."
+            }
+        ]
     },
     "Testimonials": {
         "title": "Trusted by professionals",
@@ -270,7 +376,7 @@
             "Quote": "AI helps me make content faster and better."
         },
         "User2": {
-            "Name": "Leo Tanaka",
+            "Name": "Leo Brujt",
             "Title": "Founder, Tanaka Streetwear",
             "Quote": "No more costly shoots—I create visuals in minutes."
         },
@@ -285,7 +391,7 @@
             "Quote": "AI gave our product photos a major upgrade."
         },
         "User5": {
-            "Name": "Malik Johnson",
+            "Name": "Christian Rosembaum",
             "Title": "Freelance Designer",
             "Quote": "It’s like having a full creative team, solo."
         },
@@ -394,75 +500,73 @@
             }
         }
     },
-    
-        "PrivacyPolicy": {
-            "title": "Privacy Policy",
-            "sections": [
-                {
-                    "title": "1. Information We Collect",
-                    "content": [
-                        "When you sign up, we collect your name, email address, password, and other account-related details.",
-                        "We collect data about how you use the platform, including generated content, prompts, preferences, and analytics.",
-                        "If you subscribe to a paid plan, we collect billing information via our third-party payment processors (e.g., Stripe). We do not store your credit card details.",
-                        "We use cookies and similar technologies to improve functionality and user experience."
-                    ]
-                },
-                {
-                    "title": "2. How We Use Your Information",
-                    "content": [
-                        "To provide, maintain, and improve the functionality of Artivo.Ai.",
-                        "To contact you about your account, service updates, and support requests.",
-                        "To personalize your experience and recommend features or workflows.",
-                        "To comply with legal obligations or defend against legal claims."
-                    ]
-                },
-                {
-                    "title": "3. How We Share Your Information",
-                    "content": [
-                        "We may share information with trusted third-party service providers who help us operate our platform (e.g., hosting, payments, analytics).",
-                        "We may disclose information if required by law or in response to valid legal requests.",
-                        "In case of a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction."
-                    ]
-                },
-                {
-                    "title": "4. Data Security",
-                    "content": [
-                        "We implement industry-standard security measures to protect your information. However, no system is 100% secure. Use the platform at your own risk."
-                    ]
-                },
-                {
-                    "title": "5. Your Rights",
-                    "content": [
-                        "You have the right to access and update your personal data.",
-                        "You can request deletion of your data by contacting us at support@artivo.ai.",
-                        "You can opt out of marketing emails anytime by clicking 'unsubscribe' in our communications."
-                    ]
-                },
-                {
-                    "title": "6. Data Retention",
-                    "content": [
-                        "We retain your information as long as your account is active or as needed to provide our services and comply with legal obligations."
-                    ]
-                },
-                {
-                    "title": "7. Children’s Privacy",
-                    "content": [
-                        "Artivo.Ai is not intended for use by individuals under 13 years of age. We do not knowingly collect personal information from children."
-                    ]
-                },
-                {
-                    "title": "8. Updates to this Policy",
-                    "content": [
-                        "We may update this Privacy Policy from time to time. You will be notified of material changes via email or in-app notification."
-                    ]
-                },
-                {
-                    "title": "9. Contact Us",
-                    "content": [
-                        "If you have questions about this policy, contact us at support@artivo.ai."
-                    ]
-                }
-            ]
-        }
-   
+    "PrivacyPolicy": {
+        "title": "Privacy Policy",
+        "sections": [
+            {
+                "title": "1. Information We Collect",
+                "content": [
+                    "When you sign up, we collect your name, email address, password, and other account-related details.",
+                    "We collect data about how you use the platform, including generated content, prompts, preferences, and analytics.",
+                    "If you subscribe to a paid plan, we collect billing information via our third-party payment processors (e.g., Stripe). We do not store your credit card details.",
+                    "We use cookies and similar technologies to improve functionality and user experience."
+                ]
+            },
+            {
+                "title": "2. How We Use Your Information",
+                "content": [
+                    "To provide, maintain, and improve the functionality of Artivo.Ai.",
+                    "To contact you about your account, service updates, and support requests.",
+                    "To personalize your experience and recommend features or workflows.",
+                    "To comply with legal obligations or defend against legal claims."
+                ]
+            },
+            {
+                "title": "3. How We Share Your Information",
+                "content": [
+                    "We may share information with trusted third-party service providers who help us operate our platform (e.g., hosting, payments, analytics).",
+                    "We may disclose information if required by law or in response to valid legal requests.",
+                    "In case of a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction."
+                ]
+            },
+            {
+                "title": "4. Data Security",
+                "content": [
+                    "We implement industry-standard security measures to protect your information. However, no system is 100% secure. Use the platform at your own risk."
+                ]
+            },
+            {
+                "title": "5. Your Rights",
+                "content": [
+                    "You have the right to access and update your personal data.",
+                    "You can request deletion of your data by contacting us at support@artivo.ai.",
+                    "You can opt out of marketing emails anytime by clicking 'unsubscribe' in our communications."
+                ]
+            },
+            {
+                "title": "6. Data Retention",
+                "content": [
+                    "We retain your information as long as your account is active or as needed to provide our services and comply with legal obligations."
+                ]
+            },
+            {
+                "title": "7. Children’s Privacy",
+                "content": [
+                    "Artivo.Ai is not intended for use by individuals under 13 years of age. We do not knowingly collect personal information from children."
+                ]
+            },
+            {
+                "title": "8. Updates to this Policy",
+                "content": [
+                    "We may update this Privacy Policy from time to time. You will be notified of material changes via email or in-app notification."
+                ]
+            },
+            {
+                "title": "9. Contact Us",
+                "content": [
+                    "If you have questions about this policy, contact us at support@artivo.ai."
+                ]
+            }
+        ]
+    }
 }

@@ -86,7 +86,7 @@ export function LogoTimeline() {
           />
           <Logo
             label="Imagen 4"
-            src="/models-icons/Kling.png"
+            src="/models-icons/Google.png"
             className="[animation-delay:-32s] [animation-duration:40s]"
           />
         </Row>
@@ -97,8 +97,8 @@ export function LogoTimeline() {
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
-            label="Luma Ray 2"
-            src="/models-icons/Luma.png"
+            label="Veo 3"
+            src="/models-icons/Google.png"
             className="[animation-delay:-23s] [animation-duration:45s]"
           />
         </Row>
@@ -109,8 +109,8 @@ export function LogoTimeline() {
             className="[animation-delay:-55s] [animation-duration:60s]"
           />
           <Logo
-            label="Ideogram V2.0"
-            src="/models-icons/Ideogram.png"
+            label="RunDiffusion"
+            src="/models-icons/Rundiffusion.png"
             className="[animation-delay:-20s] [animation-duration:60s]"
           />
         </Row>
@@ -122,7 +122,7 @@ export function LogoTimeline() {
           />
           <Logo
             label="Imagen 4"
-            src="/models-icons/Kling.png"
+            src="/models-icons/Google.png"
             className="[animation-delay:-28s] [animation-duration:40s]"
           />
         </Row>

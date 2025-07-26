@@ -3,7 +3,7 @@ import { Container } from "@/components/container";
 import { Subheading } from "@/components/text";
 import { Link } from "@/components/link";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { CheckIcon, MinusIcon, ChevronsUpDownIcon } from "lucide-react";
+import { Check, MinusIcon, ChevronsUpDownIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
 
@@ -58,7 +58,7 @@ export function PricingTable() {
                 data-selected={selectedTier === tier ? true : undefined}
                 className="p-0 data-selected:table-cell max-sm:hidden"
               >
-                <Subheading as="div">{t(`${tier}.name`)}</Subheading>
+                <div className="text-2xl pl-6">{t(`${tier}.name`)}</div>
               </th>
             ))}
           </tr>
@@ -85,7 +85,7 @@ export function PricingTable() {
                           className="group flex items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-200"
                         >
                           {t(`${tier}.name`)}
-                          <CheckIcon className="hidden size-4 group-data-selected:block" />
+                          <Check className="hidden size-4 group-data-selected:block" />
                         </Link>
                       </MenuItem>
                     ))}
@@ -158,7 +158,7 @@ export function PricingTable() {
                     >
                       {value === true ? (
                         <>
-                          <CheckIcon className="size-4 fill-green-600" />
+                          <Check className="size-4 text-green-900" />
                           <span className="sr-only">
                             Included in {t(`${tier}.name`)}
                           </span>

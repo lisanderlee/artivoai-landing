@@ -9,14 +9,14 @@ export default function BentoSection() {
       const t = useTranslations("BentoSection");
       
   return (
-    <div className="rounded-4xl  mt-2 py-32">
-      <Container>
-        <Subheading dark>{t("Eyebrow")}</Subheading>
-        <Heading as="h3" dark className="mt-2 max-w-3xl">
+    <div className="rounded-4xl  mt-2 py-32"   >
+      <Container >
+        <Subheading id='FeaturesID' dark>{t("Eyebrow")}</Subheading>
+        <Heading as="h3"  dark className="mt-2 max-w-3xl">
         {t("title")}
         </Heading>
 
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2" id="/#Features">
           <BentoCard
             dark
             eyebrow= {t("BotEyebrow")}

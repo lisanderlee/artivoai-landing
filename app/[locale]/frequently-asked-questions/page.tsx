@@ -4,11 +4,9 @@ import { Container } from "@/components/container";
 import { Footer } from "@/components/sections/footer-section";
 import { GradientBackground } from "@/components/gradient";
 import { Navbar } from "@/components/navbar";
-import Testimonial from "@/components/testimonial-callout";
-import FrequentlyAskedQuestions from "@/components/faq";
-import { PricingHeader } from "@/components/pricing/pricing-header";
-import { PricingCardsSection } from "@/components/pricing/pricing-cards-section";
-import { PricingTable } from "@/components/pricing/pricing-table";
+
+import PricingFrequentlyAskedQuestions from "@/components/PricingFaqs";
+
 
 export default function Faq() {
   return (
@@ -18,7 +16,7 @@ export default function Faq() {
         <Navbar mode="light" />
       </Container>
    <div className="mt-24" />
-      <FrequentlyAskedQuestions />
+      <PricingFrequentlyAskedQuestions />
       <Footer />
     </main>
   );

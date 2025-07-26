@@ -5,7 +5,7 @@ import { Footer } from "@/components/sections/footer-section";
 import { GradientBackground } from "@/components/gradient";
 import { Navbar } from "@/components/navbar";
 import Testimonial from "@/components/testimonial-callout";
-import FrequentlyAskedQuestions from "@/components/faq";
+import PricingFrequentlyAskedQuestions from "@/components/PricingFaqs";
 import { PricingHeader } from "@/components/pricing/pricing-header";
 import { PricingCardsSection } from "@/components/pricing/pricing-cards-section";
 import { PricingTable } from "@/components/pricing/pricing-table";
@@ -21,7 +21,7 @@ export default function Pricing() {
       <PricingCardsSection />
       <PricingTable />
       <Testimonial />
-      <FrequentlyAskedQuestions />
+      <PricingFrequentlyAskedQuestions />
       <Footer />
     </main>
   );

@@ -27,7 +27,6 @@ import {
   Menu,
   Ratio,
   Replace,
-  Zap,
   ArrowUpRight,
   Brush,
   ShoppingCart,
@@ -144,6 +143,10 @@ const Navbar = ({
       ],
     },
     {
+      title: "Features",
+      url: "/#FeaturesID",
+    },
+    {
       title: "Pricing",
       url: "/pricing",
     },
@@ -163,7 +166,8 @@ const Navbar = ({
     mode === "dark" ? "bg-white text-black" : "bg-white text-black";
   const logoSrc = mode === "dark" ? Logo : LogoBlack;
   const hoverText = mode === "dark" ? "hover:text-white" : "hover:text-black";
-const buttonVariant = mode === "dark" ? "secondary-outline" : "secondary-outline-gray"
+  const buttonVariant =
+    mode === "dark" ? "secondary-outline" : "secondary-outline-gray";
   return (
     <section className="py-4 ">
       <div className="container relative flex">
@@ -197,7 +201,7 @@ const buttonVariant = mode === "dark" ? "secondary-outline" : "secondary-outline
 
           <div className="flex items-center gap-2">
             <div className="z-50">
-            <LanguageToggle mode={mode} />
+              <LanguageToggle mode={mode} />
             </div>
             <Button
               variant={buttonVariant}
@@ -229,48 +233,53 @@ const buttonVariant = mode === "dark" ? "secondary-outline" : "secondary-outline
                 height={40}
               />
             </a>
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="secondary-outline">
-                  <Menu className="size-4 text-white" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent className="overflow-y-auto">
-                <SheetHeader>
-                  <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
-                      <Image
-                        src={LogoBlack}
-                        className="w-22 pt-1"
-                        alt={logo.alt}
-                        width={120}
-                        height={40}
-                      />
-                    </a>
-                  </SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-6 p-4">
-                  <Accordion
-                    type="single"
-                    collapsible
-                    className="flex w-full flex-col gap-4"
-                  >
-                    {menu.map((item) =>
-                      renderMobileMenuItem(item, t, textColor, hoverBg)
-                    )}
-                  </Accordion>
+            <div className="flex flex-row">
+               <div className="z-50">
+              <LanguageToggle mode={mode} />
+            </div>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="secondary-outline">
+                    <Menu className="size-4 text-white" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent className="overflow-y-auto">
+                  <SheetHeader>
+                    <SheetTitle>
+                      <a href={logo.url} className="flex items-center gap-2">
+                        <Image
+                          src={LogoBlack}
+                          className="w-22 pt-1"
+                          alt={logo.alt}
+                          width={120}
+                          height={40}
+                        />
+                      </a>
+                    </SheetTitle>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-6 p-4">
+                    <Accordion
+                      type="single"
+                      collapsible
+                      className="flex w-full flex-col gap-4"
+                    >
+                      {menu.map((item) =>
+                        renderMobileMenuItem(item, t, textColor, hoverBg)
+                      )}
+                    </Accordion>
 
-                  <div className="flex flex-col gap-3">
-                  <Button variant="secondary-outline-gray" >
-                      <a href={auth.login.url}>{t(auth.login.title)}</a>
-                    </Button>
-                    <Button variant="primary-icon-dark" >
-                      <a href={auth.signup.url}>{t(auth.signup.title)}</a>
-                    </Button>
+                    <div className="flex flex-col gap-3">
+                      <Button variant="secondary-outline-gray">
+                        <a href={auth.login.url}>{t(auth.login.title)}</a>
+                      </Button>
+                      <Button variant="primary-icon-dark">
+                        <a href={auth.signup.url}>{t(auth.signup.title)}</a>
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>
@@ -345,12 +354,12 @@ const renderMenuItem = (
 
   return (
     <NavigationMenuItem key={item.title}>
-      <NavigationMenuLink
-        href={item.url}
+      <Link
+        href={`${item.url}`}
         className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-4 py-2 text-[17px] font-normal ${hoverBg}`}
       >
         {t(item.title)}
-      </NavigationMenuLink>
+      </Link>
     </NavigationMenuItem>
   );
 };

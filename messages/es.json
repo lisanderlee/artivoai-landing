@@ -1,38 +1,38 @@
 {
-"Navigation": {
-  "Home": "Inicio",
-  "UseCases": "Casos de uso",
-  "Features": "Funciones",
-  "Tools": "Herramientas",
-  "Pricing": "Precios",
-  "Login": "Iniciar sesión",
-  "cta": "Probar ahora",
-  "ImageGeneration": "Generación de imágenes",
-  "VideoGeneration": "Generación de videos",
-  "BakckgroundChange": "Cambio de fondo",
-  "ImageResize": "Redimensionar imagen",
-  "RetouchLab": "Laboratorio de retoque",
-  "ProductTransfer": "Colocación de producto",
-  "Creatives": "Creativos y diseñadores",
-  "Ecommerce": "E-commerce",
-  "Marketing": "Agencias y equipos de marketing",
-  "ImageGenerationDescription": "Genera imágenes de alta calidad a partir de texto.",
-  "VideoGenerationDescription": "Convierte cualquier imagen en un video en movimiento.",
-  "BakckgroundChangeDescription": "Cambia el fondo de productos con un prompt o imagen.",
-  "ImageResizeDescription": "Redimensiona rápidamente tus visuales para cualquier formato o plataforma.",
-  "RetouchLabDescription": "Mejora, afina y escala tus imágenes con las herramientas de retoque.",
-  "ProductTransferDescription": "Coloca tu producto en cualquier escena.",
-  "CreativesDescription": "Explora ideas nuevas y crea variaciones visuales con IA en segundos.",
-  "EcommerceDescription": "Aumenta la conversión de tu tienda online con contenido visual optimizado.",
-  "MarketingDescription": "Ahorra tiempo y entrega contenido visual impactante más rápido."
-},
- "HeroSection": {
-  "badge": "Presentamos Artivo v2.0",
-  "title": "Crea Imágenes y Videos Profesionales",
-  "description": "Olvídate de producciones costosas o flujos de trabajo complejos. Usa IA para crear visuales de producto para e-commerce, redes sociales y anuncios—rápido.",
-  "highlight": "Una suscripción, todos los modelos.",
-  "cta": "Probar ahora"
-},
+  "Navigation": {
+    "Home": "Inicio",
+    "UseCases": "Casos de uso",
+    "Features": "Funciones",
+    "Tools": "Herramientas",
+    "Pricing": "Precios",
+    "Login": "Iniciar sesión",
+    "cta": "Probar ahora",
+    "ImageGeneration": "Generación de imágenes",
+    "VideoGeneration": "Generación de videos",
+    "BakckgroundChange": "Cambio de fondo",
+    "ImageResize": "Redimensionar imagen",
+    "RetouchLab": "Laboratorio de imagen",
+    "ProductTransfer": "Colocación de producto",
+    "Creatives": "Creativos y diseñadores",
+    "Ecommerce": "E-commerce",
+    "Marketing": "Agencias y equipos de marketing",
+    "ImageGenerationDescription": "Genera imágenes de alta calidad a partir de texto.",
+    "VideoGenerationDescription": "Convierte cualquier imagen en un video en movimiento.",
+    "BakckgroundChangeDescription": "Cambia el fondo de productos con un prompt o imagen.",
+    "ImageResizeDescription": "Redimensiona rápidamente tus visuales para cualquier formato o plataforma.",
+    "RetouchLabDescription": "Mejora, afina y escala tus imágenes con las herramientas de retoque.",
+    "ProductTransferDescription": "Coloca tu producto en cualquier escena.",
+    "CreativesDescription": "Explora ideas nuevas y crea variaciones visuales con IA en segundos.",
+    "EcommerceDescription": "Aumenta la conversión de tu tienda online con contenido visual optimizado.",
+    "MarketingDescription": "Ahorra tiempo y entrega contenido visual impactante más rápido."
+  },
+  "HeroSection": {
+    "badge": "Presentamos Artivo v2.0",
+    "title": "Crea Imágenes y Videos con IA en Segundos",
+    "description": "Olvídate de producciones costosas o flujos de trabajo complejos. Usa IA para crear visuales de producto para e-commerce, redes sociales y anuncios—rápido.",
+    "highlight": "Una suscripción, todos los modelos.",
+    "cta": "Probar ahora"
+  },
   "UseCase": {
     "Creatives": {
       "Thumbnail": {
@@ -159,107 +159,215 @@
     "ImageResizePrompt": "",
     "cta": "Probar ahora"
   },
-
-    "Pricing": {
-      "title": "Precios que crecen con el tamaño de tu equipo.",
-      "SubTitle": "Empresas de todo el mundo han cerrado millones de acuerdos con Radiant. Regístrate hoy y empieza a vender de forma más inteligente.",
-      "cta": "Ver detalles completos del plan",
-      "cta-text": "Descubre todo lo que incluye cada plan — consulta los detalles completos de precios.",
-      "cta-button": "Seleccionar plan",
-      "starter": {
-        "name": "Starter",
-        "description": "Todo lo que necesitas para empezar a vender.",
-        "highlights": [
-          "Miembros del equipo activos ilimitados",
-          "Tableros de progreso de acuerdos ilimitados",
-          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
-          "Integraciones con RadiantAI",
-          "Análisis de competidores ilimitados"
-        ],
-        "features": {
-          "Features": {
-            "Accounts": "5",
-            "Deal progress boards": "1",
-            "Sourcing platforms": "Seleccionar",
-            "Contacts": "100",
-            "AI assisted outreach": false
-          },
-          "Analysis": {
-            "Competitor analysis": false,
-            "Dashboard reporting": false,
-            "Community insights": false,
-            "Performance analysis": false
-          },
-          "Support": {
-            "Email support": true,
-            "24 / 7 call center support": false,
-            "Dedicated account manager": false
-          }
-        }
-      },
-      "growth": {
-        "name": "Growth",
-        "description": "Todo lo adicional que necesita tu equipo en crecimiento.",
-        "highlights": [
-          "Miembros del equipo activos ilimitados",
-          "Tableros de progreso de acuerdos ilimitados",
-          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
-          "Integraciones con RadiantAI",
-          "Análisis de competidores ilimitados"
-        ],
-        "features": {
-          "Features": {
-            "Accounts": "10",
-            "Deal progress boards": "Ilimitado",
-            "Sourcing platforms": "100+",
-            "Contacts": "1000",
-            "AI assisted outreach": true
-          },
-          "Analysis": {
-            "Competitor analysis": "5 / mes",
-            "Dashboard reporting": true,
-            "Community insights": true,
-            "Performance analysis": true
-          },
-          "Support": {
-            "Email support": true,
-            "24 / 7 call center support": true,
-            "Dedicated account manager": false
-          }
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Flexibilidad adicional para cerrar acuerdos a gran escala.",
-        "highlights": [
-          "Miembros del equipo activos ilimitados",
-          "Tableros de progreso de acuerdos ilimitados",
-          "Obtén clientes potenciales desde más de 100 plataformas verificadas",
-          "Integraciones con RadiantAI",
-          "Análisis de competidores ilimitados"
-        ],
-        "features": {
-          "Features": {
-            "Accounts": "Ilimitado",
-            "Deal progress boards": "Ilimitado",
-            "Sourcing platforms": "100+",
-            "Contacts": "Ilimitado",
-            "AI assisted outreach": true
-          },
-          "Analysis": {
-            "Competitor analysis": "Ilimitado",
-            "Dashboard reporting": true,
-            "Community insights": true,
-            "Performance analysis": true
-          },
-          "Support": {
-            "Email support": true,
-            "24 / 7 call center support": true,
-            "Dedicated account manager": true
-          }
+  "Pricing": {
+    "title": "Una Suscripción. Creatividad Sin Límites.",
+    "SubTitle": "Desde posters hasta videos de producto, obtén todas las herramientas y modelos con un solo plan. Di adiós a los costos extra.",
+    "cta": "Ver detalles completos del plan",
+    "cta-text": "Descubre todo lo que incluye cada plan — consulta todos los detalles de precios.",
+    "cta-button": "Seleccionar plan",
+    "startcreating": "Comienza a crear con",
+    "starter": {
+      "name": "Gratis",
+      "description": "Prueba herramientas básicas.",
+      "highlights": [
+        "100 créditos gratuitos",
+        "Acceso a Flux Schnell y Ray 2 Flash",
+        "Cambio de fondo básico y Escalado de imagen",
+        "Acceso limitado a herramientas de Artivo",
+        "Prueba antes de mejorar tu plan"
+      ],
+      "features": {
+        "Generación de Imagen": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2 Turbo": false,
+          "Flux v1 Pro": false,
+          "Juggernaut Flux Pro": false,
+          "Flux v1 Ultra": false,
+          "Imagen 4 Ultra": false
+        },
+        "Generación de Video": {
+          "Ray 2 Flash": true,
+          "Kling 2 Pro": false,
+          "Kling 2 Standard": false,
+          "Veo 3": false
+        },
+        "Laboratorio de Imagen": {
+          "Mejorador de Imagen": true,
+          "Transferencia de Estilo": false,
+          "Mejorador de Caras": false,
+          "Remocion de Objectos": false,
+          "Retrato Profesional": true,
+          "Retoque de piel": false
+        },
+        "Cambio de Fondo": {
+          "FAL Composition": false,
+          "FAL Background Change": true,
+          "Bria Background Change": false
+        },
+        "Workflows Especializados": {
+          "Colocación de producto": false,
+          "Redimensionar Imagen": false,
+          "Asistente Inteligente de Prompts": false
+        },
+        "Soporte & Acceso": {
+          "Licencia Comercial": false,
+          "Soporte por Email": false,
+          "Cola Prioritaria": false,
+          "Generación Simultánea de Imágenes": false,
+          "Generación Simultánea de Videos": false,
+          "Paquetes de Créditos": false
         }
       }
     },
+    "growth": {
+      "name": "Básico",
+      "description": "Accede a herramientas y modelos avanzados.",
+      "highlights": [
+        "800 créditos por mes",
+        "Asistente Inteligente de Prompts",
+        "Acceso a Kling 2.1 y todos los modelos",
+        "Acceso a wokflows especializados",
+        "Compra paquetes de créditos",
+        "Cola prioritaria y generación más rápida",
+        "Licencia comercial incluida"
+      ],
+      "features": {
+        "Generación de Imagen": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2 Turbo": true,
+          "Flux v1 Pro": true,
+          "Juggernaut Flux Pro": true,
+          "Flux v1 Ultra": true,
+          "Imagen 4 Ultra": true
+        },
+        "Generación de Video": {
+          "Ray 2 Flash": true,
+          "Kling 2 Pro": true,
+          "Kling 2 Standard": true,
+          "Veo 3": false
+        },
+        "Laboratorio de Imagen": {
+          "Mejorador de Imagen": true,
+          "Transferencia de Estilo": true,
+          "Mejorador de Caras": true,
+          "Remocion de Objectos": true,
+          "Retrato Profesional": true,
+          "Retoque de piel": true
+        },
+        "Cambio de Fondo": {
+          "FAL Composition": true,
+          "FAL Background Change": true,
+          "Bria Background Change": true
+        },
+        "Workflows Especializados": {
+          "Colocación de producto": true,
+          "Redimensionar Imagen": true,
+          "Asistente Inteligente de Prompts": "Limitado"
+        },
+        "Soporte & Acceso": {
+          "Licencia Comercial": true,
+          "Soporte por Email": true,
+          "Cola Prioritaria": true,
+          "Generación Simultánea de Imágenes": true,
+          "Generación Simultánea de Videos": false,
+          "Paquetes de Créditos": true
+        }
+      }
+    },
+    "enterprise": {
+      "name": "Pro",
+      "description": "Potencia tu creatividad con acceso total.",
+      "highlights": [
+        "3500 créditos por mes",
+         "Acceso completo a todas las herramientas",
+        "Acceso a todos los modelos actuales",
+        "Herramientas de video de gama alta, incluyendo Veo 3",
+        "Acceso completo a todas las herramientas",
+        "Velocidad máxima de generación y concurrencia",
+        "Paquetes de créditos con descuento",
+        "Licencia comercial incluida"
+      ],
+      "features": {
+        "Generación de Imagen": {
+          "Flux Schnell": true,
+          "Juggernaut Flux Lightning": true,
+          "Ideogram V2 Turbo": true,
+          "Flux v1 Pro": true,
+          "Juggernaut Flux Pro": true,
+          "Flux v1 Ultra": true,
+          "Imagen 4 Ultra": true
+        },
+        "Generación de Video": {
+          "Ray 2 Flash": true,
+          "Kling 2 Pro": true,
+          "Kling 2 Standard": true,
+          "Veo 3": true
+        },
+        "Laboratorio de Imagen": {
+          "Mejorador de Imagen": true,
+          "Transferencia de Estilo": true,
+          "Mejorador de Caras": true,
+          "Remocion de Objectos": true,
+          "Retrato Profesional": true,
+          "Retoque de piel": true
+        },
+        "Cambio de Fondo": {
+          "FAL Composition": true,
+          "FAL Background Change": true,
+          "Bria Background Change": true
+        },
+        "Workflows Especializados": {
+          "Colocación de producto": true,
+          "Redimensionar Imagen": true,
+          "Asistente Inteligente de Prompts": "Ilimitado"
+        },
+        "Soporte & Acceso": {
+          "Licencia Comercial": true,
+          "Soporte por Email": true,
+          "Cola Prioritaria": true,
+          "Generación Simultánea de Imágenes": true,
+          "Generación Simultánea de Videos": true,
+          "Paquetes de Créditos": "Con descuento"
+        }
+      }
+    }
+  },
+  "PricingFaqs": {
+    "title": "Todo sobre creditos",
+    "subtitle":"Preguntas Frecuentes",
+    "items": [
+      {
+        "question": "¿Qué son los créditos?",
+        "answer": "Los créditos son una medida de los recursos computacionales utilizados para generar imágenes o videos. Representan la potencia de procesamiento, la memoria y el tiempo necesario para cada creación. Diferentes tareas consumen distintos montos de créditos según su complejidad y calidad de salida. Por ejemplo, generar una imagen en alta resolución o un video más largo utilizará más créditos que una imagen más pequeña o un video corto."
+      },
+      {
+        "question": "¿Puedo acumular créditos no utilizados para el mes siguiente?",
+        "answer": "Los créditos no se acumulan ni se transfieren entre ciclos de facturación. Al inicio de cada mes, tu saldo de créditos se restablece según la cantidad asignada por tu plan, sin importar si quedaron créditos sin usar del mes anterior. Esto garantiza un nuevo comienzo y disponibilidad constante de recursos para todos los usuarios."
+      },
+      {
+        "question": "¿Qué opciones tengo si supero mi límite de créditos?",
+        "answer": "Si superas tu límite de créditos, tienes varias opciones para continuar trabajando:\n1. Actualiza a un plan superior con más créditos incluidos.\n2. Compra créditos adicionales para complementar tu plan actual.\n3. Usa tus créditos gratuitos diarios, que se renuevan automáticamente cada día."
+      },
+      {
+        "question": "¿Cómo puedo obtener créditos adicionales?",
+        "answer": "Puedes obtener créditos adicionales en la página de paquetes de créditos, disponible para usuarios con suscripción. Estas unidades suplementarias se activan como respaldo cuando se agotan los créditos asignados de tu plan. Una vez comprados, están disponibles para usar durante 90 días."
+      },
+      {
+        "question": "¿Cómo puedo monitorear mis créditos restantes?",
+        "answer": "Para monitorear el uso de tus créditos, haz clic en tu foto de perfil en la esquina superior derecha para ver un resumen rápido. Para un desglose más detallado, visita la página de uso de cuenta, donde podrás seguir tu consumo en el tiempo y administrar tus recursos de manera eficiente."
+      },
+      {
+        "question": "¿Puedo modificar mi plan de suscripción?",
+        "answer": "¡Sí! Puedes modificar tu plan de suscripción en cualquier momento. Solo tienes que ir a la página de cuenta, donde encontrarás opciones para gestionar y ajustar tu plan actual según tus necesidades."
+      },
+      {
+        "question": "¿Cuál es la política de reembolso de Artivo?",
+        "answer": "Los usuarios con una suscripción activa que hayan utilizado menos de 650 créditos en total son elegibles para un reembolso y pueden solicitarlo desde la página de cuenta."
+      }
+    ]
+  },
   "Testimonials": {
     "title": "Confiado por profesionales",
     "Eyebrow": "Lo que todos están diciendo",
@@ -271,7 +379,7 @@
       "Quote": "La IA me ayuda a crear contenido más rápido y mejor."
     },
     "User2": {
-      "Name": "Leo Tanaka",
+      "Name": "Leo Brujt",
       "Title": "Fundador, Tanaka Streetwear",
       "Quote": "Ya no necesito sesiones costosas—creo visuales en minutos."
     },
@@ -286,7 +394,7 @@
       "Quote": "La IA mejoró muchísimo nuestras fotos de producto."
     },
     "User5": {
-      "Name": "Malik Johnson",
+      "Name": "Christian Rosembaum",
       "Title": "Diseñador Freelance",
       "Quote": "Es como tener un equipo creativo completo, yo solo."
     },
@@ -296,24 +404,24 @@
       "Quote": "La IA mantiene nuestras campañas frescas y en línea con la marca."
     }
   },
-"Footer": {
-  "Eyebrow": "Comienza ahora 🚀",
-  "title-line-1": "¿Listo para comenzar?",
-  "title-line-2": "Empieza a crear hoy.",
-  "cta": "Probar ahora",
-  "Pricing": "Precios",
-  "Blog": "Blog",
-  "Faq": "Preguntas frecuentes",
-  "TermsAndCoditions": "Términos y condiciones",
-  "Company": "Compañía",
-  "Carreers": "Carreras",
-  "PrivacyPolicy": "Política de privacidad",
-  "Product": "Producto",
-  "Support": "Soporte",
-  "Terms": "Términos",
-  "Tools": "Herramientas",
-  "UseCase": "Casos de uso"
-},
+  "Footer": {
+    "Eyebrow": "Comienza ahora 🚀",
+    "title-line-1": "¿Listo para comenzar?",
+    "title-line-2": "Empieza a crear hoy.",
+    "cta": "Probar ahora",
+    "Pricing": "Precios",
+    "Blog": "Blog",
+    "Faq": "Preguntas frecuentes",
+    "TermsAndCoditions": "Términos y condiciones",
+    "Company": "Compañía",
+    "Carreers": "Carreras",
+    "PrivacyPolicy": "Política de privacidad",
+    "Product": "Producto",
+    "Support": "Soporte",
+    "Terms": "Términos",
+    "Tools": "Herramientas",
+    "UseCase": "Casos de uso"
+  },
   "Terms": {
     "title": "Términos y Condiciones",
     "effectiveDate": "Fecha de entrada en vigor: 20 de julio de 2025",

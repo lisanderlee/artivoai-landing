@@ -20,37 +20,37 @@ import { FadeInStagger, FadeIn } from "../fade-in";
 
 const testimonials = [
   {
-    img: "/testimonials/tina-yards.jpg",
+    img: "/testimonials/sofia-ramos.png",
     name: "User1.Name",
     title: "User1.Title",
     quote: "User1.Quote",
   },
   {
-    img: "/testimonials/conor-neville.jpg",
+    img: "/testimonials/LeoBrujt.png",
     name: "User2.Name",
     title: "User2.Title",
     quote: "User2.Quote",
   },
   {
-    img: "/testimonials/amy-chase.jpg",
+    img: "/testimonials/IsabellaMoretti.png",
     name: "User3.Name",
     title: "User3.Title",
     quote: "User3.Quote",
   },
   {
-    img: "/testimonials/veronica-winton.jpg",
+    img: "/testimonials/ChloeDubois.png",
     name: "User4.Name",
     title: "User4.Title",
     quote: "User4.Quote",
   },
   {
-    img: "/testimonials/dillon-lenora.jpg",
+    img: "/testimonials/ChristianRosembaun.png",
     name: "User5.Name",
     title: "User5.Title",
     quote: "User5.Quote",
   },
   {
-    img: "/testimonials/harriet-arron.jpg",
+    img: "/testimonials/MariaMendez.png",
     name: "User6.Name",
     title: "User6.Title",
     quote: "User6.Quote",
