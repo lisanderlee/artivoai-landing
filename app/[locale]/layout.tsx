@@ -4,9 +4,13 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { generateLayoutMetadata } from "@/lib/seo/layout-seo";
-import { generateOrganizationStructuredData, generateSoftwareStructuredData } from "@/lib/seo/structured-data";
 import { HeadTags } from "@/components/layout/head-tags";
+import {TrackingScripts} from "@/lib/scripts/tracking_scripts"
 import "./globals.css";
+import {
+  generateOrganizationStructuredData,
+  generateSoftwareStructuredData,
+} from "@/lib/seo/structured-data";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -14,9 +18,13 @@ const outfit = Outfit({
   display: "swap",
 });
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
   const { locale } = await params;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://artivo.ai';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://artivo.ai";
   return generateLayoutMetadata(locale, baseUrl);
 }
 
@@ -33,16 +41,22 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://artivo.ai';
-  
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://artivo.ai";
+
   // Generate structured data
-  const organizationStructuredData = generateOrganizationStructuredData(locale, baseUrl);
-  const softwareStructuredData = generateSoftwareStructuredData(locale, baseUrl);
+  const organizationStructuredData = generateOrganizationStructuredData(
+    locale,
+    baseUrl
+  );
+  const softwareStructuredData = generateSoftwareStructuredData(
+    locale,
+    baseUrl
+  );
 
   return (
     <html lang={locale}>
       <head>
-        <HeadTags 
+        <HeadTags
           baseUrl={baseUrl}
           locale={locale}
           organizationStructuredData={organizationStructuredData}
@@ -52,9 +66,16 @@ export default async function LocaleLayout({
       <body
         className={`${outfit.variable} font-sans antialiased bg-[#0E0F11] scroll-smooth`}
       >
-        <NextIntlClientProvider>
-          {children}
-        </NextIntlClientProvider>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-ND48B88W"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <TrackingScripts />
       </body>
     </html>
   );

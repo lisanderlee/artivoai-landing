@@ -1,5 +1,6 @@
 import { Container } from "@/components/container";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 export default function Testimonial() {
   const t = useTranslations("Testimonials");
   return (
@@ -9,11 +10,13 @@ export default function Testimonial() {
           <div className="-mt-96 lg:-mt-52">
             <div className="-m-2 rounded-4xl bg-white/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
               <div className="rounded-4xl p-2 shadow-md shadow-black/5">
-                <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
-                  <img
+                <div className="overflow-hidden rounded-3xl shadow-2xl outline -outline-offset-1 outline-black/10">
+                  <Image
                     alt=""
                     src="/testimonials/MariaMendez.png"
                     className="aspect-3/4 w-full object-cover"
+                    width={1200}
+                    height={100}
                   />
                 </div>
               </div>

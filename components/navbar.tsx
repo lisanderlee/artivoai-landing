@@ -302,7 +302,7 @@ const renderMenuItem = (
       return (
         <NavigationMenuItem key={item.title}>
           <NavigationMenuTrigger
-            className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}
+            className={`bg-transparent ${textColor} text-[16px] font-normal px-2 py-2   ${hoverText} ${hoverBg}`}
           >
             {t(item.title)}
           </NavigationMenuTrigger>
@@ -328,7 +328,7 @@ const renderMenuItem = (
       return (
         <NavigationMenuItem key={item.title}>
           <NavigationMenuTrigger
-            className={`bg-transparent ${textColor} text-[17px] font-normal  ${hoverText} ${hoverBg}`}
+            className={`bg-transparent ${textColor} text-[16px] font-normal  ${hoverText} ${hoverBg}`}
           >
             {t(item.title)}
           </NavigationMenuTrigger>
@@ -356,7 +356,7 @@ const renderMenuItem = (
     <NavigationMenuItem key={item.title}>
       <Link
         href={`${item.url}`}
-        className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-4 py-2 text-[17px] font-normal ${hoverBg}`}
+        className={`group inline-flex h-10 w-max items-center ${textColor} ${hoverText} justify-center rounded-md px-3 py-2 text-[16px] font-normal ${hoverBg}`}
       >
         {t(item.title)}
       </Link>
