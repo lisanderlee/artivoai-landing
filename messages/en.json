@@ -28,10 +28,13 @@
     },
     "HeroSection": {
         "badge": "Introducing Artivo v2.0",
-        "title": "AI-Powered Images & Videos in Seconds",
+        "title": "AI-Powered Images & Videos in Seconds for",
         "description": "No more costly shoots or complex workflows. Use AI to create product visuals for e-commerce, social, and ads—fast.",
         "highlight": "One subscription, all the models.",
-        "cta": "Try Now"
+        "cta": "Try Now",
+        "word1": "Online Stores",
+        "word2": "Creative Agencies",
+        "word3": "Designers"
     },
     "UseCase": {
         "Creatives": {

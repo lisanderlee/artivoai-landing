@@ -28,10 +28,13 @@
   },
   "HeroSection": {
     "badge": "Presentamos Artivo v2.0",
-    "title": "Crea Imágenes y Videos con IA en Segundos",
+    "title": "Contenido visual en segundos para",
     "description": "Olvídate de producciones costosas o flujos de trabajo complejos. Usa IA para crear visuales de producto para e-commerce, redes sociales y anuncios—rápido.",
     "highlight": "Una suscripción, todos los modelos.",
-    "cta": "Probar ahora"
+    "cta": "Probar ahora",
+    "word1":"Tiendas Onlines",
+    "word2":"Agencias Creativas",
+    "word3":"Diseñadores"
   },
   "UseCase": {
     "Creatives": {
